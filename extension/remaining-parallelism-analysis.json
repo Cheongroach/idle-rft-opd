@@ -1,0 +1,83 @@
+{
+  "observed_unix": 1792865335.2321198,
+  "matrix_sha256": "5e4044f74f141567520defe50c986167a6f425cdf4411ed5eb3ad61e4ebd1e45",
+  "protocol_sha256": "143a8fc799ccd57a169edf8acef0cd3e28b4ab162e8161fceedf3d51cb4971e1",
+  "logical_fits_complete": 27,
+  "unfinished_single_gpu_training_configs": 9,
+  "pre_blind_tasks": {
+    "dev": {
+      "total_tasks": 76,
+      "terminal_collected_tasks": 44,
+      "active_or_reserved_tasks": 8,
+      "not_launched_tasks": 24,
+      "phases": [
+        {
+          "phase": "ext-dev-00",
+          "tasks": 8,
+          "ledger_state": "finished"
+        },
+        {
+          "phase": "ext-dev-01",
+          "tasks": 8,
+          "ledger_state": "finished"
+        },
+        {
+          "phase": "ext-dev-09",
+          "tasks": 4,
+          "ledger_state": "finished"
+        },
+        {
+          "phase": "ext-dev-04",
+          "tasks": 8,
+          "ledger_state": "finished"
+        },
+        {
+          "phase": "ext-dev-02",
+          "tasks": 8,
+          "ledger_state": "finished"
+        },
+        {
+          "phase": "ext-dev-03",
+          "tasks": 8,
+          "ledger_state": "finished"
+        },
+        {
+          "phase": "ext-dev-08",
+          "tasks": 8,
+          "ledger_state": "submitted"
+        }
+      ]
+    },
+    "probe": {
+      "total_tasks": 38,
+      "terminal_collected_tasks": 16,
+      "active_or_reserved_tasks": 6,
+      "not_launched_tasks": 16,
+      "phases": [
+        {
+          "phase": "ext-probe-00",
+          "tasks": 8,
+          "ledger_state": "finished"
+        },
+        {
+          "phase": "ext-probe-01",
+          "tasks": 8,
+          "ledger_state": "finished"
+        },
+        {
+          "phase": "ext-probe-04",
+          "tasks": 6,
+          "ledger_state": "submitted"
+        }
+      ]
+    }
+  },
+  "pre_blind_parallelism_upper_bound": 63,
+  "current_gpu_cap": 64,
+  "considered_gpu_cap": 100,
+  "pre_blind_capacity_block_possible_by_task_count": false,
+  "blind_task_count": 80,
+  "blind_peak_parallelism_upper_bound": 80,
+  "scope": "CPU task-count bound from frozen matrix and terminal collected jobs; dependencies and planned checkpoint stages can only reduce simultaneous useful tasks. Excludes future matrices. No throughput, scheduling availability or expansion launch claim.",
+  "gpu_launched": false
+}

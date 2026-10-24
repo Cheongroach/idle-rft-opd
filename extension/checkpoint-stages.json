@@ -1,0 +1,35 @@
+{
+  "logical_fits_complete": 27,
+  "complete": false,
+  "frozen_training_changed": false,
+  "groups": [
+    {
+      "name": "rft-weekend-ext-resume-02-20261025",
+      "phase": "ext-resume-02",
+      "sid": "2af5b9136e6cceae",
+      "gpus": 3,
+      "seconds": 14400,
+      "planned_checkpoint": null,
+      "pod_stop_at": null
+    },
+    {
+      "name": "rft-weekend-ext-resume-03-20261025",
+      "phase": "ext-resume-03",
+      "sid": "b7de3874dce5a06a",
+      "gpus": 6,
+      "seconds": 14400,
+      "planned_checkpoint": null,
+      "pod_stop_at": null
+    },
+    {
+      "name": "rft-weekend-ext-resume-04-20261025",
+      "phase": "ext-resume-04",
+      "sid": "c98c99c0354c6f66",
+      "gpus": 1,
+      "seconds": 14400,
+      "planned_checkpoint": null,
+      "pod_stop_at": "2026-10-24T17:58:59.000Z"
+    }
+  ],
+  "observed_unix": 1792864781.0618494
+}

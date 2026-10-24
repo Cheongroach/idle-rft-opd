@@ -1,0 +1,105 @@
+{
+  "observed_unix": 1792865941.1399643,
+  "scope": "Analytical equal-duration sensitivity model only; not a benchmark, ETA, scheduling promise or expansion launch. Assumes 80 ready independent blind tasks, fixed shard count, no startup/export/judging/stragglers, and pre-blind durations of 4/5/6 hours for illustration. Changing per-GPU efficiency changes this model.",
+  "current_parallelism_upper_bound_before_blind": 57,
+  "remaining_task_count_basis": {
+    "unfinished_training": 9,
+    "unfinished_dev_shards": 32,
+    "unfinished_probes": 16
+  },
+  "blind_tasks": 80,
+  "current_cap": 64,
+  "considered_cap": 100,
+  "equal_blind_generation_hours_assumed": [
+    1.038872762227809,
+    1.4822186133935966
+  ],
+  "sensitivity": [
+    {
+      "pre_blind_hours_assumed": 4,
+      "equal_blind_task_hours_assumed": 1.038872762227809,
+      "blind_tasks": 80,
+      "cap64_waves": 2,
+      "cap80_waves": 1,
+      "cap100_waves": 1,
+      "cap64_total_hours": 6.077745524455619,
+      "cap80_total_hours": 5.038872762227809,
+      "cap100_total_hours": 5.038872762227809,
+      "cap100_vs64_total_speedup": 1.2061716600616241
+    },
+    {
+      "pre_blind_hours_assumed": 4,
+      "equal_blind_task_hours_assumed": 1.4822186133935966,
+      "blind_tasks": 80,
+      "cap64_waves": 2,
+      "cap80_waves": 1,
+      "cap100_waves": 1,
+      "cap64_total_hours": 6.964437226787194,
+      "cap80_total_hours": 5.482218613393597,
+      "cap100_total_hours": 5.482218613393597,
+      "cap100_vs64_total_speedup": 1.2703683887709971
+    },
+    {
+      "pre_blind_hours_assumed": 5,
+      "equal_blind_task_hours_assumed": 1.038872762227809,
+      "blind_tasks": 80,
+      "cap64_waves": 2,
+      "cap80_waves": 1,
+      "cap100_waves": 1,
+      "cap64_total_hours": 7.077745524455619,
+      "cap80_total_hours": 6.038872762227809,
+      "cap100_total_hours": 6.038872762227809,
+      "cap100_vs64_total_speedup": 1.1720309076100748
+    },
+    {
+      "pre_blind_hours_assumed": 5,
+      "equal_blind_task_hours_assumed": 1.4822186133935966,
+      "blind_tasks": 80,
+      "cap64_waves": 2,
+      "cap80_waves": 1,
+      "cap100_waves": 1,
+      "cap64_total_hours": 7.964437226787194,
+      "cap80_total_hours": 6.482218613393597,
+      "cap100_total_hours": 6.482218613393597,
+      "cap100_vs64_total_speedup": 1.2286591523357495
+    },
+    {
+      "pre_blind_hours_assumed": 6,
+      "equal_blind_task_hours_assumed": 1.038872762227809,
+      "blind_tasks": 80,
+      "cap64_waves": 2,
+      "cap80_waves": 1,
+      "cap100_waves": 1,
+      "cap64_total_hours": 8.077745524455619,
+      "cap80_total_hours": 7.038872762227809,
+      "cap100_total_hours": 7.038872762227809,
+      "cap100_vs64_total_speedup": 1.1475907858148306
+    },
+    {
+      "pre_blind_hours_assumed": 6,
+      "equal_blind_task_hours_assumed": 1.4822186133935966,
+      "blind_tasks": 80,
+      "cap64_waves": 2,
+      "cap80_waves": 1,
+      "cap100_waves": 1,
+      "cap64_total_hours": 8.964437226787194,
+      "cap80_total_hours": 7.482218613393597,
+      "cap100_total_hours": 7.482218613393597,
+      "cap100_vs64_total_speedup": 1.1980988113258735
+    }
+  ],
+  "total_speedup_range": [
+    1.1475907858148306,
+    1.2703683887709971
+  ],
+  "no_incremental_parallelism_above": 80,
+  "evidence_sha256": {
+    "evaluation-window-analysis.json": "1454b9eb55b9bd8d12a3a4d37000672a96a300d9ed96198598ae92bf9649fa2c",
+    "remaining-parallelism-analysis.json": "ac28a41852025710597838e00c837a09a5414ec6910096a94ede7a381ca1c8da",
+    "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1",
+    "opd.py": "65f8eec311a6d2c7c485dc9b699388b9ec1200d9833f02409faf1d4702034111",
+    "generate.py": "1db2c09ae8d1343df4493e3d0e4716284c4ec585086eca361aa84552c1d8ba4c"
+  },
+  "training_modified": false,
+  "gpu_launched": false
+}

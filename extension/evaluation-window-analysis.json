@@ -1,0 +1,681 @@
+{
+  "observed_unix": 1792864471.4333956,
+  "frozen_manifest_sha256": "95cb56e7d91915f9441b0f379489d89c662f2f466acc57d02262fdbd24e23e1a",
+  "development_counts": {
+    "bank": 1024,
+    "retention": 130
+  },
+  "blind_counts": {
+    "bank": 2048,
+    "retention": 436
+  },
+  "development_shards": 2,
+  "blind_shards": 4,
+  "observed_shards": 44,
+  "command_window_seconds": 7200,
+  "projection_scope": "Per-family mean observed greedy generation seconds scaled to final split; excludes cold-start, loading, export and distribution drift; not a measured final runtime.",
+  "projected_blind_generation_min_seconds": 3739.9419440201127,
+  "projected_blind_generation_max_seconds": 5335.987008216948,
+  "records": [
+    {
+      "phase": "ext-dev-00",
+      "gpu": "gpu-00",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.439759027631226,
+        "retention": 4.431612805076517
+      },
+      "generation_seconds": 4609.211454477161,
+      "projected_blind_shard_generation_seconds": 4804.2024179005275
+    },
+    {
+      "phase": "ext-dev-00",
+      "gpu": "gpu-01",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.374172706986428,
+        "retention": 3.044735913007305
+      },
+      "generation_seconds": 4997.484260322526,
+      "projected_blind_shard_generation_seconds": 5131.452640494847
+    },
+    {
+      "phase": "ext-dev-00",
+      "gpu": "gpu-02",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.168065894409665,
+        "retention": 3.2875716456140465
+      },
+      "generation_seconds": 4907.741894902661,
+      "projected_blind_shard_generation_seconds": 5052.395047309679
+    },
+    {
+      "phase": "ext-dev-00",
+      "gpu": "gpu-03",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.07403815534417,
+        "retention": 4.282431277861962
+      },
+      "generation_seconds": 4924.265568597242,
+      "projected_blind_shard_generation_seconds": 5112.692544823169
+    },
+    {
+      "phase": "ext-dev-00",
+      "gpu": "gpu-04",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.33269149280386,
+        "retention": 4.93036846449742
+      },
+      "generation_seconds": 5098.811994507909,
+      "projected_blind_shard_generation_seconds": 5315.748206945796
+    },
+    {
+      "phase": "ext-dev-00",
+      "gpu": "gpu-05",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.541151809185976,
+        "retention": 2.9560678316136966
+      },
+      "generation_seconds": 4565.21413535811,
+      "projected_blind_shard_generation_seconds": 4695.2811199491125
+    },
+    {
+      "phase": "ext-dev-00",
+      "gpu": "gpu-06",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.433115686464589,
+        "retention": 4.644328227037421
+      },
+      "generation_seconds": 5131.636566227302,
+      "projected_blind_shard_generation_seconds": 5335.987008216948
+    },
+    {
+      "phase": "ext-dev-00",
+      "gpu": "gpu-07",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.210584428590664,
+        "retention": 3.0225874801381276
+      },
+      "generation_seconds": 4912.287413647398,
+      "projected_blind_shard_generation_seconds": 5045.281262773476
+    },
+    {
+      "phase": "ext-dev-01",
+      "gpu": "gpu-00",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.208362995650305,
+        "retention": 3.5436687699814615
+      },
+      "generation_seconds": 4433.020323821751,
+      "projected_blind_shard_generation_seconds": 4588.941749700935
+    },
+    {
+      "phase": "ext-dev-01",
+      "gpu": "gpu-01",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.359113843722184,
+        "retention": 2.7558400179089335
+      },
+      "generation_seconds": 4458.995889149839,
+      "projected_blind_shard_generation_seconds": 4580.252849937832
+    },
+    {
+      "phase": "ext-dev-01",
+      "gpu": "gpu-02",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.257981948822703,
+        "retention": 4.6057036339394894
+      },
+      "generation_seconds": 5039.457494003291,
+      "projected_blind_shard_generation_seconds": 5242.108453896628
+    },
+    {
+      "phase": "ext-dev-01",
+      "gpu": "gpu-03",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.2886782420195,
+        "retention": 2.845057871893872
+      },
+      "generation_seconds": 4940.732021587086,
+      "projected_blind_shard_generation_seconds": 5065.914567950416
+    },
+    {
+      "phase": "ext-dev-01",
+      "gpu": "gpu-04",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.199439570417894,
+        "retention": 5.660825243013767
+      },
+      "generation_seconds": 5078.066700849857,
+      "projected_blind_shard_generation_seconds": 5327.143011542463
+    },
+    {
+      "phase": "ext-dev-01",
+      "gpu": "gpu-05",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.014970830864968,
+        "retention": 2.9158011445399517
+      },
+      "generation_seconds": 4805.19213979796,
+      "projected_blind_shard_generation_seconds": 4933.487390157718
+    },
+    {
+      "phase": "ext-dev-01",
+      "gpu": "gpu-06",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.316680852789432,
+        "retention": 4.912493917227795
+      },
+      "generation_seconds": 5089.452701247996,
+      "projected_blind_shard_generation_seconds": 5305.602433606019
+    },
+    {
+      "phase": "ext-dev-01",
+      "gpu": "gpu-07",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.508088463317222,
+        "retention": 2.9871611972769294
+      },
+      "generation_seconds": 4550.306771041418,
+      "projected_blind_shard_generation_seconds": 4681.741863721603
+    },
+    {
+      "phase": "ext-dev-02",
+      "gpu": "gpu-00",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.665497082889715,
+        "retention": 4.415615328761319
+      },
+      "generation_seconds": 4723.74950280902,
+      "projected_blind_shard_generation_seconds": 4918.036577274518
+    },
+    {
+      "phase": "ext-dev-02",
+      "gpu": "gpu-01",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.349746166693876,
+        "retention": 2.555946228085444
+      },
+      "generation_seconds": 4441.206542172818,
+      "projected_blind_shard_generation_seconds": 4553.668176208578
+    },
+    {
+      "phase": "ext-dev-02",
+      "gpu": "gpu-02",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.491015673251013,
+        "retention": 4.350633510445746
+      },
+      "generation_seconds": 4630.191202883492,
+      "projected_blind_shard_generation_seconds": 4821.619077343105
+    },
+    {
+      "phase": "ext-dev-02",
+      "gpu": "gpu-03",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.33521118080239,
+        "retention": 2.5843175718811557
+      },
+      "generation_seconds": 4435.608766743098,
+      "projected_blind_shard_generation_seconds": 4549.318739905869
+    },
+    {
+      "phase": "ext-dev-02",
+      "gpu": "gpu-04",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.365183488455841,
+        "retention": 4.108025240009794
+      },
+      "generation_seconds": 4549.995586690027,
+      "projected_blind_shard_generation_seconds": 4730.7486972504585
+    },
+    {
+      "phase": "ext-dev-02",
+      "gpu": "gpu-05",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.392168090964333,
+        "retention": 2.613606360841256
+      },
+      "generation_seconds": 4466.67447602842,
+      "projected_blind_shard_generation_seconds": 4581.673155905435
+    },
+    {
+      "phase": "ext-dev-02",
+      "gpu": "gpu-06",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.29344865588223,
+        "retention": 5.290841323429217
+      },
+      "generation_seconds": 5102.150397834601,
+      "projected_blind_shard_generation_seconds": 5334.947416065486
+    },
+    {
+      "phase": "ext-dev-02",
+      "gpu": "gpu-07",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.278949084838132,
+        "retention": 3.091102849616884
+      },
+      "generation_seconds": 4951.743616662221,
+      "projected_blind_shard_generation_seconds": 5087.752142045364
+    },
+    {
+      "phase": "ext-dev-03",
+      "gpu": "gpu-00",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.936800680668114,
+        "retention": 5.014857645954516
+      },
+      "generation_seconds": 4901.607695489118,
+      "projected_blind_shard_generation_seconds": 5122.261431911116
+    },
+    {
+      "phase": "ext-dev-03",
+      "gpu": "gpu-01",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.681164559394801,
+        "retention": 2.976947594277086
+      },
+      "generation_seconds": 4638.257848038149,
+      "projected_blind_shard_generation_seconds": 4769.243542186341
+    },
+    {
+      "phase": "ext-dev-03",
+      "gpu": "gpu-02",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.284078198439431,
+        "retention": 4.279690371185559
+      },
+      "generation_seconds": 4519.62791172805,
+      "projected_blind_shard_generation_seconds": 4707.934288060214
+    },
+    {
+      "phase": "ext-dev-03",
+      "gpu": "gpu-03",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.200451044707364,
+        "retention": 2.7351487532631906
+      },
+      "generation_seconds": 4376.415603852278,
+      "projected_blind_shard_generation_seconds": 4496.762148995858
+    },
+    {
+      "phase": "ext-dev-03",
+      "gpu": "gpu-04",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.265765411779427,
+        "retention": 4.524967223153307
+      },
+      "generation_seconds": 5038.194760336031,
+      "projected_blind_shard_generation_seconds": 5237.293318154777
+    },
+    {
+      "phase": "ext-dev-03",
+      "gpu": "gpu-05",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.448484199138619,
+        "retention": 2.9546497647531886
+      },
+      "generation_seconds": 4517.67614466793,
+      "projected_blind_shard_generation_seconds": 4647.68073431707
+    },
+    {
+      "phase": "ext-dev-03",
+      "gpu": "gpu-06",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.735133824400293,
+        "retention": 5.662392139738389
+      },
+      "generation_seconds": 4840.444007175945,
+      "projected_blind_shard_generation_seconds": 5089.589261324434
+    },
+    {
+      "phase": "ext-dev-03",
+      "gpu": "gpu-07",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.382470291579665,
+        "retention": 2.8090796635848863
+      },
+      "generation_seconds": 4474.414967421806,
+      "projected_blind_shard_generation_seconds": 4598.014472619541
+    },
+    {
+      "phase": "ext-dev-04",
+      "gpu": "gpu-00",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 6.908104854739577,
+        "retention": 4.145849899489146
+      },
+      "generation_seconds": 3806.4299290934578,
+      "projected_blind_shard_generation_seconds": 3988.84732467098
+    },
+    {
+      "phase": "ext-dev-04",
+      "gpu": "gpu-01",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 7.125008225053534,
+        "retention": 2.4977005081107984
+      },
+      "generation_seconds": 3810.3547442546114,
+      "projected_blind_shard_generation_seconds": 3920.2535666114863
+    },
+    {
+      "phase": "ext-dev-04",
+      "gpu": "gpu-02",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 6.976293879981313,
+        "retention": 3.481188954943075
+      },
+      "generation_seconds": 3798.139748621732,
+      "projected_blind_shard_generation_seconds": 3951.3120626392274
+    },
+    {
+      "phase": "ext-dev-04",
+      "gpu": "gpu-03",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 6.9161509575151285,
+        "retention": 2.1365141075391034
+      },
+      "generation_seconds": 3679.9427072377875,
+      "projected_blind_shard_generation_seconds": 3773.949327969508
+    },
+    {
+      "phase": "ext-dev-04",
+      "gpu": "gpu-04",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 6.778579016820004,
+        "retention": 3.335400772266663
+      },
+      "generation_seconds": 3687.433506809175,
+      "projected_blind_shard_generation_seconds": 3834.1911407889083
+    },
+    {
+      "phase": "ext-dev-04",
+      "gpu": "gpu-05",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 6.853064058148448,
+        "retention": 2.12085455273493
+      },
+      "generation_seconds": 3646.6243436997756,
+      "projected_blind_shard_generation_seconds": 3739.9419440201127
+    },
+    {
+      "phase": "ext-dev-04",
+      "gpu": "gpu-06",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 7.084761103295023,
+        "retention": 4.1078987062550505
+      },
+      "generation_seconds": 3894.41110079363,
+      "projected_blind_shard_generation_seconds": 4075.158643868852
+    },
+    {
+      "phase": "ext-dev-04",
+      "gpu": "gpu-07",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 7.22785496141114,
+        "retention": 2.258305548203106
+      },
+      "generation_seconds": 3847.4516008757055,
+      "projected_blind_shard_generation_seconds": 3946.817044996642
+    },
+    {
+      "phase": "ext-dev-09",
+      "gpu": "gpu-00",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.855545927428466,
+        "retention": 5.492275512705628
+      },
+      "generation_seconds": 4891.03742316924,
+      "projected_blind_shard_generation_seconds": 5132.697545728288
+    },
+    {
+      "phase": "ext-dev-09",
+      "gpu": "gpu-01",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 9.027882755826795,
+        "retention": 3.9142627626585846
+      },
+      "generation_seconds": 4876.703050556127,
+      "projected_blind_shard_generation_seconds": 5048.930612113105
+    },
+    {
+      "phase": "ext-dev-09",
+      "gpu": "gpu-02",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.462147380906572,
+        "retention": 4.5063542350195345
+      },
+      "generation_seconds": 4625.532484300435,
+      "projected_blind_shard_generation_seconds": 4823.812070641294
+    },
+    {
+      "phase": "ext-dev-09",
+      "gpu": "gpu-03",
+      "tasks": 577,
+      "family_counts": {
+        "bank": 512,
+        "retention": 65
+      },
+      "family_mean_seconds": {
+        "bank": 8.760115050578861,
+        "retention": 2.834677328670827
+      },
+      "generation_seconds": 4669.432932259981,
+      "projected_blind_shard_generation_seconds": 4794.158734721497
+    }
+  ]
+}

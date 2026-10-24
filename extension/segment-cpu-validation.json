@@ -1,14 +1,13 @@
 {
-  "checks": [
-    "finished plus hard-stop bounded process duration",
-    "hard-stop time capped by reservation",
-    "unknown timing states rejected",
-    "future launch keeps exact frozen task arguments, assets and worker bytes; bash syntax passed",
-    "checkpoint command compiles, contains no NUL and targets exact OPD child runs"
-  ],
   "passed": true,
+  "checks": [
+    "Measured finished sessions plus capped hard-stop upper bounds",
+    "Nonpositive and nonfinite process durations rejected",
+    "Every family generates finite next stage with exact original tasks, assets, bootstrap bytes and valid bash",
+    "Repeated live predecessor metadata query preserves immutable Pod evidence hash and timing"
+  ],
+  "source_sha256": "0b4c132c6f0f27e5244d123dbd0a440b2de901b16a049e5c3596f3bb1d170b9b",
   "gpu_launched": false,
   "signals_sent": false,
-  "source_sha256": "3cf33ccd903ddf3d7ba171c127ca3d59969a6f400aab40d91dd9451faf1646c2",
-  "warning": "Future test-stage payload will be rebuilt from actual new checkpoints before submission"
+  "logical_matrix_complete": false
 }

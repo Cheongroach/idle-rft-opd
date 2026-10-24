@@ -1,0 +1,80 @@
+{
+  "scope": "Measured Role/Pod aggregates for one six-H20 recovery job; sample means over returned points, not per-GPU occupancy, hardware FLOPs utilization, exact effective GPU hours, billing or expansion speedup.",
+  "control_plane": "cn",
+  "trial_sid": "438788439",
+  "declared_gpus": 6,
+  "samples_per_metric": 120,
+  "from_utc": "2026-10-24T17:42:15+00:00",
+  "to_utc": "2026-10-24T18:12:00+00:00",
+  "sm_activity_mean_percent": 10.251434743192249,
+  "gpu_duty_cycle_mean_percent": 34.979166666666664,
+  "sum_gpu_memory_used_mean_bytes": 126772803447.46666,
+  "sum_gpu_memory_total_mean_bytes": 615751090176.0,
+  "aggregate_memory_used_fraction": 0.20588319772398814,
+  "raw_excerpts": {
+    "sm_activity_percent": [
+      [
+        1792865490.0,
+        10.196592610913397
+      ],
+      [
+        1792865505.0,
+        10.717191032984365
+      ],
+      [
+        1792865520.0,
+        10.502001450432582
+      ]
+    ],
+    "gpu_duty_cycle_percent": [
+      [
+        1792865490.0,
+        34.5
+      ],
+      [
+        1792865505.0,
+        35.166666666666664
+      ],
+      [
+        1792865520.0,
+        35.333333333333336
+      ]
+    ],
+    "sum_gpu_memory_used_bytes": [
+      [
+        1792865504.0,
+        126773624832.0
+      ],
+      [
+        1792865520.0,
+        126773624832.0
+      ],
+      [
+        1792865534.0,
+        126773624832.0
+      ]
+    ],
+    "sum_gpu_memory_total_bytes": [
+      [
+        1792865504.0,
+        615751090176.0
+      ],
+      [
+        1792865520.0,
+        615751090176.0
+      ],
+      [
+        1792865534.0,
+        615751090176.0
+      ]
+    ]
+  },
+  "raw_source_sha256": {
+    "lab.arnold.instance_monitor.gpu_sm_activity": "60a2fc48569904c57cd91399acb8c751b05617757db9250197936d3d9313d621",
+    "lab.arnold.instance_monitor.gpu_duty_cycle": "74ccb30dc7b4dc701bc9804d0191f28c5f882d1151c152ce6c06bdc0486f3ceb",
+    "lab.arnold.instance_monitor.gpu_mem_used": "5b995d7865cd05871abcb4f84a1610e99985434290af49b3486792d037a6c9ca",
+    "lab.arnold.instance_monitor.gpu_mem_total": "5b995d7865cd05871abcb4f84a1610e99985434290af49b3486792d037a6c9ca"
+  },
+  "training_modified": false,
+  "gpu_launched": false
+}
