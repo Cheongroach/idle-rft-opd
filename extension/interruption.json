@@ -1,0 +1,172 @@
+{
+  "full_extension_completed": false,
+  "completed_logical_training_configs": 26,
+  "declared_logical_training_configs": 36,
+  "interrupted_logical_training_configs": 10,
+  "remaining_saved_checkpoint_response_tokens": 1987008,
+  "gpu_recovery_launched": false,
+  "automatic_launch_paused": true,
+  "frozen_inputs_changed": false,
+  "independent_existing_development_evaluations_continue": true,
+  "stop_events": [
+    {
+      "event": "job_stopped",
+      "created_by": "mlx",
+      "utc": "2026-10-24T14:19:56.421Z"
+    },
+    {
+      "event": "job_stopped",
+      "created_by": "mlx",
+      "utc": "2026-10-24T14:20:26.156Z"
+    },
+    {
+      "event": "job_stopped",
+      "created_by": "mlx",
+      "utc": "2026-10-24T14:20:27.501Z"
+    }
+  ],
+  "cause": "Stop events observed; initiating human intent not established. No algorithm-failure attribution.",
+  "pending_configs": [
+    {
+      "label": "opd-524288-s42",
+      "seed": 42,
+      "config_sha256": "3c3585b8792d80f13b946869da86003e43009d24ab3db98a36ecb85ff0199b88",
+      "checkpoint_files_sha256": "b634c6bcaabcd3c355cec6ed9e4f6dd3e7e3d8a1a25d5ebb71b7b735a32f5724",
+      "saved_tokens": 271141,
+      "saved_step": 536,
+      "remaining_response_tokens": 253147,
+      "optimizer_states": 128
+    },
+    {
+      "label": "opd-524288-s43",
+      "seed": 43,
+      "config_sha256": "c3ead7c94bc78b9f00bab21b4aaff3484dc1b1d674617b56e26d049d8a540b93",
+      "checkpoint_files_sha256": "80e5f2f43b37f76126cfb2da571b24a91adf44672b7232a004a8e30295fdeb77",
+      "saved_tokens": 275465,
+      "saved_step": 536,
+      "remaining_response_tokens": 248823,
+      "optimizer_states": 128
+    },
+    {
+      "label": "opd-524288-s44",
+      "seed": 44,
+      "config_sha256": "3624a5a8053e6661de26c7f18c9ee686bab3473371bfd1f92caf00cdd7827261",
+      "checkpoint_files_sha256": "177237496a5c01dd5f46992f99f68805986d5a42bf544da9d36888a72aae7fd4",
+      "saved_tokens": 275842,
+      "saved_step": 544,
+      "remaining_response_tokens": 248446,
+      "optimizer_states": 128
+    },
+    {
+      "label": "bank-only-524288-s42",
+      "seed": 42,
+      "config_sha256": "49560799fbfcfa80807d3579120d7ac566744aaec96678b1771d0526cddb0016",
+      "checkpoint_files_sha256": "150c86e92b60793f79dbb8b8fd90c003823b42472f0599636705d92adc521597",
+      "saved_tokens": 289625,
+      "saved_step": 360,
+      "remaining_response_tokens": 103591,
+      "optimizer_states": 128
+    },
+    {
+      "label": "bank-only-524288-s43",
+      "seed": 43,
+      "config_sha256": "e52eab1373c507075b2dc6c3822fd5cb749faa6027604f9293d11709ab5dab5d",
+      "checkpoint_files_sha256": "06c7136fabf918301ff3a8786e6098edb8dc8cf864609f62075dcf0834a0f9d5",
+      "saved_tokens": 274631,
+      "saved_step": 336,
+      "remaining_response_tokens": 118585,
+      "optimizer_states": 128
+    },
+    {
+      "label": "bank-only-524288-s44",
+      "seed": 44,
+      "config_sha256": "117beae563b9496189dde0c762b0aada020eb331ed323f95c68e693151574342",
+      "checkpoint_files_sha256": "8c384446705443d01c95689bbb6e5f536ca48f2cbb98cf9f102bd7d6b8c1f0bb",
+      "saved_tokens": 271969,
+      "saved_step": 336,
+      "remaining_response_tokens": 121247,
+      "optimizer_states": 128
+    },
+    {
+      "label": "balanced-s42",
+      "seed": 42,
+      "config_sha256": "7cc374562e4b3f60ef60de437e7807dd7fdcd65e71ed8d2a2af12fb8e6937d33",
+      "checkpoint_files_sha256": "2e822fe87e3dbaf50a23cf97a4c89c6f9b666b6325fd1cc71a08ab51da36aaf4",
+      "saved_tokens": 240403,
+      "saved_step": 648,
+      "remaining_response_tokens": 283885,
+      "optimizer_states": 128
+    },
+    {
+      "label": "balanced-s43",
+      "seed": 43,
+      "config_sha256": "d6b8882c8b555ff015a39cd277fe4b28ae52085e2294880f3f5d82cf410e74d7",
+      "checkpoint_files_sha256": "359b80de4de6ab2a058057cbd833231f8a0679dacfa8ecc128565a98b906fa91",
+      "saved_tokens": 240940,
+      "saved_step": 646,
+      "remaining_response_tokens": 283348,
+      "optimizer_states": 128
+    },
+    {
+      "label": "balanced-s44",
+      "seed": 44,
+      "config_sha256": "94c36a54e84f3e33b967b477b117accf619198acaa49d2a80f0c72595961e1c6",
+      "checkpoint_files_sha256": "ab70295e9d641a37f17f8123f678bb6e5e29e6bfa6674a1ca9a579a050e081cc",
+      "saved_tokens": 246219,
+      "saved_step": 664,
+      "remaining_response_tokens": 278069,
+      "optimizer_states": 128
+    },
+    {
+      "label": "bank-only-balanced-s44",
+      "seed": 44,
+      "config_sha256": "574659e746398548fd8d80fa1df76538fbcf2cdd5b763586d0f7f63ef29ca78e",
+      "checkpoint_files_sha256": "f7967e3873fd1bb2c711f244f20245420cf4c90781ff574dbb16df328c3ceff5",
+      "saved_tokens": 214277,
+      "saved_step": 264,
+      "remaining_response_tokens": 47867,
+      "optimizer_states": 128
+    }
+  ],
+  "proposal_max_additional_reserved_gpu_hours": 50.083333333333336,
+  "reserved_gpu_hours_so_far": 1369.7999999999997,
+  "fixed_prefix_validation": {
+    "validated_models": 16,
+    "prefixes_per_model": 80,
+    "adapter_hashes_checked": true,
+    "token_coverage_checked": true,
+    "aggregates_recomputed": true,
+    "finiteness_checked": true,
+    "full_extension_completed": false,
+    "gpu_launched": false,
+    "observed_unix": 1792852124.0122404
+  },
+  "scope": "Interruption record and prepared recovery proposal only; no full extension acceptance or convergence claim.",
+  "observed_unix": 1792852280.435045,
+  "checkpoint_preservation": {
+    "complete": true,
+    "files": 214,
+    "gpu_launched": false,
+    "source_modified": false,
+    "archives": {
+      "ext-fit-02": {
+        "files": 86,
+        "archive_sha256": "8df924785e5d87f4087c108e396d520c487866fc4542adb76174e9a35c4a8b64",
+        "manifest_sha256": "6b4381759ec3e57a638a8fa0caa5c029c1ee7e248c874da356934d867a4d2c5e",
+        "bytes": 822118400
+      },
+      "ext-fit-03": {
+        "files": 84,
+        "archive_sha256": "39547ac863bbe330f2d1d9e79418885582aec8a0af1406e4cae6d10b32236f11",
+        "manifest_sha256": "3195bdeaca6b1d6d6d64160e32b9d137cec5b613e60e08b087955ad1974d06b7",
+        "bytes": 822149120
+      },
+      "ext-fit-04": {
+        "files": 44,
+        "archive_sha256": "ba024da28f46b2b4270aacbeffeda0352e55f272f6991e41fedf21e40f1c7055",
+        "manifest_sha256": "5f25cd4ac44e030ffc870b30687c22762c9d4709875d3911431c5520c6303e65",
+        "bytes": 410705920
+      }
+    }
+  }
+}

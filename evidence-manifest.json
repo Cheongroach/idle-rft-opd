@@ -29,10 +29,12 @@
     "extension/PROTOCOL.md": "40f12dcedc89fa0ff7de2879406282cf92d575997c93c5aab99133109ce796db",
     "extension/matrix.json": "5e4044f74f141567520defe50c986167a6f425cdf4411ed5eb3ad61e4ebd1e45",
     "extension/prepared.json": "4abbfabbf29655ff81cdd5f02fd9a6eb8ba64f28676a97506d601693c2606061",
-    "extension/retention-audit.json": "7f0103afb0213fa4f47a978e053574c79af7ec21ca71e54468c131fc219efaa1"
+    "extension/retention-audit.json": "7f0103afb0213fa4f47a978e053574c79af7ec21ca71e54468c131fc219efaa1",
+    "extension/INTERRUPTION_AND_RECOVERY.md": "3241bf1e39abfbf4a02e9fd4ea75ea551b41c752981d91a7be7be5a044a39993",
+    "extension/interruption.json": "00f6889ab15ac5056086fd66b9e57066d086c307c6cbb6902f4529640cfa1718"
   },
   "dialogue_records": 223,
-  "status": "Pilot complete; 36-configuration OPD strengthening experiment in progress",
+  "status": "Pilot complete; strengthening training externally interrupted, full extension acceptance pending",
   "tool_messages_exported": false,
   "private_oracles_exported": false,
   "model_weights_exported": false
