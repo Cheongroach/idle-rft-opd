@@ -1,0 +1,16 @@
+{
+  "files": {
+    "manuscript/OPD_DESIGN_AND_INTERVIEW.md": "a14518ceb7e77a3b1aa70a3108e799402674956b183ee9c4746dc55ad33ed301",
+    "protocol/OPD_PROTOCOL.md": "7d88a54a8f6f08b46971c3d5ee63c86059b731b4661687bc56a08f86e208ba86",
+    "conversations/excerpts.json": "6d9e1f5adac577b7119609094a1bda0614151850a6a3b39d8a97d762cd997f98",
+    "conversations/excerpts.md": "5288ae43f48c3cc98b9afc52144731a87cc923cb86e0fc1b973355e28850c09a",
+    "results/bank-training-complete.md": "165a31d9f27f3afc2663ca623949a8bb91814eeb0191d8f83c4dad33eeab70f7",
+    "results/mbpp-final.md": "d65e7feede739148b02a71c2fa05ddf07dbc7384f43cf46ef695928a7cfcfe46",
+    "logs/cpu-tests.txt": "d46c33275f9f722ffbb323b87c79d9f1be111b1783b233613e23e7731d90e693"
+  },
+  "dialogue_records": 190,
+  "status": "OPD training/evaluation pending; no OPD quality claim",
+  "tool_messages_exported": false,
+  "private_oracles_exported": false,
+  "model_weights_exported": false
+}

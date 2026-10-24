@@ -1,0 +1,119 @@
+./usr/local/lib/python3.11/dist-packages/torch/autograd/graph.py:841: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 304: OS call failed or operation not supported on this OS (Triggered internally at [local path redacted])
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+......{"event": "observer_started", "run_sid": "sid", "pid": 456, "watch": "/tmp/tmpayxgp5sq/phase-watch"}
+...{'task': 0, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 0, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 0, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 0, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 1, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 1, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 1, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 1, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 2, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 2, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 2, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 2, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 3, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 3, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 3, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 3, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 4, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 4, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 4, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 4, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 5, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 5, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 5, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 5, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 6, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 6, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 6, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 6, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 7, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 7, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 7, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 7, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 8, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 8, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 8, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 8, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 9, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 9, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 9, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 9, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 10, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 10, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 10, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 10, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 11, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 11, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 11, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 11, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 12, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 12, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 12, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 12, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 0, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 0, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 0, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 0, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 3, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 3, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 3, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 3, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 6, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 6, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 6, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 6, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 9, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 9, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 9, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 9, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 12, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 12, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 12, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 12, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 1, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 1, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 1, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 1, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 4, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 4, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 4, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 4, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 7, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 7, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 7, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 7, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 10, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 10, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 10, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 10, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 2, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 2, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 2, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 2, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 5, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 5, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 5, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 5, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 8, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 8, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 8, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 8, 'candidate': 3, 'tokens': 1, 'truncated': False}
+{'task': 11, 'candidate': 0, 'tokens': 1, 'truncated': False}
+{'task': 11, 'candidate': 1, 'tokens': 1, 'truncated': False}
+{'task': 11, 'candidate': 2, 'tokens': 1, 'truncated': False}
+{'task': 11, 'candidate': 3, 'tokens': 1, 'truncated': False}
+.....[local path redacted] UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+[local path redacted] UserWarning: Could not find a config file in  - will assume that the vocabulary was not modified.
+  warnings.warn(
+........{"event": "inline_observer_started", "run_sid": "second", "pid": 3855854, "watch": "/tmp/tmpsvps5jnl"}
+{"event": "inline_observer_started", "run_sid": "second", "pid": 3855854, "watch": "/tmp/tmpsvps5jnl"}
+.{"event": "inline_observer_started", "run_sid": "first", "pid": 3855854, "watch": "/tmp/tmptvru47mq"}
+.
+----------------------------------------------------------------------
+Ran 25 tests in 5.431s
+
+OK
