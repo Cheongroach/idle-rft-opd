@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "finished plus hard-stop bounded process duration",
+    "hard-stop time capped by reservation",
+    "unknown timing states rejected",
+    "future launch keeps exact frozen task arguments, assets and worker bytes; bash syntax passed",
+    "checkpoint command compiles, contains no NUL and targets exact OPD child runs"
+  ],
+  "passed": true,
+  "gpu_launched": false,
+  "signals_sent": false,
+  "source_sha256": "3cf33ccd903ddf3d7ba171c127ca3d59969a6f400aab40d91dd9451faf1646c2",
+  "warning": "Future test-stage payload will be rebuilt from actual new checkpoints before submission"
+}

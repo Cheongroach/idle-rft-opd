@@ -1,0 +1,168 @@
+{
+  "records": [
+    {
+      "phase": "ext-fit-02",
+      "sid": "5328c7345610b982",
+      "events": [
+        {
+          "event_type": "job_stopped",
+          "created_at": "2026-10-24T14:20:26.156Z",
+          "created_by": "mlx",
+          "job_run_sid": "5328c7345610b982",
+          "job_run_trial_sid": "438638034",
+          "msg": "\u4f4e GPU \u5229\u7528\u7387\u67e5\u6740\uff0c\u8fc7\u53bb 3 \u5c0f\u65f6\u5e73\u5747SM \u5229\u7528\u7387 7.53%\uff08\u67e5\u6740\u9608\u503c <= 20%\uff09"
+        },
+        {
+          "event_type": "start_run",
+          "created_at": "2026-10-24T10:43:12.161Z",
+          "created_by": "Merlin",
+          "job_run_sid": "5328c7345610b982",
+          "job_run_trial_sid": "438638034",
+          "msg": null
+        },
+        {
+          "event_type": "job_staging",
+          "created_at": "2026-10-24T10:42:33.495Z",
+          "created_by": "auto",
+          "job_run_sid": "5328c7345610b982",
+          "job_run_trial_sid": "438638034",
+          "msg": null
+        },
+        {
+          "event_type": "job_queue",
+          "created_at": "2026-10-24T10:42:33.421Z",
+          "created_by": "auto",
+          "job_run_sid": "5328c7345610b982",
+          "job_run_trial_sid": "438638034",
+          "msg": null
+        },
+        {
+          "event_type": "task_group_submit",
+          "created_at": "2026-10-24T10:41:49.307Z",
+          "created_by": "auto",
+          "job_run_sid": "5328c7345610b982",
+          "job_run_trial_sid": "438638034",
+          "msg": null
+        },
+        {
+          "event_type": "job_created",
+          "created_at": "2026-10-24T10:41:48.361Z",
+          "created_by": "zhangyang.exp",
+          "job_run_sid": "5328c7345610b982",
+          "job_run_trial_sid": "438638034",
+          "msg": null
+        }
+      ]
+    },
+    {
+      "phase": "ext-fit-03",
+      "sid": "3893f71259b0c052",
+      "events": [
+        {
+          "event_type": "job_stopped",
+          "created_at": "2026-10-24T14:20:27.501Z",
+          "created_by": "mlx",
+          "job_run_sid": "3893f71259b0c052",
+          "job_run_trial_sid": "438638446",
+          "msg": "\u4f4e GPU \u5229\u7528\u7387\u67e5\u6740\uff0c\u8fc7\u53bb 3 \u5c0f\u65f6\u5e73\u5747SM \u5229\u7528\u7387 10.31%\uff08\u67e5\u6740\u9608\u503c <= 20%\uff09"
+        },
+        {
+          "event_type": "start_run",
+          "created_at": "2026-10-24T10:44:09.389Z",
+          "created_by": "Merlin",
+          "job_run_sid": "3893f71259b0c052",
+          "job_run_trial_sid": "438638446",
+          "msg": null
+        },
+        {
+          "event_type": "job_staging",
+          "created_at": "2026-10-24T10:43:11.695Z",
+          "created_by": "auto",
+          "job_run_sid": "3893f71259b0c052",
+          "job_run_trial_sid": "438638446",
+          "msg": null
+        },
+        {
+          "event_type": "job_queue",
+          "created_at": "2026-10-24T10:43:11.484Z",
+          "created_by": "auto",
+          "job_run_sid": "3893f71259b0c052",
+          "job_run_trial_sid": "438638446",
+          "msg": null
+        },
+        {
+          "event_type": "task_group_submit",
+          "created_at": "2026-10-24T10:42:45.998Z",
+          "created_by": "auto",
+          "job_run_sid": "3893f71259b0c052",
+          "job_run_trial_sid": "438638446",
+          "msg": null
+        },
+        {
+          "event_type": "job_created",
+          "created_at": "2026-10-24T10:42:44.080Z",
+          "created_by": "zhangyang.exp",
+          "job_run_sid": "3893f71259b0c052",
+          "job_run_trial_sid": "438638446",
+          "msg": null
+        }
+      ]
+    },
+    {
+      "phase": "ext-fit-04",
+      "sid": "463967ab0d1a5a17",
+      "events": [
+        {
+          "event_type": "job_stopped",
+          "created_at": "2026-10-24T14:19:56.421Z",
+          "created_by": "mlx",
+          "job_run_sid": "463967ab0d1a5a17",
+          "job_run_trial_sid": "438638763",
+          "msg": "\u4f4e GPU \u5229\u7528\u7387\u67e5\u6740\uff0c\u8fc7\u53bb 3 \u5c0f\u65f6\u5e73\u5747GPU \u5229\u7528\u7387 13.57%\uff08\u67e5\u6740\u9608\u503c <= 30%\uff09"
+        },
+        {
+          "event_type": "start_run",
+          "created_at": "2026-10-24T10:44:32.278Z",
+          "created_by": "Merlin",
+          "job_run_sid": "463967ab0d1a5a17",
+          "job_run_trial_sid": "438638763",
+          "msg": null
+        },
+        {
+          "event_type": "job_staging",
+          "created_at": "2026-10-24T10:44:11.718Z",
+          "created_by": "auto",
+          "job_run_sid": "463967ab0d1a5a17",
+          "job_run_trial_sid": "438638763",
+          "msg": null
+        },
+        {
+          "event_type": "job_queue",
+          "created_at": "2026-10-24T10:44:11.643Z",
+          "created_by": "auto",
+          "job_run_sid": "463967ab0d1a5a17",
+          "job_run_trial_sid": "438638763",
+          "msg": null
+        },
+        {
+          "event_type": "task_group_submit",
+          "created_at": "2026-10-24T10:43:45.928Z",
+          "created_by": "auto",
+          "job_run_sid": "463967ab0d1a5a17",
+          "job_run_trial_sid": "438638763",
+          "msg": null
+        },
+        {
+          "event_type": "job_created",
+          "created_at": "2026-10-24T10:43:45.029Z",
+          "created_by": "zhangyang.exp",
+          "job_run_sid": "463967ab0d1a5a17",
+          "job_run_trial_sid": "438638763",
+          "msg": null
+        }
+      ]
+    }
+  ],
+  "observed_unix": 1792863030.8609552,
+  "scope": "Timeline fields only; raw launch payloads and metadata deliberately excluded"
+}

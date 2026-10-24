@@ -1,0 +1,36 @@
+{
+  "peft_version": "0.18.1",
+  "same_adapter_hash": true,
+  "lora_parameters_equal_before": false,
+  "teacher_equals_student_rounded_to_bf16": true,
+  "max_abs_lora_parameter_difference": 6.103515625e-05,
+  "lora_parameters_equal_after_fp32_reload": true,
+  "max_logit_difference_before": 0.5986328125,
+  "max_logit_difference_after": 0.0,
+  "top64_distance_before": 0.00024391069018747658,
+  "top64_distance_after": 0.0,
+  "student_repeat_max_logit_difference": 0.0,
+  "prefix_tokens": 236,
+  "loader_source_order": [
+    {
+      "source_line": 79,
+      "text": "load_result = set_peft_model_state_dict("
+    },
+    {
+      "source_line": 153,
+      "text": "if hasattr(self.base_model, \"_cast_adapter_dtype\"):"
+    },
+    {
+      "source_line": 154,
+      "text": "self.base_model._cast_adapter_dtype("
+    }
+  ],
+  "official_training_modified": false,
+  "adapter_saved": false,
+  "scope": "Scratch models only; read-only numerical audit inside an existing allocated free slot",
+  "checked_utc": "2026-10-24T12:37:24.606029+00:00",
+  "raw_stdout_sha256": "e2dcc530faa83c8bf051a36f3d01c3dcb1c82d46ccb905fa1631212a0ac96b35",
+  "request_sha256": "e580bcd68fce6382c7af17ae752d0107f76e020fd1fe7c0a4d8284928fdf90fd",
+  "slot": "Previously completed process slot within an existing accounted training allocation",
+  "interpretation": "Secondary adapter load rounds FP32 checkpoint values through BF16 before converting them to FP32; frozen official runs retain this loader behavior. One prefix was used to isolate output differences; all LoRA parameters were compared."
+}

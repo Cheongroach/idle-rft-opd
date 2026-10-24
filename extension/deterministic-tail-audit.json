@@ -1,0 +1,87 @@
+{
+  "checks": [
+    {
+      "label": "opd-524288-s42",
+      "old_uncommitted_updates": 1,
+      "new_update_count_observed": 8,
+      "compared_updates": 1,
+      "exactly_equal": true,
+      "all_available_old_tail_compared": true
+    },
+    {
+      "label": "opd-524288-s43",
+      "old_uncommitted_updates": 3,
+      "new_update_count_observed": 8,
+      "compared_updates": 3,
+      "exactly_equal": true,
+      "all_available_old_tail_compared": true
+    },
+    {
+      "label": "opd-524288-s44",
+      "old_uncommitted_updates": 1,
+      "new_update_count_observed": 8,
+      "compared_updates": 1,
+      "exactly_equal": true,
+      "all_available_old_tail_compared": true
+    },
+    {
+      "label": "bank-only-524288-s42",
+      "old_uncommitted_updates": 3,
+      "new_update_count_observed": 8,
+      "compared_updates": 3,
+      "exactly_equal": true,
+      "all_available_old_tail_compared": true
+    },
+    {
+      "label": "bank-only-524288-s43",
+      "old_uncommitted_updates": 1,
+      "new_update_count_observed": 8,
+      "compared_updates": 1,
+      "exactly_equal": true,
+      "all_available_old_tail_compared": true
+    },
+    {
+      "label": "bank-only-524288-s44",
+      "old_uncommitted_updates": 5,
+      "new_update_count_observed": 8,
+      "compared_updates": 5,
+      "exactly_equal": true,
+      "all_available_old_tail_compared": true
+    },
+    {
+      "label": "balanced-s42",
+      "old_uncommitted_updates": 1,
+      "new_update_count_observed": 8,
+      "compared_updates": 1,
+      "exactly_equal": true,
+      "all_available_old_tail_compared": true
+    },
+    {
+      "label": "balanced-s43",
+      "old_uncommitted_updates": 0,
+      "new_update_count_observed": 8,
+      "compared_updates": 0,
+      "exactly_equal": null,
+      "all_available_old_tail_compared": true
+    },
+    {
+      "label": "balanced-s44",
+      "old_uncommitted_updates": 1,
+      "new_update_count_observed": 8,
+      "compared_updates": 1,
+      "exactly_equal": true,
+      "all_available_old_tail_compared": true
+    },
+    {
+      "label": "bank-only-balanced-s44",
+      "old_uncommitted_updates": 6,
+      "new_update_count_observed": 8,
+      "compared_updates": 6,
+      "exactly_equal": true,
+      "all_available_old_tail_compared": true
+    }
+  ],
+  "gpu_compute": false,
+  "observed_unix": 1792863743.0968072,
+  "scope": "Exact comparison of every available original uncommitted update; not full uninterrupted-run equivalence"
+}
