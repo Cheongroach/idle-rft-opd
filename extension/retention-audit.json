@@ -1,0 +1,48 @@
+{
+  "source_sha256": "ccf64ceae9c5403bf50a044cb6d505bfd2a2963ee58338ba268fd65beab92a9f",
+  "raw_source_rows": 974,
+  "blocked_original_task_ids": 427,
+  "candidate_rows": 519,
+  "reference_passed": 516,
+  "new_dev": 80,
+  "new_blind": 436,
+  "excluded": [
+    {
+      "id": 367,
+      "reason": "malformed node or string on line 1: <ast.Name object at 0x7f3d4236c610>"
+    },
+    {
+      "id": 486,
+      "reason": "malformed node or string on line 1: <ast.BinOp object at 0x7f3d4236cc10>"
+    },
+    {
+      "id": 533,
+      "reason": "malformed node or string on line 1: <ast.Name object at 0x7f3d4236da50>"
+    },
+    {
+      "id": 601,
+      "reason": "malformed node or string on line 1: <ast.Call object at 0x7f3d4250be50>"
+    },
+    {
+      "id": 912,
+      "reason": "malformed node or string on line 1: <ast.Call object at 0x7f3d4250b610>"
+    },
+    {
+      "id": 927,
+      "reason": "malformed node or string on line 1: <ast.Name object at 0x7f3d425097e0>"
+    },
+    {
+      "id": 40,
+      "reason": "runtime_error"
+    },
+    {
+      "id": 653,
+      "reason": "runtime_error"
+    },
+    {
+      "id": 902,
+      "reason": "runtime_error"
+    }
+  ],
+  "original_data_sha256": "9072c0a47066a9b822141f1dfd87ba0caf92a931d368618c8647a42d770ce8c0"
+}

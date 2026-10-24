@@ -1,0 +1,7 @@
+{
+  "protocol_sha256": "143a8fc799ccd57a169edf8acef0cd3e28b4ab162e8161fceedf3d51cb4971e1",
+  "evaluation_sha256": "95cb56e7d91915f9441b0f379489d89c662f2f466acc57d02262fdbd24e23e1a",
+  "matrix_sha256": "5e4044f74f141567520defe50c986167a6f425cdf4411ed5eb3ad61e4ebd1e45",
+  "training_configs": 36,
+  "private_oracles_on_gpu": false
+}

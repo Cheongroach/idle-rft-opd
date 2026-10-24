@@ -1,0 +1,362 @@
+[
+  {
+    "label": "opd-65536-s42",
+    "algorithm": "opd",
+    "seed": 42,
+    "budget": 65536,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/opd-65536-s42.json",
+    "config_sha256": "796787f404ef1b21fcd0e110d1fec1428de37cb87259189b47a14f98e383eb57"
+  },
+  {
+    "label": "opd-65536-s43",
+    "algorithm": "opd",
+    "seed": 43,
+    "budget": 65536,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/opd-65536-s43.json",
+    "config_sha256": "46bd8af5f088dc5e93b394aeeaa5f5c3b7b14ad372e4170896a21140c43dfb04"
+  },
+  {
+    "label": "opd-65536-s44",
+    "algorithm": "opd",
+    "seed": 44,
+    "budget": 65536,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/opd-65536-s44.json",
+    "config_sha256": "623a2847201222941816e5ab08c70d1a15f74ed9d78ff562dcab49eb85b709c6"
+  },
+  {
+    "label": "replay-65536-s42",
+    "algorithm": "replay",
+    "seed": 42,
+    "budget": 65536,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/replay-65536-s42.json",
+    "config_sha256": "0d1bf680f7c238ee093472ec705984e0fa9ac862144060c6ca6a81f1d10096ae"
+  },
+  {
+    "label": "replay-65536-s43",
+    "algorithm": "replay",
+    "seed": 43,
+    "budget": 65536,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/replay-65536-s43.json",
+    "config_sha256": "70c8e57eeffe9995407a64df67ef953d8c64c3d8ff00fc9a8b4f803c106ef47d"
+  },
+  {
+    "label": "replay-65536-s44",
+    "algorithm": "replay",
+    "seed": 44,
+    "budget": 65536,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/replay-65536-s44.json",
+    "config_sha256": "7c2a438c029e8dc76f5e8287becf9b0fec8381f7a8b9554ce921f67f1d948064"
+  },
+  {
+    "label": "bank-only-65536-s42",
+    "algorithm": "opd",
+    "seed": 42,
+    "budget": 49152,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-65536-s42.json",
+    "config_sha256": "16e23a416a3263a57af62c68e13bf13c6dce92a5c9ceeb6a38a077cedebe237a"
+  },
+  {
+    "label": "bank-only-65536-s43",
+    "algorithm": "opd",
+    "seed": 43,
+    "budget": 49152,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-65536-s43.json",
+    "config_sha256": "183fc2c70213da58d91cfbd21a71d8b10e39f26125aaada49bfe47e89fa3cc7e"
+  },
+  {
+    "label": "bank-only-65536-s44",
+    "algorithm": "opd",
+    "seed": 44,
+    "budget": 49152,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-65536-s44.json",
+    "config_sha256": "b8dd2a1ae809b900ee532c1b6d69a9589a6866fcf05692a066026dd3c1ce8db5"
+  },
+  {
+    "label": "opd-262144-s42",
+    "algorithm": "opd",
+    "seed": 42,
+    "budget": 262144,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/opd-262144-s42.json",
+    "config_sha256": "41a4cede645aea1882a5abef42120202b0a638b2fccd31db2170925a863d15a3"
+  },
+  {
+    "label": "opd-262144-s43",
+    "algorithm": "opd",
+    "seed": 43,
+    "budget": 262144,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/opd-262144-s43.json",
+    "config_sha256": "7f3a49e2ec1ec042cbcfcfefd9af7747a4cde80c00bf50777b6aba2ca1196451"
+  },
+  {
+    "label": "opd-262144-s44",
+    "algorithm": "opd",
+    "seed": 44,
+    "budget": 262144,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/opd-262144-s44.json",
+    "config_sha256": "d961de285426a93ddf54687c77283cfda70e740f59526798d9d1d8174b6b49fc"
+  },
+  {
+    "label": "replay-262144-s42",
+    "algorithm": "replay",
+    "seed": 42,
+    "budget": 262144,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/replay-262144-s42.json",
+    "config_sha256": "a713f7b2d94a491f32459e1d11b0c65c32b61c7c12e9f845d11f1ce93af68899"
+  },
+  {
+    "label": "replay-262144-s43",
+    "algorithm": "replay",
+    "seed": 43,
+    "budget": 262144,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/replay-262144-s43.json",
+    "config_sha256": "35b6debcf6d4068d56f26f0dcce03f3222d9c276f072513cd8707d0625cba28c"
+  },
+  {
+    "label": "replay-262144-s44",
+    "algorithm": "replay",
+    "seed": 44,
+    "budget": 262144,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/replay-262144-s44.json",
+    "config_sha256": "bae123d48e918e2e9dd09d2796f80b0a6435eb4e7e26c5d8897836238e92f349"
+  },
+  {
+    "label": "bank-only-262144-s42",
+    "algorithm": "opd",
+    "seed": 42,
+    "budget": 196608,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-262144-s42.json",
+    "config_sha256": "d3ba58941c6071ee5c0cb0c903d1ed467c75b4e37bf37ccc90758c6457ddea4a"
+  },
+  {
+    "label": "bank-only-262144-s43",
+    "algorithm": "opd",
+    "seed": 43,
+    "budget": 196608,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-262144-s43.json",
+    "config_sha256": "bd77f442340a96dffe17371c3caf93eca350c4542835af307c4ba363c917f20a"
+  },
+  {
+    "label": "bank-only-262144-s44",
+    "algorithm": "opd",
+    "seed": 44,
+    "budget": 196608,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-262144-s44.json",
+    "config_sha256": "b7d92a63efaea280dd53dcdfd2518d94f20d1dbc97d715c79aa87ae43b9839a8"
+  },
+  {
+    "label": "opd-524288-s42",
+    "algorithm": "opd",
+    "seed": 42,
+    "budget": 524288,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/opd-524288-s42.json",
+    "config_sha256": "3c3585b8792d80f13b946869da86003e43009d24ab3db98a36ecb85ff0199b88"
+  },
+  {
+    "label": "opd-524288-s43",
+    "algorithm": "opd",
+    "seed": 43,
+    "budget": 524288,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/opd-524288-s43.json",
+    "config_sha256": "c3ead7c94bc78b9f00bab21b4aaff3484dc1b1d674617b56e26d049d8a540b93"
+  },
+  {
+    "label": "opd-524288-s44",
+    "algorithm": "opd",
+    "seed": 44,
+    "budget": 524288,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/opd-524288-s44.json",
+    "config_sha256": "3624a5a8053e6661de26c7f18c9ee686bab3473371bfd1f92caf00cdd7827261"
+  },
+  {
+    "label": "replay-524288-s42",
+    "algorithm": "replay",
+    "seed": 42,
+    "budget": 524288,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/replay-524288-s42.json",
+    "config_sha256": "b3a53affaa610a4de2831d409daa753733c8caf7b4f20125faba22f94df702c6"
+  },
+  {
+    "label": "replay-524288-s43",
+    "algorithm": "replay",
+    "seed": 43,
+    "budget": 524288,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/replay-524288-s43.json",
+    "config_sha256": "09fad0a9d4536551af97adea48b8ed7d135ca8e98a54b9595a9e80e52f135bcb"
+  },
+  {
+    "label": "replay-524288-s44",
+    "algorithm": "replay",
+    "seed": 44,
+    "budget": 524288,
+    "bank_share": 0.75,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/replay-524288-s44.json",
+    "config_sha256": "bc2115062e4b8054aa607a7d0fc9749c2c2ab1e10e7f4bf1e89815ab4fea99ab"
+  },
+  {
+    "label": "bank-only-524288-s42",
+    "algorithm": "opd",
+    "seed": 42,
+    "budget": 393216,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-524288-s42.json",
+    "config_sha256": "49560799fbfcfa80807d3579120d7ac566744aaec96678b1771d0526cddb0016"
+  },
+  {
+    "label": "bank-only-524288-s43",
+    "algorithm": "opd",
+    "seed": 43,
+    "budget": 393216,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-524288-s43.json",
+    "config_sha256": "e52eab1373c507075b2dc6c3822fd5cb749faa6027604f9293d11709ab5dab5d"
+  },
+  {
+    "label": "bank-only-524288-s44",
+    "algorithm": "opd",
+    "seed": 44,
+    "budget": 393216,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-524288-s44.json",
+    "config_sha256": "117beae563b9496189dde0c762b0aada020eb331ed323f95c68e693151574342"
+  },
+  {
+    "label": "balanced-s42",
+    "algorithm": "opd",
+    "seed": 42,
+    "budget": 524288,
+    "bank_share": 0.5,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/balanced-s42.json",
+    "config_sha256": "7cc374562e4b3f60ef60de437e7807dd7fdcd65e71ed8d2a2af12fb8e6937d33"
+  },
+  {
+    "label": "balanced-s43",
+    "algorithm": "opd",
+    "seed": 43,
+    "budget": 524288,
+    "bank_share": 0.5,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/balanced-s43.json",
+    "config_sha256": "d6b8882c8b555ff015a39cd277fe4b28ae52085e2294880f3f5d82cf410e74d7"
+  },
+  {
+    "label": "balanced-s44",
+    "algorithm": "opd",
+    "seed": 44,
+    "budget": 524288,
+    "bank_share": 0.5,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/balanced-s44.json",
+    "config_sha256": "94c36a54e84f3e33b967b477b117accf619198acaa49d2a80f0c72595961e1c6"
+  },
+  {
+    "label": "bank-only-balanced-s42",
+    "algorithm": "opd",
+    "seed": 42,
+    "budget": 262144,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-balanced-s42.json",
+    "config_sha256": "3959248c1b9d33fde9d3a2ff639d0d2424f084dcd719688dea8c8e157dd66c33"
+  },
+  {
+    "label": "bank-only-balanced-s43",
+    "algorithm": "opd",
+    "seed": 43,
+    "budget": 262144,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-balanced-s43.json",
+    "config_sha256": "388b66947fe77d390dc8ff9ff35b362d9714db34ff4894885ff6a1772e1d0290"
+  },
+  {
+    "label": "bank-only-balanced-s44",
+    "algorithm": "opd",
+    "seed": 44,
+    "budget": 262144,
+    "bank_share": 1.0,
+    "rollout_tokens": 256,
+    "experiment_config": "extension/bank-only-balanced-s44.json",
+    "config_sha256": "574659e746398548fd8d80fa1df76538fbcf2cdd5b763586d0f7f63ef29ca78e"
+  },
+  {
+    "label": "long-prefix-s42",
+    "algorithm": "opd",
+    "seed": 42,
+    "budget": 65536,
+    "bank_share": 0.75,
+    "rollout_tokens": 512,
+    "experiment_config": "extension/long-prefix-s42.json",
+    "config_sha256": "50e39307cd66760cd7ea1d486447b5e98e94ee9f8416d28d82c9c4b12eb9c1cd"
+  },
+  {
+    "label": "long-prefix-s43",
+    "algorithm": "opd",
+    "seed": 43,
+    "budget": 65536,
+    "bank_share": 0.75,
+    "rollout_tokens": 512,
+    "experiment_config": "extension/long-prefix-s43.json",
+    "config_sha256": "9181b457c1b15c09d225629b5f3b8a13f40bd0316fed07f41824fa5f0c33fe8d"
+  },
+  {
+    "label": "long-prefix-s44",
+    "algorithm": "opd",
+    "seed": 44,
+    "budget": 65536,
+    "bank_share": 0.75,
+    "rollout_tokens": 512,
+    "experiment_config": "extension/long-prefix-s44.json",
+    "config_sha256": "477da60ab3a1b66a5950a74ec88c4f4d75cf36b7e695a477625605e075945d33"
+  }
+]

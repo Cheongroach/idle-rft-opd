@@ -300,6 +300,14 @@ MBPP 上 OPD 相对 warm 均值 −0.39 pp，replay 为 −2.94 pp；OPD/replay 
 
 代码：[main 分支](https://github.com/Cheongroach/idle-rft-opd/tree/main)。协议、日志与实测：[research 分支](https://github.com/Cheongroach/idle-rft-opd/tree/research)。
 
+### 7.2 用户要求补强后的独立扩展（执行中）
+
+用户认为首轮预算不足以回答“训到位了吗”，因此把首轮定义为接入 pilot，保留原结果后冻结独立扩展协议。36组训练包含6.5万/26.2万/52.4万响应token的OPD与replay三种子曲线、匹配bank token配额的单任务OPD、1:1保持份额及512-token前缀消融。不同预算有不同token-based LR horizon，它们是独立完整训练，不能拼成同一优化轨迹。
+
+新增256道bank dev规格和2048道最终规格，排除旧8192道规格hash。完整MBPP新增80道dev、436道最终题，排除所有旧427个项目任务ID、规范化题面与alpha-renamed程序，连接重复组不跨dev/final。参考执行516/519通过，3道不支持或执行未通过项排除；公开MBPP的预训练污染与测试稀疏边界仍存在。
+
+开发集仅用于选预算；最终全部三种子进入新留出集。保持性非劣目标提前冻结为逐seed配对95% CI下界≥−2pp，未通过就报告证据不足。固定64个bank和16个MBPP旧student生成前缀用于无更新分布诊断，禁止用其loss下降替代任务分数。完整协议在`extension/PROTOCOL.md`；实际训练与最终结果未完成时不预填收益、平台期或非劣结论。
+
 ## 8. 代码阅读入口与面试表达边界
 
 当前工作区包含可阅读的 Miles/verl 源码快照。它们不是独立 Git checkout：在这些目录执行 `git rev-parse HEAD` 会回溯到外层 vllm-omni 仓库。外层提交号不能当作这两份框架的 upstream revision。实跑前应取得真正 upstream commit、固定依赖和源码 hash。

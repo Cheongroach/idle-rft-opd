@@ -1,6 +1,6 @@
 {
   "files": {
-    "manuscript/OPD_DESIGN_AND_INTERVIEW.md": "563fcc1417d2b6e5f8e5ddfb418a66e1d126ea8271961f4f57b2d9ffa55a5c1c",
+    "manuscript/OPD_DESIGN_AND_INTERVIEW.md": "7dec60b3439909922c20beb5f6385b80d3fdc4a8ee04b117232482bb86857137",
     "protocol/OPD_PROTOCOL.md": "7d88a54a8f6f08b46971c3d5ee63c86059b731b4661687bc56a08f86e208ba86",
     "protocol/WEEKEND_EXPERIMENT.md": "984903b162d2d0bcd6a62f58cc5c6801b171e6cf5d18a8ef10ca32e681370051",
     "conversations/excerpts.json": "725b3d35ec42e2c4d079dbfc2b92f6f4f5253ff8a3747f0336fb97194c9ed49c",
@@ -25,10 +25,14 @@
     "results/opd-training-diagnostics.json": "2b555ee439307991824c1b92051a33c933c8e99ae5fdd8fde3145813760491c3",
     "results/weekend-verified.json": "7411ca132e6447932272d72e49fcbd84e93ea6f672b344fbb15faf6e955e2dc8",
     "logs/cpu-tests.txt": "d46c33275f9f722ffbb323b87c79d9f1be111b1783b233613e23e7731d90e693",
-    "logs/training-update-metrics.json": "375bcdc0be5084a444cf55d954ba6fd03034ecb9a8931b645592c69ec945e7ec"
+    "logs/training-update-metrics.json": "375bcdc0be5084a444cf55d954ba6fd03034ecb9a8931b645592c69ec945e7ec",
+    "extension/PROTOCOL.md": "40f12dcedc89fa0ff7de2879406282cf92d575997c93c5aab99133109ce796db",
+    "extension/matrix.json": "5e4044f74f141567520defe50c986167a6f425cdf4411ed5eb3ad61e4ebd1e45",
+    "extension/prepared.json": "4abbfabbf29655ff81cdd5f02fd9a6eb8ba64f28676a97506d601693c2606061",
+    "extension/retention-audit.json": "7f0103afb0213fa4f47a978e053574c79af7ec21ca71e54468c131fc219efaa1"
   },
   "dialogue_records": 223,
-  "status": "Original RFT and all OPD blind evaluations complete; all GPU jobs terminal",
+  "status": "Pilot complete; 36-configuration OPD strengthening experiment in progress",
   "tool_messages_exported": false,
   "private_oracles_exported": false,
   "model_weights_exported": false
