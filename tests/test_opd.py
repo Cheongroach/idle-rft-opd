@@ -4,7 +4,8 @@ import unittest
 
 import torch
 
-from idle_rft.common import atomic_json, digest
+from idle_rft.common import atomic_json, digest, identity, read_json
+from idle_rft.weekend_collect import merge
 from idle_rft.opd import (checkpoint_info, next_route, response_positions,
                           row_at, topk_reverse_divergence, validate_targets)
 
@@ -76,6 +77,38 @@ class DistillationTests(unittest.TestCase):
                         {"bank": 1.5, "mbpp": 0}, {"bank": True, "mbpp": 0}):
             with self.assertRaises(ValueError):
                 validate_targets(invalid)
+
+    def test_dev_shards_merge_mixed_task_id_types_without_changing_identity(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            data = root / "data"
+            task_ids = (7, "bankx-007")
+            atomic_json(data / "manifest.json", {"frozen": True})
+            atomic_json(data / "dev.prompts.json", [{"task_id": task} for task in task_ids])
+            protocol = {"data": digest(data / "manifest.json"), "split": "dev",
+                        "adapter": "frozen-adapter"}
+            sources = []
+            for index, task in enumerate(task_ids):
+                source = root / f"shard-{index}"
+                prompt_hash = identity(["prompt", task])
+                atomic_json(source / "candidates/frozen" / f"{task}.0.json", {
+                    "protocol": protocol, "task_id": task, "index": 0,
+                    "prompt_hash": prompt_hash,
+                    "key": identity([protocol, prompt_hash, task, 0]),
+                    "seed": int(identity([task, 0, 42])[:8], 16),
+                    "seconds": 1., "truncated": False, "output_tokens": 10})
+                sources.append(source)
+            summary = merge(data, sources, root / "merged", "dev", 1)
+            self.assertTrue(summary["complete"])
+            self.assertEqual(summary["candidates"], 2)
+            namespace = Path(summary["candidate_directory"])
+            actual = {read_json(path)["task_id"] for path in namespace.glob("*.json")
+                      if path.name != "protocol.json"}
+            self.assertEqual(actual, set(task_ids))
+            hashes = {path.name: digest(path) for path in namespace.glob("*.json")}
+            repeated = merge(data, list(reversed(sources)), root / "merged", "dev", 1)
+            self.assertEqual(repeated["candidates"], 2)
+            self.assertEqual(hashes, {path.name: digest(path) for path in namespace.glob("*.json")})
 
     def test_checkpoint_rejects_incomplete_and_tampered_assets(self):
         with tempfile.TemporaryDirectory() as temporary:

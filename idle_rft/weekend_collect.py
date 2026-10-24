@@ -49,7 +49,9 @@ def merge(data, sources, output, split="train", samples=4, require_complete=True
     namespace = output / "candidates" / identity(protocol)
     atomic_json(namespace / "protocol.json", protocol)
     records = []
-    for key, path in sorted(candidates.items()):
+    # Original MBPP IDs are integers; newly audited task IDs are strings.
+    for key, path in sorted(candidates.items(),
+                            key=lambda item: (type(item[0][0]).__name__, *item[0])):
         target = namespace / f"{key[0]}.{key[1]}.json"
         if target.exists() and digest(target) != digest(path):
             raise ValueError("Merged candidate changed")
