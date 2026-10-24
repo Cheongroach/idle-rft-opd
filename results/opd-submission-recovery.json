@@ -1,0 +1,10 @@
+{
+  "cause": "Create returned HTTP 504, but the server committed exactly one matching run",
+  "name": "rft-weekend-opd-bank-blind-07-20261024",
+  "sid": "69a0610f69466477",
+  "original_submit_request_sha256": "6e796700242a8ba44474e7400896d95a4d1141f8621789339d4cfc845c9ab04a",
+  "reconciled_get_sha256": "213cc3fd9cc7d348be799a45d23ba1927bd4334fcc2520506da9370e61723509",
+  "existing_run_reused": true,
+  "gpu_job_retried": false,
+  "checked_unix": 1792829112.3578682
+}

@@ -1,0 +1,77 @@
+{
+  "proceed": true,
+  "comparison": {
+    "n": 768,
+    "base_pass_at_1": 0.8645833333333334,
+    "adapter_pass_at_1": 0.9895833333333334,
+    "delta": 0.125,
+    "wins": 98,
+    "losses": 2,
+    "ci95": [
+      0.1015625,
+      0.14973958333333334
+    ],
+    "method": "paired bootstrap over frozen duplicate groups, seed42",
+    "training_seeds": 1
+  },
+  "teacher": {
+    "adapter_path": "[local path redacted]",
+    "contract": {
+      "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+      "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+      "arm": "B",
+      "rank": 16,
+      "lr": 0.0002,
+      "seed": 42,
+      "epochs": 2,
+      "accumulation": 8,
+      "supervised_tokens": 1000000,
+      "max_length": 2560,
+      "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+      "examples": "f455759d99ded9bfdc20ec7353e3984a2bb6cdeb13c05e63d75836edf2fa6fb3",
+      "implementation": {
+        "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+        "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+      }
+    },
+    "status": {
+      "progress": {
+        "cursor": 4726,
+        "tokens": 1000000,
+        "step": 591,
+        "loss": 0.051753683015704155
+      },
+      "contract": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "f455759d99ded9bfdc20ec7353e3984a2bb6cdeb13c05e63d75836edf2fa6fb3",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "complete": true,
+      "checkpoint": "checkpoint-000591-f7b0f5ee",
+      "exclusions": {
+        "A": [],
+        "B": []
+      },
+      "peak_cuda_bytes": 15639075840
+    }
+  },
+  "student_report": "[local path redacted]",
+  "student_report_sha256": "91c7cd6e7cc8cf541735ce118b05493b4968ded322c835b4d912975862cab98b",
+  "teacher_report": "[local path redacted]",
+  "teacher_report_sha256": "5a8f632e249d670b9b63c5ac4b50d2fa44979a69d881fc48a055f24e69430202",
+  "original_decision_sha256": "a870c65c8f0c6fe045719b9696cde16116d97a383dfcb7097d6bf67bc0d11e0a",
+  "rule": "Fixed teacher seed42; >=1pp development gain and positive paired CI lower bound"
+}

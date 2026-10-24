@@ -1,0 +1,208 @@
+{
+  "track": "mbpp",
+  "decision": {
+    "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+    "data": "9072c0a47066a9b822141f1dfd87ba0caf92a931d368618c8647a42d770ce8c0",
+    "max_new_tokens": 2048,
+    "comparisons": {
+      "A": {
+        "n": 50,
+        "base_pass_at_1": 0.56,
+        "adapter_pass_at_1": 0.62,
+        "delta": 0.06,
+        "wins": 4,
+        "losses": 1,
+        "ci95": [
+          -0.02,
+          0.14
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      "B": {
+        "n": 50,
+        "base_pass_at_1": 0.56,
+        "adapter_pass_at_1": 0.58,
+        "delta": 0.02,
+        "wins": 1,
+        "losses": 0,
+        "ci95": [
+          0.0,
+          0.06
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      }
+    },
+    "chosen_arm": "A",
+    "chosen_adapter": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+    "proceed": true,
+    "reports": {
+      "[local path redacted]": "71bc9b5e2e5ca94bfd3c9bb5dea78d406ba3f80603d52ff1068d5f83cd633980",
+      "[local path redacted]": "c72309215096f4ebbe83653a105f7224c4cfd4d3ce9b79497758a0e57ea7b412",
+      "[local path redacted]": "0790febdab60d4bc65a8e57379d8b8dbc8ceb8a8c45fd5ac5acf3590a0ec81a6"
+    },
+    "stop_rule": "Both dev gains <=0 => stop without blind tuning."
+  },
+  "dev_stop": false,
+  "billing_verified": false,
+  "fits": [
+    {
+      "adapter_path": "[local path redacted]",
+      "contract": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "deb168d44a7596721f47cb93314e0995062e7b0a3612662d4be2d6614f9befef",
+        "arm": "A",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 14756,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "14011ebfbead30d555411142f66bb7f31efd63d65da2afe5e569c215977e4a38",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "status": {
+        "progress": {
+          "cursor": 210,
+          "tokens": 14756,
+          "step": 27,
+          "loss": 0.027272076345980167
+        },
+        "contract": {
+          "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+          "data": "deb168d44a7596721f47cb93314e0995062e7b0a3612662d4be2d6614f9befef",
+          "arm": "A",
+          "rank": 16,
+          "lr": 0.0002,
+          "seed": 42,
+          "epochs": 2,
+          "accumulation": 8,
+          "supervised_tokens": 14756,
+          "max_length": 2560,
+          "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+          "examples": "14011ebfbead30d555411142f66bb7f31efd63d65da2afe5e569c215977e4a38",
+          "implementation": {
+            "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+            "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+          }
+        },
+        "complete": true,
+        "checkpoint": "checkpoint-000027-3d6d9d05",
+        "exclusions": {
+          "A": [],
+          "B": []
+        },
+        "peak_cuda_bytes": 13995953664
+      }
+    },
+    {
+      "adapter_path": "[local path redacted]",
+      "contract": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "deb168d44a7596721f47cb93314e0995062e7b0a3612662d4be2d6614f9befef",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 14756,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "ad86c2f2e93fca436c37a2c45a8cb612f954e0252787e19ddff95701f7c12f84",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "status": {
+        "progress": {
+          "cursor": 166,
+          "tokens": 14756,
+          "step": 21,
+          "loss": 0.1450275238021277
+        },
+        "contract": {
+          "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+          "data": "deb168d44a7596721f47cb93314e0995062e7b0a3612662d4be2d6614f9befef",
+          "arm": "B",
+          "rank": 16,
+          "lr": 0.0002,
+          "seed": 42,
+          "epochs": 2,
+          "accumulation": 8,
+          "supervised_tokens": 14756,
+          "max_length": 2560,
+          "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+          "examples": "ad86c2f2e93fca436c37a2c45a8cb612f954e0252787e19ddff95701f7c12f84",
+          "implementation": {
+            "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+            "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+          }
+        },
+        "complete": true,
+        "checkpoint": "checkpoint-000021-a1652e7a",
+        "exclusions": {
+          "A": [],
+          "B": []
+        },
+        "peak_cuda_bytes": 13996231680
+      }
+    }
+  ],
+  "blind": [
+    {
+      "report": "[local path redacted]",
+      "sha256": "785cd7fcbe186442ec35e011b0f0f7d3e4f01a0aa2ce7c7a75a7fd8495a89123",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "deb168d44a7596721f47cb93314e0995062e7b0a3612662d4be2d6614f9befef",
+        "arm": "A",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 14756,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "14011ebfbead30d555411142f66bb7f31efd63d65da2afe5e569c215977e4a38",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "comparison": {
+        "n": 170,
+        "base_pass_at_1": 0.5588235294117647,
+        "adapter_pass_at_1": 0.6176470588235294,
+        "delta": 0.058823529411764705,
+        "wins": 11,
+        "losses": 1,
+        "ci95": [
+          0.023391812865497075,
+          0.09941520467836257
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      }
+    }
+  ],
+  "scope": "New-spec generalization with shared operator families; MBPP is public.",
+  "warning": "Single-seed MBPP; three bank seeds. Never select a seed on blind scores.",
+  "A": {
+    "mean_pass_at_1": 0.6176470588235294,
+    "seed_std": null,
+    "seed_scores": [
+      0.6176470588235294
+    ]
+  },
+  "reserved_gpu_hours_all_tracks": 191.53333333333336,
+  "observed_script_gpu_hours_available": 4.043478735801246
+}

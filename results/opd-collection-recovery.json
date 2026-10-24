@@ -1,0 +1,8 @@
+{
+  "run_sid": "6d0b1f5b78f5f4ee",
+  "snapshot": "[internal storage URI redacted]",
+  "phase_status_sha256": "0b60090f646c097bb16297574419ccefa823aea8e8f147954285d617ee25fbc5",
+  "collection_sha256_verified": true,
+  "gpu_retried": false,
+  "checked_unix": 1792829243.8480499
+}

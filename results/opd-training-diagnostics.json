@@ -1,0 +1,209 @@
+{
+  "training_acceptance_passed": true,
+  "training_fits_sha256": "b9f4c172303401fdad58997cea01cdb4c358949eb5b967e0d148690fa12102be",
+  "rows": [
+    {
+      "algorithm": "opd",
+      "seed": 42,
+      "steps": 35,
+      "response_tokens": 16384,
+      "route_tokens": {
+        "bank": 12288,
+        "mbpp": 4096
+      },
+      "token_weighted_update_metrics": {
+        "loss": 0.00401169258664222,
+        "teacher_mass": 0.9999874751083553,
+        "student_mass": 0.9999804490944371,
+        "sample_outside_topk": 0.0
+      },
+      "first_update_loss": 0.006590893111706464,
+      "last_update_loss": 0.0016062530680756026,
+      "gradient_norm_range": [
+        0.032329708337783813,
+        0.500812292098999
+      ],
+      "sampled_responses": 139,
+      "prefixes_at_cap": 20,
+      "process_seconds": 951.683523448999,
+      "process_response_tokens_per_second": 17.21580714208721,
+      "peak_cuda_bytes": 18377527808,
+      "parameters_changed": true,
+      "optimizer_states": 128,
+      "adapter_hash": "28ec4157d36ddada9f25e72ce8698964c709cf3f6a2d30fc4086a97af44b707c",
+      "update_log_sha256": "8cc8461b5843b535d266458672988f1d1dd6e9a5ba85cba8df42761ba1245111"
+    },
+    {
+      "algorithm": "opd",
+      "seed": 43,
+      "steps": 33,
+      "response_tokens": 16384,
+      "route_tokens": {
+        "bank": 12288,
+        "mbpp": 4096
+      },
+      "token_weighted_update_metrics": {
+        "loss": 0.0034451389862646085,
+        "teacher_mass": 0.9999853853951208,
+        "student_mass": 0.9999797035125084,
+        "sample_outside_topk": 6.103515625e-05
+      },
+      "first_update_loss": 0.0041538098848832306,
+      "last_update_loss": 0.0018114271305904595,
+      "gradient_norm_range": [
+        0.03945491090416908,
+        0.20172008872032166
+      ],
+      "sampled_responses": 132,
+      "prefixes_at_cap": 19,
+      "process_seconds": 988.5022451460027,
+      "process_response_tokens_per_second": 16.574570346656188,
+      "peak_cuda_bytes": 18380219392,
+      "parameters_changed": true,
+      "optimizer_states": 128,
+      "adapter_hash": "03d90b260f3e596f35a36c52418827099dd5de815469f3e0a6ce76eaf5fbc652",
+      "update_log_sha256": "16bc92092c1b9766d44d482a7a892b76ef2035ce4e7f046a90ac4a71491b0e9f"
+    },
+    {
+      "algorithm": "opd",
+      "seed": 44,
+      "steps": 33,
+      "response_tokens": 16384,
+      "route_tokens": {
+        "bank": 12288,
+        "mbpp": 4096
+      },
+      "token_weighted_update_metrics": {
+        "loss": 0.0034252746081405126,
+        "teacher_mass": 0.9999880941468291,
+        "student_mass": 0.9999822145910002,
+        "sample_outside_topk": 0.0
+      },
+      "first_update_loss": 0.004949105150444666,
+      "last_update_loss": 0.002242013841168955,
+      "gradient_norm_range": [
+        0.039774876087903976,
+        0.22197692096233368
+      ],
+      "sampled_responses": 131,
+      "prefixes_at_cap": 22,
+      "process_seconds": 1016.3960097860036,
+      "process_response_tokens_per_second": 16.119701221032496,
+      "peak_cuda_bytes": 18377527808,
+      "parameters_changed": true,
+      "optimizer_states": 128,
+      "adapter_hash": "261b0bd64bfaa2e5d1f242d6a301b18fe20456f79e77727ea3d46b7c7aaf6de5",
+      "update_log_sha256": "9e8384510ff0b180dec1e9294c90a81956db795e51bb4ba000d731b4ce898d49"
+    },
+    {
+      "algorithm": "replay",
+      "seed": 42,
+      "steps": 34,
+      "response_tokens": 16384,
+      "route_tokens": {
+        "bank": 12288,
+        "mbpp": 4096
+      },
+      "token_weighted_update_metrics": {
+        "loss": 0.05239316389511803,
+        "teacher_mass": 0.0,
+        "student_mass": 0.0,
+        "sample_outside_topk": 0.0
+      },
+      "first_update_loss": 0.02575014077592641,
+      "last_update_loss": 0.06397209991700947,
+      "gradient_norm_range": [
+        0.22377663850784302,
+        0.8681386709213257
+      ],
+      "sampled_responses": 135,
+      "prefixes_at_cap": 0,
+      "process_seconds": 192.774996619999,
+      "process_response_tokens_per_second": 84.9902751252352,
+      "peak_cuda_bytes": 10976947712,
+      "parameters_changed": true,
+      "optimizer_states": 128,
+      "adapter_hash": "421666bcf69722a44e02e2be8eb83a374e5bf6493356a2d1996e146a56764e19",
+      "update_log_sha256": "32591790d226cfe11f9910f36a6e0694b3c728ffa72563311704d502b3cd192e"
+    },
+    {
+      "algorithm": "replay",
+      "seed": 43,
+      "steps": 33,
+      "response_tokens": 16384,
+      "route_tokens": {
+        "bank": 12288,
+        "mbpp": 4096
+      },
+      "token_weighted_update_metrics": {
+        "loss": 0.05655987682628741,
+        "teacher_mass": 0.0,
+        "student_mass": 0.0,
+        "sample_outside_topk": 0.0
+      },
+      "first_update_loss": 0.03246361459605396,
+      "last_update_loss": 0.10073339636437595,
+      "gradient_norm_range": [
+        0.10426060110330582,
+        1.4360694885253906
+      ],
+      "sampled_responses": 130,
+      "prefixes_at_cap": 0,
+      "process_seconds": 183.03967861199635,
+      "process_response_tokens_per_second": 89.51064667639882,
+      "peak_cuda_bytes": 13962884096,
+      "parameters_changed": true,
+      "optimizer_states": 128,
+      "adapter_hash": "fdfcb6875b7a75261b4df0af99f24fb46741fa797e2eb90e445ff744ba7b2322",
+      "update_log_sha256": "e3a0a9e016d63b29e9853a389cf3da4acea1a7296850d451c1200043d7a6e611"
+    },
+    {
+      "algorithm": "replay",
+      "seed": 44,
+      "steps": 30,
+      "response_tokens": 16384,
+      "route_tokens": {
+        "bank": 12288,
+        "mbpp": 4096
+      },
+      "token_weighted_update_metrics": {
+        "loss": 0.07100247049131726,
+        "teacher_mass": 0.0,
+        "student_mass": 0.0,
+        "sample_outside_topk": 0.0
+      },
+      "first_update_loss": 0.03728339393273927,
+      "last_update_loss": 0.0335153229534626,
+      "gradient_norm_range": [
+        0.13767759501934052,
+        0.9629812836647034
+      ],
+      "sampled_responses": 117,
+      "prefixes_at_cap": 0,
+      "process_seconds": 169.5519337750011,
+      "process_response_tokens_per_second": 96.63115975864896,
+      "peak_cuda_bytes": 13995965440,
+      "parameters_changed": true,
+      "optimizer_states": 128,
+      "adapter_hash": "5d0d032e129977f5a6958a0037cc379b4484da59e5cd6e36615522511944f580",
+      "update_log_sha256": "ea0669a76dd18c49c142271e8daa8b94006d0a43367ee2ab096232e24395a3c6"
+    }
+  ],
+  "by_algorithm": {
+    "opd": {
+      "response_tokens": 49152,
+      "process_gpu_hours": 0.8212727162169459,
+      "mean_process_response_tokens_per_second": 16.63669290325863,
+      "max_peak_cuda_bytes": 18380219392
+    },
+    "replay": {
+      "response_tokens": 49152,
+      "process_gpu_hours": 0.15149072472416567,
+      "mean_process_response_tokens_per_second": 90.37736052009433,
+      "max_peak_cuda_bytes": 13995965440
+    }
+  },
+  "scope": "Token-weighted metrics on changing student prefixes. First/last loss is descriptive, not a fixed-set convergence test. Process time covers loading, generation, scoring, updating and checkpoint saving; shared Pod allocation, setup and idle time are accounted separately. Equal response-token quotas do not imply equal compute budgets.",
+  "gpu_cold_resume_tested_for_opd": false,
+  "teacher_prefill_stage_timing_available": false
+}

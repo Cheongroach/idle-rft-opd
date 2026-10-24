@@ -1,0 +1,4007 @@
+{
+  "scope": "Actual printed update records only; platform/bootstrap logs excluded",
+  "runs": [
+    {
+      "algorithm": "opd",
+      "seed": 42,
+      "source_sha256": "8cc8461b5843b535d266458672988f1d1dd6e9a5ba85cba8df42761ba1245111",
+      "updates": [
+        {
+          "tokens": 489,
+          "step": 1,
+          "route_tokens": {
+            "bank": 368,
+            "mbpp": 121
+          },
+          "route_cursor": {
+            "bank": 2,
+            "mbpp": 2
+          },
+          "metrics": {
+            "loss": 0.006590893111706464,
+            "teacher_mass": 0.9999972228379825,
+            "student_mass": 0.9999932755234295,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.17361880838871002
+          }
+        },
+        {
+          "tokens": 754,
+          "step": 2,
+          "route_tokens": {
+            "bank": 557,
+            "mbpp": 197
+          },
+          "route_cursor": {
+            "bank": 3,
+            "mbpp": 5
+          },
+          "metrics": {
+            "loss": 0.006311050245926708,
+            "teacher_mass": 0.999993946867169,
+            "student_mass": 0.9999858028483841,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.2148207724094391
+          }
+        },
+        {
+          "tokens": 1411,
+          "step": 3,
+          "route_tokens": {
+            "bank": 971,
+            "mbpp": 440
+          },
+          "route_cursor": {
+            "bank": 5,
+            "mbpp": 7
+          },
+          "metrics": {
+            "loss": 0.0043410775033407845,
+            "teacher_mass": 0.9999652787067757,
+            "student_mass": 0.9999556403544758,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.09301969408988953
+          }
+        },
+        {
+          "tokens": 1961,
+          "step": 4,
+          "route_tokens": {
+            "bank": 1499,
+            "mbpp": 462
+          },
+          "route_cursor": {
+            "bank": 8,
+            "mbpp": 8
+          },
+          "metrics": {
+            "loss": 0.006368534179273411,
+            "teacher_mass": 0.9999905950372869,
+            "student_mass": 0.9999676062844016,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.1444789171218872
+          }
+        },
+        {
+          "tokens": 2274,
+          "step": 5,
+          "route_tokens": {
+            "bank": 1755,
+            "mbpp": 519
+          },
+          "route_cursor": {
+            "bank": 9,
+            "mbpp": 11
+          },
+          "metrics": {
+            "loss": 0.005030477569526681,
+            "teacher_mass": 0.999996355928171,
+            "student_mass": 0.9999922030269147,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.22963549196720123
+          }
+        },
+        {
+          "tokens": 2633,
+          "step": 6,
+          "route_tokens": {
+            "bank": 1960,
+            "mbpp": 673
+          },
+          "route_cursor": {
+            "bank": 10,
+            "mbpp": 14
+          },
+          "metrics": {
+            "loss": 0.006450127519201487,
+            "teacher_mass": 0.9999939219865294,
+            "student_mass": 0.9999917968069942,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.2703007757663727
+          }
+        },
+        {
+          "tokens": 3272,
+          "step": 7,
+          "route_tokens": {
+            "bank": 2327,
+            "mbpp": 945
+          },
+          "route_cursor": {
+            "bank": 12,
+            "mbpp": 16
+          },
+          "metrics": {
+            "loss": 0.007171285248659842,
+            "teacher_mass": 0.999928075942635,
+            "student_mass": 0.9999222733045408,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.30072730779647827
+          }
+        },
+        {
+          "tokens": 3975,
+          "step": 8,
+          "route_tokens": {
+            "bank": 3010,
+            "mbpp": 965
+          },
+          "route_cursor": {
+            "bank": 15,
+            "mbpp": 17
+          },
+          "metrics": {
+            "loss": 0.003852571429888485,
+            "teacher_mass": 0.9999939930727267,
+            "student_mass": 0.9999905609304501,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.09126993268728256
+          }
+        },
+        {
+          "tokens": 4301,
+          "step": 9,
+          "route_tokens": {
+            "bank": 3206,
+            "mbpp": 1095
+          },
+          "route_cursor": {
+            "bank": 16,
+            "mbpp": 20
+          },
+          "metrics": {
+            "loss": 0.006682575837203331,
+            "teacher_mass": 0.9999955417188398,
+            "student_mass": 0.9999932131152942,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.22536787390708923
+          }
+        },
+        {
+          "tokens": 4900,
+          "step": 10,
+          "route_tokens": {
+            "bank": 3674,
+            "mbpp": 1226
+          },
+          "route_cursor": {
+            "bank": 18,
+            "mbpp": 22
+          },
+          "metrics": {
+            "loss": 0.001843732035922585,
+            "teacher_mass": 0.999996866726119,
+            "student_mass": 0.9999960834076489,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.07935784757137299
+          }
+        },
+        {
+          "tokens": 5204,
+          "step": 11,
+          "route_tokens": {
+            "bank": 3894,
+            "mbpp": 1310
+          },
+          "route_cursor": {
+            "bank": 19,
+            "mbpp": 25
+          },
+          "metrics": {
+            "loss": 0.0015849389801587677,
+            "teacher_mass": 0.9999964801888717,
+            "student_mass": 0.9999944285342568,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.06634361296892166
+          }
+        },
+        {
+          "tokens": 5682,
+          "step": 12,
+          "route_tokens": {
+            "bank": 4290,
+            "mbpp": 1392
+          },
+          "route_cursor": {
+            "bank": 21,
+            "mbpp": 27
+          },
+          "metrics": {
+            "loss": 0.0018768151688846046,
+            "teacher_mass": 0.9999977255466094,
+            "student_mass": 0.9999960616043921,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.0779179185628891
+          }
+        },
+        {
+          "tokens": 6053,
+          "step": 13,
+          "route_tokens": {
+            "bank": 4546,
+            "mbpp": 1507
+          },
+          "route_cursor": {
+            "bank": 22,
+            "mbpp": 30
+          },
+          "metrics": {
+            "loss": 0.0031869044578343164,
+            "teacher_mass": 0.9999916714156734,
+            "student_mass": 0.9999863760811942,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.09135692566633224
+          }
+        },
+        {
+          "tokens": 6505,
+          "step": 14,
+          "route_tokens": {
+            "bank": 4866,
+            "mbpp": 1639
+          },
+          "route_cursor": {
+            "bank": 24,
+            "mbpp": 32
+          },
+          "metrics": {
+            "loss": 0.005596458168838581,
+            "teacher_mass": 0.9999951219136737,
+            "student_mass": 0.9999879313781198,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.12606272101402283
+          }
+        },
+        {
+          "tokens": 7113,
+          "step": 15,
+          "route_tokens": {
+            "bank": 5353,
+            "mbpp": 1760
+          },
+          "route_cursor": {
+            "bank": 26,
+            "mbpp": 34
+          },
+          "metrics": {
+            "loss": 0.001641539366573852,
+            "teacher_mass": 0.999994679501182,
+            "student_mass": 0.9999888570685136,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.054401155561208725
+          }
+        },
+        {
+          "tokens": 7682,
+          "step": 16,
+          "route_tokens": {
+            "bank": 5781,
+            "mbpp": 1901
+          },
+          "route_cursor": {
+            "bank": 28,
+            "mbpp": 36
+          },
+          "metrics": {
+            "loss": 0.0019655661644719657,
+            "teacher_mass": 0.999996547330243,
+            "student_mass": 0.9999914219593122,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.07298276573419571
+          }
+        },
+        {
+          "tokens": 8003,
+          "step": 17,
+          "route_tokens": {
+            "bank": 5971,
+            "mbpp": 2032
+          },
+          "route_cursor": {
+            "bank": 30,
+            "mbpp": 38
+          },
+          "metrics": {
+            "loss": 0.006081047470843259,
+            "teacher_mass": 0.9999907900611188,
+            "student_mass": 0.9999851214922849,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.20301833748817444
+          }
+        },
+        {
+          "tokens": 8674,
+          "step": 18,
+          "route_tokens": {
+            "bank": 6483,
+            "mbpp": 2191
+          },
+          "route_cursor": {
+            "bank": 32,
+            "mbpp": 40
+          },
+          "metrics": {
+            "loss": 0.0016322252340614796,
+            "teacher_mass": 0.9999911028297754,
+            "student_mass": 0.9999896701863911,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.0701238363981247
+          }
+        },
+        {
+          "tokens": 9031,
+          "step": 19,
+          "route_tokens": {
+            "bank": 6770,
+            "mbpp": 2261
+          },
+          "route_cursor": {
+            "bank": 34,
+            "mbpp": 42
+          },
+          "metrics": {
+            "loss": 0.002407845400739461,
+            "teacher_mass": 0.9999815409256965,
+            "student_mass": 0.9999767164556251,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.07538589835166931
+          }
+        },
+        {
+          "tokens": 9585,
+          "step": 20,
+          "route_tokens": {
+            "bank": 7203,
+            "mbpp": 2382
+          },
+          "route_cursor": {
+            "bank": 36,
+            "mbpp": 44
+          },
+          "metrics": {
+            "loss": 0.0019509977973939385,
+            "teacher_mass": 0.9999940644963123,
+            "student_mass": 0.999991275773582,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.09618811309337616
+          }
+        },
+        {
+          "tokens": 10095,
+          "step": 21,
+          "route_tokens": {
+            "bank": 7631,
+            "mbpp": 2464
+          },
+          "route_cursor": {
+            "bank": 38,
+            "mbpp": 46
+          },
+          "metrics": {
+            "loss": 0.0035947440996437763,
+            "teacher_mass": 0.9999943677116843,
+            "student_mass": 0.999987632153081,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.11404962092638016
+          }
+        },
+        {
+          "tokens": 10836,
+          "step": 22,
+          "route_tokens": {
+            "bank": 8116,
+            "mbpp": 2720
+          },
+          "route_cursor": {
+            "bank": 41,
+            "mbpp": 47
+          },
+          "metrics": {
+            "loss": 0.004120064550079405,
+            "teacher_mass": 0.9999903731661448,
+            "student_mass": 0.9999845146971996,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.10062617063522339
+          }
+        },
+        {
+          "tokens": 11259,
+          "step": 23,
+          "route_tokens": {
+            "bank": 8419,
+            "mbpp": 2840
+          },
+          "route_cursor": {
+            "bank": 43,
+            "mbpp": 49
+          },
+          "metrics": {
+            "loss": 0.0023587489558849484,
+            "teacher_mass": 0.9999951121373098,
+            "student_mass": 0.9999907653664303,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.0952618271112442
+          }
+        },
+        {
+          "tokens": 11801,
+          "step": 24,
+          "route_tokens": {
+            "bank": 8869,
+            "mbpp": 2932
+          },
+          "route_cursor": {
+            "bank": 45,
+            "mbpp": 51
+          },
+          "metrics": {
+            "loss": 0.020816755343957993,
+            "teacher_mass": 0.9999271371707706,
+            "student_mass": 0.9998846546750227,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.500812292098999
+          }
+        },
+        {
+          "tokens": 12361,
+          "step": 25,
+          "route_tokens": {
+            "bank": 9331,
+            "mbpp": 3030
+          },
+          "route_cursor": {
+            "bank": 47,
+            "mbpp": 53
+          },
+          "metrics": {
+            "loss": 0.0032949960818768886,
+            "teacher_mass": 0.9999840395791189,
+            "student_mass": 0.999977925845555,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.08948002755641937
+          }
+        },
+        {
+          "tokens": 12643,
+          "step": 26,
+          "route_tokens": {
+            "bank": 9519,
+            "mbpp": 3124
+          },
+          "route_cursor": {
+            "bank": 48,
+            "mbpp": 56
+          },
+          "metrics": {
+            "loss": 0.0031903646101909544,
+            "teacher_mass": 0.9999929319882224,
+            "student_mass": 0.999986303613541,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.18182708323001862
+          }
+        },
+        {
+          "tokens": 12951,
+          "step": 27,
+          "route_tokens": {
+            "bank": 9742,
+            "mbpp": 3209
+          },
+          "route_cursor": {
+            "bank": 49,
+            "mbpp": 59
+          },
+          "metrics": {
+            "loss": 0.002706368977214879,
+            "teacher_mass": 0.9999915160141981,
+            "student_mass": 0.9999822393640295,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.09539740532636642
+          }
+        },
+        {
+          "tokens": 13412,
+          "step": 28,
+          "route_tokens": {
+            "bank": 10101,
+            "mbpp": 3311
+          },
+          "route_cursor": {
+            "bank": 51,
+            "mbpp": 61
+          },
+          "metrics": {
+            "loss": 0.002048649112111889,
+            "teacher_mass": 0.9999955564155496,
+            "student_mass": 0.999991940314237,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.15245313942432404
+          }
+        },
+        {
+          "tokens": 13712,
+          "step": 29,
+          "route_tokens": {
+            "bank": 10278,
+            "mbpp": 3434
+          },
+          "route_cursor": {
+            "bank": 52,
+            "mbpp": 64
+          },
+          "metrics": {
+            "loss": 0.0006037730017851572,
+            "teacher_mass": 0.9999948374430339,
+            "student_mass": 0.9999941762288411,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.03857933729887009
+          }
+        },
+        {
+          "tokens": 14101,
+          "step": 30,
+          "route_tokens": {
+            "bank": 10585,
+            "mbpp": 3516
+          },
+          "route_cursor": {
+            "bank": 54,
+            "mbpp": 66
+          },
+          "metrics": {
+            "loss": 0.0023684446787228808,
+            "teacher_mass": 0.9999948859521233,
+            "student_mass": 0.9999909192553523,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.07446619123220444
+          }
+        },
+        {
+          "tokens": 14480,
+          "step": 31,
+          "route_tokens": {
+            "bank": 10842,
+            "mbpp": 3638
+          },
+          "route_cursor": {
+            "bank": 56,
+            "mbpp": 68
+          },
+          "metrics": {
+            "loss": 0.001714742866170127,
+            "teacher_mass": 0.9999948265055554,
+            "student_mass": 0.999991444610354,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.07128561288118362
+          }
+        },
+        {
+          "tokens": 15202,
+          "step": 32,
+          "route_tokens": {
+            "bank": 11438,
+            "mbpp": 3764
+          },
+          "route_cursor": {
+            "bank": 59,
+            "mbpp": 69
+          },
+          "metrics": {
+            "loss": 0.001818251665099524,
+            "teacher_mass": 0.999996734788213,
+            "student_mass": 0.9999936703499664,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.0470571368932724
+          }
+        },
+        {
+          "tokens": 15599,
+          "step": 33,
+          "route_tokens": {
+            "bank": 11679,
+            "mbpp": 3920
+          },
+          "route_cursor": {
+            "bank": 60,
+            "mbpp": 72
+          },
+          "metrics": {
+            "loss": 0.0006266259597396129,
+            "teacher_mass": 0.9999974392523394,
+            "student_mass": 0.999995061072054,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.032329708337783813
+          }
+        },
+        {
+          "tokens": 16241,
+          "step": 34,
+          "route_tokens": {
+            "bank": 12191,
+            "mbpp": 4050
+          },
+          "route_cursor": {
+            "bank": 62,
+            "mbpp": 74
+          },
+          "metrics": {
+            "loss": 0.004027014741950552,
+            "teacher_mass": 0.9999871001436703,
+            "student_mass": 0.9999669392903646,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.1036243662238121
+          }
+        },
+        {
+          "tokens": 16384,
+          "step": 35,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 63,
+            "mbpp": 76
+          },
+          "metrics": {
+            "loss": 0.0016062530680756026,
+            "teacher_mass": 0.9999884091890776,
+            "student_mass": 0.9999749910581363,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.12531006336212158
+          }
+        }
+      ]
+    },
+    {
+      "algorithm": "opd",
+      "seed": 43,
+      "source_sha256": "16bc92092c1b9766d44d482a7a892b76ef2035ce4e7f046a90ac4a71491b0e9f",
+      "updates": [
+        {
+          "tokens": 594,
+          "step": 1,
+          "route_tokens": {
+            "bank": 482,
+            "mbpp": 112
+          },
+          "route_cursor": {
+            "bank": 2,
+            "mbpp": 2
+          },
+          "metrics": {
+            "loss": 0.0041538098848832306,
+            "teacher_mass": 0.9999912017925019,
+            "student_mass": 0.9999705260048812,
+            "sample_outside_topk": 0.0016835016835016834,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.08025556802749634
+          }
+        },
+        {
+          "tokens": 938,
+          "step": 2,
+          "route_tokens": {
+            "bank": 738,
+            "mbpp": 200
+          },
+          "route_cursor": {
+            "bank": 3,
+            "mbpp": 5
+          },
+          "metrics": {
+            "loss": 0.0056522861320829065,
+            "teacher_mass": 0.9999906739523244,
+            "student_mass": 0.999986401824064,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.20172008872032166
+          }
+        },
+        {
+          "tokens": 1320,
+          "step": 3,
+          "route_tokens": {
+            "bank": 994,
+            "mbpp": 326
+          },
+          "route_cursor": {
+            "bank": 4,
+            "mbpp": 8
+          },
+          "metrics": {
+            "loss": 0.0030939087571368873,
+            "teacher_mass": 0.999995835788587,
+            "student_mass": 0.9999868982125327,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.1173919141292572
+          }
+        },
+        {
+          "tokens": 1629,
+          "step": 4,
+          "route_tokens": {
+            "bank": 1245,
+            "mbpp": 384
+          },
+          "route_cursor": {
+            "bank": 5,
+            "mbpp": 11
+          },
+          "metrics": {
+            "loss": 0.004252439166378963,
+            "teacher_mass": 0.9999925989934928,
+            "student_mass": 0.9999770130540175,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.13542786240577698
+          }
+        },
+        {
+          "tokens": 2173,
+          "step": 5,
+          "route_tokens": {
+            "bank": 1479,
+            "mbpp": 694
+          },
+          "route_cursor": {
+            "bank": 6,
+            "mbpp": 14
+          },
+          "metrics": {
+            "loss": 0.002056043858829071,
+            "teacher_mass": 0.9999774764565861,
+            "student_mass": 0.9999773572472965,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.08450186252593994
+          }
+        },
+        {
+          "tokens": 2931,
+          "step": 6,
+          "route_tokens": {
+            "bank": 2237,
+            "mbpp": 694
+          },
+          "route_cursor": {
+            "bank": 10,
+            "mbpp": 14
+          },
+          "metrics": {
+            "loss": 0.0036551588564179838,
+            "teacher_mass": 0.9999889283192818,
+            "student_mass": 0.9999808157968646,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.091211698949337
+          }
+        },
+        {
+          "tokens": 3315,
+          "step": 7,
+          "route_tokens": {
+            "bank": 2470,
+            "mbpp": 845
+          },
+          "route_cursor": {
+            "bank": 11,
+            "mbpp": 17
+          },
+          "metrics": {
+            "loss": 0.00259480948534474,
+            "teacher_mass": 0.9999905625979106,
+            "student_mass": 0.9999858339627583,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.12895312905311584
+          }
+        },
+        {
+          "tokens": 3771,
+          "step": 8,
+          "route_tokens": {
+            "bank": 2861,
+            "mbpp": 910
+          },
+          "route_cursor": {
+            "bank": 13,
+            "mbpp": 19
+          },
+          "metrics": {
+            "loss": 0.0028755341015767044,
+            "teacher_mass": 0.9999951479727762,
+            "student_mass": 0.9999852180480957,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.07242408394813538
+          }
+        },
+        {
+          "tokens": 4383,
+          "step": 9,
+          "route_tokens": {
+            "bank": 3315,
+            "mbpp": 1068
+          },
+          "route_cursor": {
+            "bank": 15,
+            "mbpp": 21
+          },
+          "metrics": {
+            "loss": 0.005694062918337295,
+            "teacher_mass": 0.9999903074276992,
+            "student_mass": 0.9999850965013691,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.1356012523174286
+          }
+        },
+        {
+          "tokens": 4778,
+          "step": 10,
+          "route_tokens": {
+            "bank": 3633,
+            "mbpp": 1145
+          },
+          "route_cursor": {
+            "bank": 17,
+            "mbpp": 23
+          },
+          "metrics": {
+            "loss": 0.0032620120800856967,
+            "teacher_mass": 0.9999962239325801,
+            "student_mass": 0.9999943407276009,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.1160997822880745
+          }
+        },
+        {
+          "tokens": 5071,
+          "step": 11,
+          "route_tokens": {
+            "bank": 3822,
+            "mbpp": 1249
+          },
+          "route_cursor": {
+            "bank": 18,
+            "mbpp": 26
+          },
+          "metrics": {
+            "loss": 0.003982492144132266,
+            "teacher_mass": 0.9999863426026224,
+            "student_mass": 0.9999815481921511,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.15284350514411926
+          }
+        },
+        {
+          "tokens": 5654,
+          "step": 12,
+          "route_tokens": {
+            "bank": 4200,
+            "mbpp": 1454
+          },
+          "route_cursor": {
+            "bank": 20,
+            "mbpp": 28
+          },
+          "metrics": {
+            "loss": 0.004215941399706935,
+            "teacher_mass": 0.999985729237159,
+            "student_mass": 0.9999852450388783,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.1162523552775383
+          }
+        },
+        {
+          "tokens": 6261,
+          "step": 13,
+          "route_tokens": {
+            "bank": 4712,
+            "mbpp": 1549
+          },
+          "route_cursor": {
+            "bank": 22,
+            "mbpp": 30
+          },
+          "metrics": {
+            "loss": 0.002419050148091628,
+            "teacher_mass": 0.9999844835460481,
+            "student_mass": 0.9999777214138275,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.0792488157749176
+          }
+        },
+        {
+          "tokens": 6947,
+          "step": 14,
+          "route_tokens": {
+            "bank": 5165,
+            "mbpp": 1782
+          },
+          "route_cursor": {
+            "bank": 25,
+            "mbpp": 31
+          },
+          "metrics": {
+            "loss": 0.0049414593377150595,
+            "teacher_mass": 0.9999226383843157,
+            "student_mass": 0.9999325588215195,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.1279991865158081
+          }
+        },
+        {
+          "tokens": 7359,
+          "step": 15,
+          "route_tokens": {
+            "bank": 5535,
+            "mbpp": 1824
+          },
+          "route_cursor": {
+            "bank": 27,
+            "mbpp": 33
+          },
+          "metrics": {
+            "loss": 0.0033100570990427514,
+            "teacher_mass": 0.9999363908489931,
+            "student_mass": 0.9998673327918192,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.12062617391347885
+          }
+        },
+        {
+          "tokens": 7677,
+          "step": 16,
+          "route_tokens": {
+            "bank": 5735,
+            "mbpp": 1942
+          },
+          "route_cursor": {
+            "bank": 28,
+            "mbpp": 36
+          },
+          "metrics": {
+            "loss": 0.0018240492963741417,
+            "teacher_mass": 0.9999891077197574,
+            "student_mass": 0.9999898274739583,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.0828292965888977
+          }
+        },
+        {
+          "tokens": 8289,
+          "step": 17,
+          "route_tokens": {
+            "bank": 6224,
+            "mbpp": 2065
+          },
+          "route_cursor": {
+            "bank": 30,
+            "mbpp": 38
+          },
+          "metrics": {
+            "loss": 0.006912297513736121,
+            "teacher_mass": 0.9999948638716556,
+            "student_mass": 0.9999920028487063,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.20030607283115387
+          }
+        },
+        {
+          "tokens": 9022,
+          "step": 18,
+          "route_tokens": {
+            "bank": 6663,
+            "mbpp": 2359
+          },
+          "route_cursor": {
+            "bank": 32,
+            "mbpp": 40
+          },
+          "metrics": {
+            "loss": 0.0021689791828976013,
+            "teacher_mass": 0.9999773199854249,
+            "student_mass": 0.999975966886804,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.06775714457035065
+          }
+        },
+        {
+          "tokens": 9606,
+          "step": 19,
+          "route_tokens": {
+            "bank": 7216,
+            "mbpp": 2390
+          },
+          "route_cursor": {
+            "bank": 35,
+            "mbpp": 41
+          },
+          "metrics": {
+            "loss": 0.005454342714074301,
+            "teacher_mass": 0.9999947776533152,
+            "student_mass": 0.9999904436607884,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.12058401852846146
+          }
+        },
+        {
+          "tokens": 10192,
+          "step": 20,
+          "route_tokens": {
+            "bank": 7670,
+            "mbpp": 2522
+          },
+          "route_cursor": {
+            "bank": 37,
+            "mbpp": 43
+          },
+          "metrics": {
+            "loss": 0.0014347280830406817,
+            "teacher_mass": 0.9999980405735889,
+            "student_mass": 0.9999968167457971,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.0461251325905323
+          }
+        },
+        {
+          "tokens": 10623,
+          "step": 21,
+          "route_tokens": {
+            "bank": 7926,
+            "mbpp": 2697
+          },
+          "route_cursor": {
+            "bank": 38,
+            "mbpp": 46
+          },
+          "metrics": {
+            "loss": 0.00278040341072483,
+            "teacher_mass": 0.9999904145774046,
+            "student_mass": 0.9999900605451756,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.09086036682128906
+          }
+        },
+        {
+          "tokens": 11132,
+          "step": 22,
+          "route_tokens": {
+            "bank": 8369,
+            "mbpp": 2763
+          },
+          "route_cursor": {
+            "bank": 40,
+            "mbpp": 48
+          },
+          "metrics": {
+            "loss": 0.00183150878365268,
+            "teacher_mass": 0.99999703967501,
+            "student_mass": 0.9999945814810942,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.07766835391521454
+          }
+        },
+        {
+          "tokens": 11363,
+          "step": 23,
+          "route_tokens": {
+            "bank": 8468,
+            "mbpp": 2895
+          },
+          "route_cursor": {
+            "bank": 41,
+            "mbpp": 51
+          },
+          "metrics": {
+            "loss": 0.0014862935723840565,
+            "teacher_mass": 0.9999959623658813,
+            "student_mass": 0.9999955330060157,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.08680853992700577
+          }
+        },
+        {
+          "tokens": 12077,
+          "step": 24,
+          "route_tokens": {
+            "bank": 9076,
+            "mbpp": 3001
+          },
+          "route_cursor": {
+            "bank": 44,
+            "mbpp": 52
+          },
+          "metrics": {
+            "loss": 0.0045601981692016125,
+            "teacher_mass": 0.9999976705770199,
+            "student_mass": 0.9999953197831868,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.14649875462055206
+          }
+        },
+        {
+          "tokens": 12478,
+          "step": 25,
+          "route_tokens": {
+            "bank": 9332,
+            "mbpp": 3146
+          },
+          "route_cursor": {
+            "bank": 45,
+            "mbpp": 55
+          },
+          "metrics": {
+            "loss": 0.0004918258946418064,
+            "teacher_mass": 0.9999979071486322,
+            "student_mass": 0.9999970224432815,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.03945491090416908
+          }
+        },
+        {
+          "tokens": 12947,
+          "step": 26,
+          "route_tokens": {
+            "bank": 9760,
+            "mbpp": 3187
+          },
+          "route_cursor": {
+            "bank": 47,
+            "mbpp": 57
+          },
+          "metrics": {
+            "loss": 0.00213138564711457,
+            "teacher_mass": 0.9999928240582887,
+            "student_mass": 0.9999864574180231,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.06427567452192307
+          }
+        },
+        {
+          "tokens": 13311,
+          "step": 27,
+          "route_tokens": {
+            "bank": 9964,
+            "mbpp": 3347
+          },
+          "route_cursor": {
+            "bank": 48,
+            "mbpp": 60
+          },
+          "metrics": {
+            "loss": 0.0031799595199686337,
+            "teacher_mass": 0.9999983232099932,
+            "student_mass": 0.9999973695356768,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.1653866171836853
+          }
+        },
+        {
+          "tokens": 13873,
+          "step": 28,
+          "route_tokens": {
+            "bank": 10339,
+            "mbpp": 3534
+          },
+          "route_cursor": {
+            "bank": 50,
+            "mbpp": 62
+          },
+          "metrics": {
+            "loss": 0.002958445929834852,
+            "teacher_mass": 0.9999962803307803,
+            "student_mass": 0.9999939453559413,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.07595895975828171
+          }
+        },
+        {
+          "tokens": 14276,
+          "step": 29,
+          "route_tokens": {
+            "bank": 10699,
+            "mbpp": 3577
+          },
+          "route_cursor": {
+            "bank": 52,
+            "mbpp": 64
+          },
+          "metrics": {
+            "loss": 0.0028132706806900387,
+            "teacher_mass": 0.9999936200844738,
+            "student_mass": 0.9999874010866984,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.10855619609355927
+          }
+        },
+        {
+          "tokens": 14818,
+          "step": 30,
+          "route_tokens": {
+            "bank": 11097,
+            "mbpp": 3721
+          },
+          "route_cursor": {
+            "bank": 54,
+            "mbpp": 66
+          },
+          "metrics": {
+            "loss": 0.0013560340292002593,
+            "teacher_mass": 0.9999945383670146,
+            "student_mass": 0.999992659171129,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.04581323638558388
+          }
+        },
+        {
+          "tokens": 15704,
+          "step": 31,
+          "route_tokens": {
+            "bank": 11727,
+            "mbpp": 3977
+          },
+          "route_cursor": {
+            "bank": 57,
+            "mbpp": 67
+          },
+          "metrics": {
+            "loss": 0.005547424225369468,
+            "teacher_mass": 0.9999566175060401,
+            "student_mass": 0.999947489787978,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.1428663283586502
+          }
+        },
+        {
+          "tokens": 16085,
+          "step": 32,
+          "route_tokens": {
+            "bank": 12084,
+            "mbpp": 4001
+          },
+          "route_cursor": {
+            "bank": 60,
+            "mbpp": 68
+          },
+          "metrics": {
+            "loss": 0.003207958726079596,
+            "teacher_mass": 0.9999933117643742,
+            "student_mass": 0.9999897173383417,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.1137201115489006
+          }
+        },
+        {
+          "tokens": 16384,
+          "step": 33,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 62,
+            "mbpp": 70
+          },
+          "metrics": {
+            "loss": 0.0018114271305904595,
+            "teacher_mass": 0.9999895446675278,
+            "student_mass": 0.9999886866795977,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.06967390328645706
+          }
+        }
+      ]
+    },
+    {
+      "algorithm": "opd",
+      "seed": 44,
+      "source_sha256": "9e8384510ff0b180dec1e9294c90a81956db795e51bb4ba000d731b4ce898d49",
+      "updates": [
+        {
+          "tokens": 381,
+          "step": 1,
+          "route_tokens": {
+            "bank": 285,
+            "mbpp": 96
+          },
+          "route_cursor": {
+            "bank": 2,
+            "mbpp": 2
+          },
+          "metrics": {
+            "loss": 0.004949105150444666,
+            "teacher_mass": 0.9999932016287576,
+            "student_mass": 0.9999860328013502,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.13266751170158386
+          }
+        },
+        {
+          "tokens": 929,
+          "step": 2,
+          "route_tokens": {
+            "bank": 694,
+            "mbpp": 235
+          },
+          "route_cursor": {
+            "bank": 4,
+            "mbpp": 4
+          },
+          "metrics": {
+            "loss": 0.006119413726992207,
+            "teacher_mass": 0.9999915909593123,
+            "student_mass": 0.9999787128754777,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.15171730518341064
+          }
+        },
+        {
+          "tokens": 1413,
+          "step": 3,
+          "route_tokens": {
+            "bank": 1101,
+            "mbpp": 312
+          },
+          "route_cursor": {
+            "bank": 6,
+            "mbpp": 6
+          },
+          "metrics": {
+            "loss": 0.006899940376918323,
+            "teacher_mass": 0.999993048423578,
+            "student_mass": 0.9999758487890574,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.20758408308029175
+          }
+        },
+        {
+          "tokens": 1778,
+          "step": 4,
+          "route_tokens": {
+            "bank": 1357,
+            "mbpp": 421
+          },
+          "route_cursor": {
+            "bank": 7,
+            "mbpp": 9
+          },
+          "metrics": {
+            "loss": 0.002973534342345374,
+            "teacher_mass": 0.9999800695131903,
+            "student_mass": 0.9999687299336473,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.09950000792741776
+          }
+        },
+        {
+          "tokens": 2176,
+          "step": 5,
+          "route_tokens": {
+            "bank": 1613,
+            "mbpp": 563
+          },
+          "route_cursor": {
+            "bank": 8,
+            "mbpp": 12
+          },
+          "metrics": {
+            "loss": 0.0018288791688974015,
+            "teacher_mass": 0.9999975367407105,
+            "student_mass": 0.999994460062765,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.08797513693571091
+          }
+        },
+        {
+          "tokens": 3018,
+          "step": 6,
+          "route_tokens": {
+            "bank": 2199,
+            "mbpp": 819
+          },
+          "route_cursor": {
+            "bank": 11,
+            "mbpp": 13
+          },
+          "metrics": {
+            "loss": 0.003254686831496656,
+            "teacher_mass": 0.999979032756597,
+            "student_mass": 0.9999776011124925,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.08252643793821335
+          }
+        },
+        {
+          "tokens": 3755,
+          "step": 7,
+          "route_tokens": {
+            "bank": 2754,
+            "mbpp": 1001
+          },
+          "route_cursor": {
+            "bank": 14,
+            "mbpp": 14
+          },
+          "metrics": {
+            "loss": 0.004825239302590489,
+            "teacher_mass": 0.9999899171909451,
+            "student_mass": 0.9999841200933366,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.12782469391822815
+          }
+        },
+        {
+          "tokens": 4349,
+          "step": 8,
+          "route_tokens": {
+            "bank": 3255,
+            "mbpp": 1094
+          },
+          "route_cursor": {
+            "bank": 16,
+            "mbpp": 16
+          },
+          "metrics": {
+            "loss": 0.004541200658422895,
+            "teacher_mass": 0.9999903187607274,
+            "student_mass": 0.9999776127362493,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.10671848803758621
+          }
+        },
+        {
+          "tokens": 4883,
+          "step": 9,
+          "route_tokens": {
+            "bank": 3684,
+            "mbpp": 1199
+          },
+          "route_cursor": {
+            "bank": 18,
+            "mbpp": 18
+          },
+          "metrics": {
+            "loss": 0.0028634345526370453,
+            "teacher_mass": 0.9999946494227492,
+            "student_mass": 0.9999922420201677,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.08381443470716476
+          }
+        },
+        {
+          "tokens": 5287,
+          "step": 10,
+          "route_tokens": {
+            "bank": 3940,
+            "mbpp": 1347
+          },
+          "route_cursor": {
+            "bank": 19,
+            "mbpp": 21
+          },
+          "metrics": {
+            "loss": 0.003971389600337716,
+            "teacher_mass": 0.9999858790104931,
+            "student_mass": 0.9999845665280183,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.11858085542917252
+          }
+        },
+        {
+          "tokens": 5700,
+          "step": 11,
+          "route_tokens": {
+            "bank": 4308,
+            "mbpp": 1392
+          },
+          "route_cursor": {
+            "bank": 21,
+            "mbpp": 23
+          },
+          "metrics": {
+            "loss": 0.002447601946130362,
+            "teacher_mass": 0.9999902900714274,
+            "student_mass": 0.9999873366829268,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.06840136647224426
+          }
+        },
+        {
+          "tokens": 6288,
+          "step": 12,
+          "route_tokens": {
+            "bank": 4733,
+            "mbpp": 1555
+          },
+          "route_cursor": {
+            "bank": 23,
+            "mbpp": 25
+          },
+          "metrics": {
+            "loss": 0.001743468362775502,
+            "teacher_mass": 0.9999791845983388,
+            "student_mass": 0.9999805859157018,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.07615146785974503
+          }
+        },
+        {
+          "tokens": 6803,
+          "step": 13,
+          "route_tokens": {
+            "bank": 5161,
+            "mbpp": 1642
+          },
+          "route_cursor": {
+            "bank": 25,
+            "mbpp": 27
+          },
+          "metrics": {
+            "loss": 0.004374637910586898,
+            "teacher_mass": 0.9999838079063639,
+            "student_mass": 0.9999764007272072,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.12091772258281708
+          }
+        },
+        {
+          "tokens": 7285,
+          "step": 14,
+          "route_tokens": {
+            "bank": 5417,
+            "mbpp": 1868
+          },
+          "route_cursor": {
+            "bank": 26,
+            "mbpp": 30
+          },
+          "metrics": {
+            "loss": 0.001980774126423057,
+            "teacher_mass": 0.9999839814372082,
+            "student_mass": 0.9999866723024995,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.0603145994246006
+          }
+        },
+        {
+          "tokens": 7937,
+          "step": 15,
+          "route_tokens": {
+            "bank": 5929,
+            "mbpp": 2008
+          },
+          "route_cursor": {
+            "bank": 28,
+            "mbpp": 32
+          },
+          "metrics": {
+            "loss": 0.0039169945916910365,
+            "teacher_mass": 0.9999616979821329,
+            "student_mass": 0.9999586819139726,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.11927428841590881
+          }
+        },
+        {
+          "tokens": 8444,
+          "step": 16,
+          "route_tokens": {
+            "bank": 6340,
+            "mbpp": 2104
+          },
+          "route_cursor": {
+            "bank": 30,
+            "mbpp": 34
+          },
+          "metrics": {
+            "loss": 0.0024996518113766797,
+            "teacher_mass": 0.9999958241479637,
+            "student_mass": 0.9999951695549417,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.09549613296985626
+          }
+        },
+        {
+          "tokens": 8792,
+          "step": 17,
+          "route_tokens": {
+            "bank": 6628,
+            "mbpp": 2164
+          },
+          "route_cursor": {
+            "bank": 32,
+            "mbpp": 36
+          },
+          "metrics": {
+            "loss": 0.0033109101617654346,
+            "teacher_mass": 0.9999922061788624,
+            "student_mass": 0.9999874487690541,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.1350966989994049
+          }
+        },
+        {
+          "tokens": 9191,
+          "step": 18,
+          "route_tokens": {
+            "bank": 6884,
+            "mbpp": 2307
+          },
+          "route_cursor": {
+            "bank": 33,
+            "mbpp": 39
+          },
+          "metrics": {
+            "loss": 0.009215255598519434,
+            "teacher_mass": 0.9999577323894453,
+            "student_mass": 0.999947908826938,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.22197692096233368
+          }
+        },
+        {
+          "tokens": 9566,
+          "step": 19,
+          "route_tokens": {
+            "bank": 7140,
+            "mbpp": 2426
+          },
+          "route_cursor": {
+            "bank": 34,
+            "mbpp": 42
+          },
+          "metrics": {
+            "loss": 0.0021981009965656995,
+            "teacher_mass": 0.9999945170084635,
+            "student_mass": 0.9999940694173177,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.10664529353380203
+          }
+        },
+        {
+          "tokens": 9924,
+          "step": 20,
+          "route_tokens": {
+            "bank": 7416,
+            "mbpp": 2508
+          },
+          "route_cursor": {
+            "bank": 36,
+            "mbpp": 44
+          },
+          "metrics": {
+            "loss": 0.007927668178751901,
+            "teacher_mass": 0.9999945336879964,
+            "student_mass": 0.9999858280799908,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.16593125462532043
+          }
+        },
+        {
+          "tokens": 10369,
+          "step": 21,
+          "route_tokens": {
+            "bank": 7820,
+            "mbpp": 2549
+          },
+          "route_cursor": {
+            "bank": 38,
+            "mbpp": 46
+          },
+          "metrics": {
+            "loss": 0.0034128703764508828,
+            "teacher_mass": 0.9999950108903177,
+            "student_mass": 0.9999886416317372,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.09930505603551865
+          }
+        },
+        {
+          "tokens": 10830,
+          "step": 22,
+          "route_tokens": {
+            "bank": 8076,
+            "mbpp": 2754
+          },
+          "route_cursor": {
+            "bank": 39,
+            "mbpp": 49
+          },
+          "metrics": {
+            "loss": 0.0025335307727800682,
+            "teacher_mass": 0.9999894082158352,
+            "student_mass": 0.9999852294259889,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.08139573782682419
+          }
+        },
+        {
+          "tokens": 11408,
+          "step": 23,
+          "route_tokens": {
+            "bank": 8588,
+            "mbpp": 2820
+          },
+          "route_cursor": {
+            "bank": 41,
+            "mbpp": 51
+          },
+          "metrics": {
+            "loss": 0.003943337259897817,
+            "teacher_mass": 0.9999939149638772,
+            "student_mass": 0.9999838238356435,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.08818367123603821
+          }
+        },
+        {
+          "tokens": 11901,
+          "step": 24,
+          "route_tokens": {
+            "bank": 8968,
+            "mbpp": 2933
+          },
+          "route_cursor": {
+            "bank": 43,
+            "mbpp": 53
+          },
+          "metrics": {
+            "loss": 0.0020658221214944206,
+            "teacher_mass": 0.9999915658823133,
+            "student_mass": 0.9999797658552747,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.05195239931344986
+          }
+        },
+        {
+          "tokens": 12218,
+          "step": 25,
+          "route_tokens": {
+            "bank": 9202,
+            "mbpp": 3016
+          },
+          "route_cursor": {
+            "bank": 44,
+            "mbpp": 56
+          },
+          "metrics": {
+            "loss": 0.003229567443668202,
+            "teacher_mass": 0.9999961913196072,
+            "student_mass": 0.9999935258450193,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.11463696509599686
+          }
+        },
+        {
+          "tokens": 12843,
+          "step": 26,
+          "route_tokens": {
+            "bank": 9678,
+            "mbpp": 3165
+          },
+          "route_cursor": {
+            "bank": 46,
+            "mbpp": 58
+          },
+          "metrics": {
+            "loss": 0.0018998684827238321,
+            "teacher_mass": 0.9999946838378907,
+            "student_mass": 0.9999881622314453,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.05566198751330376
+          }
+        },
+        {
+          "tokens": 13412,
+          "step": 27,
+          "route_tokens": {
+            "bank": 10079,
+            "mbpp": 3333
+          },
+          "route_cursor": {
+            "bank": 48,
+            "mbpp": 60
+          },
+          "metrics": {
+            "loss": 0.0015795338968018768,
+            "teacher_mass": 0.9999952400086844,
+            "student_mass": 0.9999929672804365,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.06359755247831345
+          }
+        },
+        {
+          "tokens": 14008,
+          "step": 28,
+          "route_tokens": {
+            "bank": 10538,
+            "mbpp": 3470
+          },
+          "route_cursor": {
+            "bank": 50,
+            "mbpp": 62
+          },
+          "metrics": {
+            "loss": 0.003657711724372348,
+            "teacher_mass": 0.9999957308673219,
+            "student_mass": 0.9999931770683135,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 1,
+            "grad_norm": 0.1351146101951599
+          }
+        },
+        {
+          "tokens": 14649,
+          "step": 29,
+          "route_tokens": {
+            "bank": 11016,
+            "mbpp": 3633
+          },
+          "route_cursor": {
+            "bank": 52,
+            "mbpp": 64
+          },
+          "metrics": {
+            "loss": 0.0011422669485909864,
+            "teacher_mass": 0.9999915017352647,
+            "student_mass": 0.9999897163855304,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.039774876087903976
+          }
+        },
+        {
+          "tokens": 15072,
+          "step": 30,
+          "route_tokens": {
+            "bank": 11260,
+            "mbpp": 3812
+          },
+          "route_cursor": {
+            "bank": 53,
+            "mbpp": 67
+          },
+          "metrics": {
+            "loss": 0.0017543594499329629,
+            "teacher_mass": 0.9999600223333842,
+            "student_mass": 0.9999320298503758,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.06976205110549927
+          }
+        },
+        {
+          "tokens": 15522,
+          "step": 31,
+          "route_tokens": {
+            "bank": 11684,
+            "mbpp": 3838
+          },
+          "route_cursor": {
+            "bank": 56,
+            "mbpp": 68
+          },
+          "metrics": {
+            "loss": 0.0030943054030103667,
+            "teacher_mass": 0.9999937693277995,
+            "student_mass": 0.9999853558010525,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.0898432806134224
+          }
+        },
+        {
+          "tokens": 15888,
+          "step": 32,
+          "route_tokens": {
+            "bank": 11912,
+            "mbpp": 3976
+          },
+          "route_cursor": {
+            "bank": 57,
+            "mbpp": 71
+          },
+          "metrics": {
+            "loss": 0.0021605170259135775,
+            "teacher_mass": 0.999996576152864,
+            "student_mass": 0.9999936109032136,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.09502009302377701
+          }
+        },
+        {
+          "tokens": 16384,
+          "step": 33,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 59,
+            "mbpp": 72
+          },
+          "metrics": {
+            "loss": 0.002242013841168955,
+            "teacher_mass": 0.9999941856630388,
+            "student_mass": 0.9999902786747101,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.07151331007480621
+          }
+        }
+      ]
+    },
+    {
+      "algorithm": "replay",
+      "seed": 42,
+      "source_sha256": "32591790d226cfe11f9910f36a6e0694b3c728ffa72563311704d502b3cd192e",
+      "updates": [
+        {
+          "tokens": 456,
+          "step": 1,
+          "route_tokens": {
+            "bank": 339,
+            "mbpp": 117
+          },
+          "route_cursor": {
+            "bank": 2,
+            "mbpp": 2
+          },
+          "metrics": {
+            "loss": 0.02575014077592641,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.26604828238487244
+          }
+        },
+        {
+          "tokens": 753,
+          "step": 2,
+          "route_tokens": {
+            "bank": 566,
+            "mbpp": 187
+          },
+          "route_cursor": {
+            "bank": 3,
+            "mbpp": 5
+          },
+          "metrics": {
+            "loss": 0.068242293133153,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.5200304985046387
+          }
+        },
+        {
+          "tokens": 1359,
+          "step": 3,
+          "route_tokens": {
+            "bank": 978,
+            "mbpp": 381
+          },
+          "route_cursor": {
+            "bank": 5,
+            "mbpp": 7
+          },
+          "metrics": {
+            "loss": 0.05619853385724127,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.3097415864467621
+          }
+        },
+        {
+          "tokens": 1885,
+          "step": 4,
+          "route_tokens": {
+            "bank": 1470,
+            "mbpp": 415
+          },
+          "route_cursor": {
+            "bank": 7,
+            "mbpp": 9
+          },
+          "metrics": {
+            "loss": 0.05575786291504414,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.38508790731430054
+          }
+        },
+        {
+          "tokens": 2160,
+          "step": 5,
+          "route_tokens": {
+            "bank": 1652,
+            "mbpp": 508
+          },
+          "route_cursor": {
+            "bank": 8,
+            "mbpp": 12
+          },
+          "metrics": {
+            "loss": 0.05945419683121145,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.505510151386261
+          }
+        },
+        {
+          "tokens": 2676,
+          "step": 6,
+          "route_tokens": {
+            "bank": 2034,
+            "mbpp": 642
+          },
+          "route_cursor": {
+            "bank": 10,
+            "mbpp": 14
+          },
+          "metrics": {
+            "loss": 0.06100397411501035,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.37202683091163635
+          }
+        },
+        {
+          "tokens": 3603,
+          "step": 7,
+          "route_tokens": {
+            "bank": 2569,
+            "mbpp": 1034
+          },
+          "route_cursor": {
+            "bank": 12,
+            "mbpp": 16
+          },
+          "metrics": {
+            "loss": 0.06863711202277045,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.29674679040908813
+          }
+        },
+        {
+          "tokens": 4337,
+          "step": 8,
+          "route_tokens": {
+            "bank": 3285,
+            "mbpp": 1052
+          },
+          "route_cursor": {
+            "bank": 15,
+            "mbpp": 17
+          },
+          "metrics": {
+            "loss": 0.05434978840639815,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.27947497367858887
+          }
+        },
+        {
+          "tokens": 4594,
+          "step": 9,
+          "route_tokens": {
+            "bank": 3418,
+            "mbpp": 1176
+          },
+          "route_cursor": {
+            "bank": 16,
+            "mbpp": 20
+          },
+          "metrics": {
+            "loss": 0.035699693915375974,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.398873507976532
+          }
+        },
+        {
+          "tokens": 5141,
+          "step": 10,
+          "route_tokens": {
+            "bank": 3817,
+            "mbpp": 1324
+          },
+          "route_cursor": {
+            "bank": 18,
+            "mbpp": 22
+          },
+          "metrics": {
+            "loss": 0.026999885245459154,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.22377663850784302
+          }
+        },
+        {
+          "tokens": 5724,
+          "step": 11,
+          "route_tokens": {
+            "bank": 4335,
+            "mbpp": 1389
+          },
+          "route_cursor": {
+            "bank": 20,
+            "mbpp": 24
+          },
+          "metrics": {
+            "loss": 0.0346809673064854,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.38713178038597107
+          }
+        },
+        {
+          "tokens": 5953,
+          "step": 12,
+          "route_tokens": {
+            "bank": 4471,
+            "mbpp": 1482
+          },
+          "route_cursor": {
+            "bank": 21,
+            "mbpp": 27
+          },
+          "metrics": {
+            "loss": 0.03800063813923771,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.43504223227500916
+          }
+        },
+        {
+          "tokens": 6304,
+          "step": 13,
+          "route_tokens": {
+            "bank": 4720,
+            "mbpp": 1584
+          },
+          "route_cursor": {
+            "bank": 22,
+            "mbpp": 30
+          },
+          "metrics": {
+            "loss": 0.05440659890882671,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4488585591316223
+          }
+        },
+        {
+          "tokens": 6837,
+          "step": 14,
+          "route_tokens": {
+            "bank": 5125,
+            "mbpp": 1712
+          },
+          "route_cursor": {
+            "bank": 24,
+            "mbpp": 32
+          },
+          "metrics": {
+            "loss": 0.02034523876500316,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.2552717626094818
+          }
+        },
+        {
+          "tokens": 7420,
+          "step": 15,
+          "route_tokens": {
+            "bank": 5601,
+            "mbpp": 1819
+          },
+          "route_cursor": {
+            "bank": 26,
+            "mbpp": 34
+          },
+          "metrics": {
+            "loss": 0.05749646242475137,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.3412635028362274
+          }
+        },
+        {
+          "tokens": 7854,
+          "step": 16,
+          "route_tokens": {
+            "bank": 5873,
+            "mbpp": 1981
+          },
+          "route_cursor": {
+            "bank": 27,
+            "mbpp": 37
+          },
+          "metrics": {
+            "loss": 0.025982426708651474,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.22829888761043549
+          }
+        },
+        {
+          "tokens": 8273,
+          "step": 17,
+          "route_tokens": {
+            "bank": 6193,
+            "mbpp": 2080
+          },
+          "route_cursor": {
+            "bank": 30,
+            "mbpp": 38
+          },
+          "metrics": {
+            "loss": 0.06322508817538619,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.3723013401031494
+          }
+        },
+        {
+          "tokens": 8949,
+          "step": 18,
+          "route_tokens": {
+            "bank": 6736,
+            "mbpp": 2213
+          },
+          "route_cursor": {
+            "bank": 32,
+            "mbpp": 40
+          },
+          "metrics": {
+            "loss": 0.03377294261008501,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.29865503311157227
+          }
+        },
+        {
+          "tokens": 9474,
+          "step": 19,
+          "route_tokens": {
+            "bank": 7131,
+            "mbpp": 2343
+          },
+          "route_cursor": {
+            "bank": 34,
+            "mbpp": 42
+          },
+          "metrics": {
+            "loss": 0.09252144943457097,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4206428527832031
+          }
+        },
+        {
+          "tokens": 9901,
+          "step": 20,
+          "route_tokens": {
+            "bank": 7420,
+            "mbpp": 2481
+          },
+          "route_cursor": {
+            "bank": 35,
+            "mbpp": 45
+          },
+          "metrics": {
+            "loss": 0.027455069516690855,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.2367130070924759
+          }
+        },
+        {
+          "tokens": 10604,
+          "step": 21,
+          "route_tokens": {
+            "bank": 7742,
+            "mbpp": 2862
+          },
+          "route_cursor": {
+            "bank": 37,
+            "mbpp": 47
+          },
+          "metrics": {
+            "loss": 0.042940371262375265,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.24327675998210907
+          }
+        },
+        {
+          "tokens": 11501,
+          "step": 22,
+          "route_tokens": {
+            "bank": 8639,
+            "mbpp": 2862
+          },
+          "route_cursor": {
+            "bank": 41,
+            "mbpp": 47
+          },
+          "metrics": {
+            "loss": 0.05507951229810715,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.3142324686050415
+          }
+        },
+        {
+          "tokens": 11905,
+          "step": 23,
+          "route_tokens": {
+            "bank": 8939,
+            "mbpp": 2966
+          },
+          "route_cursor": {
+            "bank": 43,
+            "mbpp": 49
+          },
+          "metrics": {
+            "loss": 0.04937064088881016,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.35841596126556396
+          }
+        },
+        {
+          "tokens": 12515,
+          "step": 24,
+          "route_tokens": {
+            "bank": 9458,
+            "mbpp": 3057
+          },
+          "route_cursor": {
+            "bank": 45,
+            "mbpp": 51
+          },
+          "metrics": {
+            "loss": 0.037817459564394085,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.2728182077407837
+          }
+        },
+        {
+          "tokens": 12813,
+          "step": 25,
+          "route_tokens": {
+            "bank": 9636,
+            "mbpp": 3177
+          },
+          "route_cursor": {
+            "bank": 46,
+            "mbpp": 54
+          },
+          "metrics": {
+            "loss": 0.02830834341875743,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.2640816867351532
+          }
+        },
+        {
+          "tokens": 13035,
+          "step": 26,
+          "route_tokens": {
+            "bank": 9772,
+            "mbpp": 3263
+          },
+          "route_cursor": {
+            "bank": 47,
+            "mbpp": 57
+          },
+          "metrics": {
+            "loss": 0.07609976587991696,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.6562352776527405
+          }
+        },
+        {
+          "tokens": 13302,
+          "step": 27,
+          "route_tokens": {
+            "bank": 9957,
+            "mbpp": 3345
+          },
+          "route_cursor": {
+            "bank": 48,
+            "mbpp": 60
+          },
+          "metrics": {
+            "loss": 0.050974805795704015,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.5265710353851318
+          }
+        },
+        {
+          "tokens": 13604,
+          "step": 28,
+          "route_tokens": {
+            "bank": 10165,
+            "mbpp": 3439
+          },
+          "route_cursor": {
+            "bank": 49,
+            "mbpp": 63
+          },
+          "metrics": {
+            "loss": 0.08004262280883268,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4833574891090393
+          }
+        },
+        {
+          "tokens": 14069,
+          "step": 29,
+          "route_tokens": {
+            "bank": 10566,
+            "mbpp": 3503
+          },
+          "route_cursor": {
+            "bank": 51,
+            "mbpp": 65
+          },
+          "metrics": {
+            "loss": 0.052048883750103414,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.3598807454109192
+          }
+        },
+        {
+          "tokens": 14543,
+          "step": 30,
+          "route_tokens": {
+            "bank": 10930,
+            "mbpp": 3613
+          },
+          "route_cursor": {
+            "bank": 53,
+            "mbpp": 67
+          },
+          "metrics": {
+            "loss": 0.05506555351894349,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4727284610271454
+          }
+        },
+        {
+          "tokens": 15034,
+          "step": 31,
+          "route_tokens": {
+            "bank": 11245,
+            "mbpp": 3789
+          },
+          "route_cursor": {
+            "bank": 55,
+            "mbpp": 69
+          },
+          "metrics": {
+            "loss": 0.036165612342301756,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.3112906217575073
+          }
+        },
+        {
+          "tokens": 15587,
+          "step": 32,
+          "route_tokens": {
+            "bank": 11736,
+            "mbpp": 3851
+          },
+          "route_cursor": {
+            "bank": 57,
+            "mbpp": 71
+          },
+          "metrics": {
+            "loss": 0.1601054065822609,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.6367301940917969
+          }
+        },
+        {
+          "tokens": 16215,
+          "step": 33,
+          "route_tokens": {
+            "bank": 12210,
+            "mbpp": 4005
+          },
+          "route_cursor": {
+            "bank": 59,
+            "mbpp": 73
+          },
+          "metrics": {
+            "loss": 0.03393998648971319,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.2518433630466461
+          }
+        },
+        {
+          "tokens": 16384,
+          "step": 34,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 60,
+            "mbpp": 75
+          },
+          "metrics": {
+            "loss": 0.06397209991700947,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.8681386709213257
+          }
+        }
+      ]
+    },
+    {
+      "algorithm": "replay",
+      "seed": 43,
+      "source_sha256": "e3a0a9e016d63b29e9853a389cf3da4acea1a7296850d451c1200043d7a6e611",
+      "updates": [
+        {
+          "tokens": 573,
+          "step": 1,
+          "route_tokens": {
+            "bank": 474,
+            "mbpp": 99
+          },
+          "route_cursor": {
+            "bank": 2,
+            "mbpp": 2
+          },
+          "metrics": {
+            "loss": 0.03246361459605396,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.23297740519046783
+          }
+        },
+        {
+          "tokens": 919,
+          "step": 2,
+          "route_tokens": {
+            "bank": 742,
+            "mbpp": 177
+          },
+          "route_cursor": {
+            "bank": 3,
+            "mbpp": 5
+          },
+          "metrics": {
+            "loss": 0.12037588074167616,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.6574606895446777
+          }
+        },
+        {
+          "tokens": 1313,
+          "step": 3,
+          "route_tokens": {
+            "bank": 1016,
+            "mbpp": 297
+          },
+          "route_cursor": {
+            "bank": 4,
+            "mbpp": 8
+          },
+          "metrics": {
+            "loss": 0.02820492017781362,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.3000892698764801
+          }
+        },
+        {
+          "tokens": 1535,
+          "step": 4,
+          "route_tokens": {
+            "bank": 1186,
+            "mbpp": 349
+          },
+          "route_cursor": {
+            "bank": 5,
+            "mbpp": 11
+          },
+          "metrics": {
+            "loss": 0.07184363817214034,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.5688657760620117
+          }
+        },
+        {
+          "tokens": 2062,
+          "step": 5,
+          "route_tokens": {
+            "bank": 1414,
+            "mbpp": 648
+          },
+          "route_cursor": {
+            "bank": 6,
+            "mbpp": 14
+          },
+          "metrics": {
+            "loss": 0.05592799559235573,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.34511828422546387
+          }
+        },
+        {
+          "tokens": 2658,
+          "step": 6,
+          "route_tokens": {
+            "bank": 2010,
+            "mbpp": 648
+          },
+          "route_cursor": {
+            "bank": 10,
+            "mbpp": 14
+          },
+          "metrics": {
+            "loss": 0.07343680085614324,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4955657124519348
+          }
+        },
+        {
+          "tokens": 3063,
+          "step": 7,
+          "route_tokens": {
+            "bank": 2331,
+            "mbpp": 732
+          },
+          "route_cursor": {
+            "bank": 12,
+            "mbpp": 16
+          },
+          "metrics": {
+            "loss": 0.06147303694160655,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4461326003074646
+          }
+        },
+        {
+          "tokens": 3348,
+          "step": 8,
+          "route_tokens": {
+            "bank": 2512,
+            "mbpp": 836
+          },
+          "route_cursor": {
+            "bank": 13,
+            "mbpp": 19
+          },
+          "metrics": {
+            "loss": 0.05293145948962774,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.43539339303970337
+          }
+        },
+        {
+          "tokens": 3917,
+          "step": 9,
+          "route_tokens": {
+            "bank": 2924,
+            "mbpp": 993
+          },
+          "route_cursor": {
+            "bank": 15,
+            "mbpp": 21
+          },
+          "metrics": {
+            "loss": 0.05760548647958785,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4201621115207672
+          }
+        },
+        {
+          "tokens": 4253,
+          "step": 10,
+          "route_tokens": {
+            "bank": 3183,
+            "mbpp": 1070
+          },
+          "route_cursor": {
+            "bank": 17,
+            "mbpp": 23
+          },
+          "metrics": {
+            "loss": 0.027802515134681016,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.2783021032810211
+          }
+        },
+        {
+          "tokens": 4543,
+          "step": 11,
+          "route_tokens": {
+            "bank": 3375,
+            "mbpp": 1168
+          },
+          "route_cursor": {
+            "bank": 18,
+            "mbpp": 26
+          },
+          "metrics": {
+            "loss": 0.0654600339503304,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.5127589702606201
+          }
+        },
+        {
+          "tokens": 5396,
+          "step": 12,
+          "route_tokens": {
+            "bank": 3852,
+            "mbpp": 1544
+          },
+          "route_cursor": {
+            "bank": 20,
+            "mbpp": 28
+          },
+          "metrics": {
+            "loss": 0.08499063794806716,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.32098448276519775
+          }
+        },
+        {
+          "tokens": 6144,
+          "step": 13,
+          "route_tokens": {
+            "bank": 4600,
+            "mbpp": 1544
+          },
+          "route_cursor": {
+            "bank": 24,
+            "mbpp": 28
+          },
+          "metrics": {
+            "loss": 0.0513206678442657,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.2688107490539551
+          }
+        },
+        {
+          "tokens": 6682,
+          "step": 14,
+          "route_tokens": {
+            "bank": 5006,
+            "mbpp": 1676
+          },
+          "route_cursor": {
+            "bank": 26,
+            "mbpp": 30
+          },
+          "metrics": {
+            "loss": 0.046387168229557574,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.34631434082984924
+          }
+        },
+        {
+          "tokens": 7634,
+          "step": 15,
+          "route_tokens": {
+            "bank": 5580,
+            "mbpp": 2054
+          },
+          "route_cursor": {
+            "bank": 29,
+            "mbpp": 31
+          },
+          "metrics": {
+            "loss": 0.06721839308738708,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.259360134601593
+          }
+        },
+        {
+          "tokens": 8292,
+          "step": 16,
+          "route_tokens": {
+            "bank": 6214,
+            "mbpp": 2078
+          },
+          "route_cursor": {
+            "bank": 32,
+            "mbpp": 32
+          },
+          "metrics": {
+            "loss": 0.05262931456672959,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.3867778182029724
+          }
+        },
+        {
+          "tokens": 8554,
+          "step": 17,
+          "route_tokens": {
+            "bank": 6384,
+            "mbpp": 2170
+          },
+          "route_cursor": {
+            "bank": 33,
+            "mbpp": 35
+          },
+          "metrics": {
+            "loss": 0.045814086943209986,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4159379005432129
+          }
+        },
+        {
+          "tokens": 9204,
+          "step": 18,
+          "route_tokens": {
+            "bank": 6906,
+            "mbpp": 2298
+          },
+          "route_cursor": {
+            "bank": 35,
+            "mbpp": 37
+          },
+          "metrics": {
+            "loss": 0.061185855069197714,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.36362671852111816
+          }
+        },
+        {
+          "tokens": 9689,
+          "step": 19,
+          "route_tokens": {
+            "bank": 7303,
+            "mbpp": 2386
+          },
+          "route_cursor": {
+            "bank": 37,
+            "mbpp": 39
+          },
+          "metrics": {
+            "loss": 0.052650923607870936,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.30737027525901794
+          }
+        },
+        {
+          "tokens": 10959,
+          "step": 20,
+          "route_tokens": {
+            "bank": 8077,
+            "mbpp": 2882
+          },
+          "route_cursor": {
+            "bank": 40,
+            "mbpp": 40
+          },
+          "metrics": {
+            "loss": 0.08254665834829211,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.2345910519361496
+          }
+        },
+        {
+          "tokens": 11757,
+          "step": 21,
+          "route_tokens": {
+            "bank": 8875,
+            "mbpp": 2882
+          },
+          "route_cursor": {
+            "bank": 44,
+            "mbpp": 40
+          },
+          "metrics": {
+            "loss": 0.040952003095299006,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.23748624324798584
+          }
+        },
+        {
+          "tokens": 12193,
+          "step": 22,
+          "route_tokens": {
+            "bank": 9154,
+            "mbpp": 3039
+          },
+          "route_cursor": {
+            "bank": 45,
+            "mbpp": 43
+          },
+          "metrics": {
+            "loss": 0.007048697618301958,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.10426060110330582
+          }
+        },
+        {
+          "tokens": 12781,
+          "step": 23,
+          "route_tokens": {
+            "bank": 9649,
+            "mbpp": 3132
+          },
+          "route_cursor": {
+            "bank": 47,
+            "mbpp": 45
+          },
+          "metrics": {
+            "loss": 0.05406642658635974,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.36170142889022827
+          }
+        },
+        {
+          "tokens": 12861,
+          "step": 24,
+          "route_tokens": {
+            "bank": 9649,
+            "mbpp": 3212
+          },
+          "route_cursor": {
+            "bank": 47,
+            "mbpp": 49
+          },
+          "metrics": {
+            "loss": 0.02331115468405187,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.466203898191452
+          }
+        },
+        {
+          "tokens": 13362,
+          "step": 25,
+          "route_tokens": {
+            "bank": 10010,
+            "mbpp": 3352
+          },
+          "route_cursor": {
+            "bank": 49,
+            "mbpp": 51
+          },
+          "metrics": {
+            "loss": 0.06377033021999523,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4163890779018402
+          }
+        },
+        {
+          "tokens": 13938,
+          "step": 26,
+          "route_tokens": {
+            "bank": 10482,
+            "mbpp": 3456
+          },
+          "route_cursor": {
+            "bank": 52,
+            "mbpp": 52
+          },
+          "metrics": {
+            "loss": 0.06591309979557991,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.42672255635261536
+          }
+        },
+        {
+          "tokens": 14412,
+          "step": 27,
+          "route_tokens": {
+            "bank": 10859,
+            "mbpp": 3553
+          },
+          "route_cursor": {
+            "bank": 54,
+            "mbpp": 54
+          },
+          "metrics": {
+            "loss": 0.02962832699995488,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.22270694375038147
+          }
+        },
+        {
+          "tokens": 14657,
+          "step": 28,
+          "route_tokens": {
+            "bank": 11026,
+            "mbpp": 3631
+          },
+          "route_cursor": {
+            "bank": 55,
+            "mbpp": 57
+          },
+          "metrics": {
+            "loss": 0.052887850256411184,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4611605405807495
+          }
+        },
+        {
+          "tokens": 15006,
+          "step": 29,
+          "route_tokens": {
+            "bank": 11241,
+            "mbpp": 3765
+          },
+          "route_cursor": {
+            "bank": 56,
+            "mbpp": 60
+          },
+          "metrics": {
+            "loss": 0.046344318448973354,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.34847164154052734
+          }
+        },
+        {
+          "tokens": 15552,
+          "step": 30,
+          "route_tokens": {
+            "bank": 11615,
+            "mbpp": 3937
+          },
+          "route_cursor": {
+            "bank": 58,
+            "mbpp": 62
+          },
+          "metrics": {
+            "loss": 0.023955301148816943,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.21093949675559998
+          }
+        },
+        {
+          "tokens": 16068,
+          "step": 31,
+          "route_tokens": {
+            "bank": 12089,
+            "mbpp": 3979
+          },
+          "route_cursor": {
+            "bank": 61,
+            "mbpp": 63
+          },
+          "metrics": {
+            "loss": 0.07104713481385261,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4150439202785492
+          }
+        },
+        {
+          "tokens": 16347,
+          "step": 32,
+          "route_tokens": {
+            "bank": 12276,
+            "mbpp": 4071
+          },
+          "route_cursor": {
+            "bank": 62,
+            "mbpp": 66
+          },
+          "metrics": {
+            "loss": 0.04466927682278765,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.40568849444389343
+          }
+        },
+        {
+          "tokens": 16384,
+          "step": 33,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 63,
+            "mbpp": 67
+          },
+          "metrics": {
+            "loss": 0.10073339636437595,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 1.4360694885253906
+          }
+        }
+      ]
+    },
+    {
+      "algorithm": "replay",
+      "seed": 44,
+      "source_sha256": "ea0669a76dd18c49c142271e8daa8b94006d0a43367ee2ab096232e24395a3c6",
+      "updates": [
+        {
+          "tokens": 308,
+          "step": 1,
+          "route_tokens": {
+            "bank": 230,
+            "mbpp": 78
+          },
+          "route_cursor": {
+            "bank": 2,
+            "mbpp": 2
+          },
+          "metrics": {
+            "loss": 0.03728339393273927,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.38594716787338257
+          }
+        },
+        {
+          "tokens": 838,
+          "step": 2,
+          "route_tokens": {
+            "bank": 619,
+            "mbpp": 219
+          },
+          "route_cursor": {
+            "bank": 4,
+            "mbpp": 4
+          },
+          "metrics": {
+            "loss": 0.05351304810028523,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.285195529460907
+          }
+        },
+        {
+          "tokens": 1333,
+          "step": 3,
+          "route_tokens": {
+            "bank": 1041,
+            "mbpp": 292
+          },
+          "route_cursor": {
+            "bank": 6,
+            "mbpp": 6
+          },
+          "metrics": {
+            "loss": 0.031395269683571314,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.34526491165161133
+          }
+        },
+        {
+          "tokens": 1679,
+          "step": 4,
+          "route_tokens": {
+            "bank": 1276,
+            "mbpp": 403
+          },
+          "route_cursor": {
+            "bank": 7,
+            "mbpp": 9
+          },
+          "metrics": {
+            "loss": 0.015991485444828868,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.21687069535255432
+          }
+        },
+        {
+          "tokens": 2115,
+          "step": 5,
+          "route_tokens": {
+            "bank": 1573,
+            "mbpp": 542
+          },
+          "route_cursor": {
+            "bank": 8,
+            "mbpp": 12
+          },
+          "metrics": {
+            "loss": 0.03776497358921915,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.301882803440094
+          }
+        },
+        {
+          "tokens": 4028,
+          "step": 6,
+          "route_tokens": {
+            "bank": 2140,
+            "mbpp": 1888
+          },
+          "route_cursor": {
+            "bank": 11,
+            "mbpp": 13
+          },
+          "metrics": {
+            "loss": 0.12108159670606256,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.27599087357521057
+          }
+        },
+        {
+          "tokens": 4854,
+          "step": 7,
+          "route_tokens": {
+            "bank": 2966,
+            "mbpp": 1888
+          },
+          "route_cursor": {
+            "bank": 15,
+            "mbpp": 13
+          },
+          "metrics": {
+            "loss": 0.10069024935364723,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.44108787178993225
+          }
+        },
+        {
+          "tokens": 5704,
+          "step": 8,
+          "route_tokens": {
+            "bank": 3816,
+            "mbpp": 1888
+          },
+          "route_cursor": {
+            "bank": 19,
+            "mbpp": 13
+          },
+          "metrics": {
+            "loss": 0.0573596702888608,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.26331016421318054
+          }
+        },
+        {
+          "tokens": 6526,
+          "step": 9,
+          "route_tokens": {
+            "bank": 4638,
+            "mbpp": 1888
+          },
+          "route_cursor": {
+            "bank": 23,
+            "mbpp": 13
+          },
+          "metrics": {
+            "loss": 0.04742182558402419,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.29332202672958374
+          }
+        },
+        {
+          "tokens": 7408,
+          "step": 10,
+          "route_tokens": {
+            "bank": 5520,
+            "mbpp": 1888
+          },
+          "route_cursor": {
+            "bank": 27,
+            "mbpp": 13
+          },
+          "metrics": {
+            "loss": 0.06609813123941422,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.32582521438598633
+          }
+        },
+        {
+          "tokens": 8230,
+          "step": 11,
+          "route_tokens": {
+            "bank": 6146,
+            "mbpp": 2084
+          },
+          "route_cursor": {
+            "bank": 30,
+            "mbpp": 14
+          },
+          "metrics": {
+            "loss": 0.05151680018752813,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.2798375189304352
+          }
+        },
+        {
+          "tokens": 8673,
+          "step": 12,
+          "route_tokens": {
+            "bank": 6518,
+            "mbpp": 2155
+          },
+          "route_cursor": {
+            "bank": 32,
+            "mbpp": 16
+          },
+          "metrics": {
+            "loss": 0.052033692016266286,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.504065752029419
+          }
+        },
+        {
+          "tokens": 9014,
+          "step": 13,
+          "route_tokens": {
+            "bank": 6733,
+            "mbpp": 2281
+          },
+          "route_cursor": {
+            "bank": 33,
+            "mbpp": 19
+          },
+          "metrics": {
+            "loss": 0.05834009080899705,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.42869970202445984
+          }
+        },
+        {
+          "tokens": 10003,
+          "step": 14,
+          "route_tokens": {
+            "bank": 7640,
+            "mbpp": 2363
+          },
+          "route_cursor": {
+            "bank": 35,
+            "mbpp": 21
+          },
+          "metrics": {
+            "loss": 0.18215541043900885,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.5263795852661133
+          }
+        },
+        {
+          "tokens": 10181,
+          "step": 15,
+          "route_tokens": {
+            "bank": 7640,
+            "mbpp": 2541
+          },
+          "route_cursor": {
+            "bank": 35,
+            "mbpp": 25
+          },
+          "metrics": {
+            "loss": 0.01775960403233512,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.320279985666275
+          }
+        },
+        {
+          "tokens": 10616,
+          "step": 16,
+          "route_tokens": {
+            "bank": 7986,
+            "mbpp": 2630
+          },
+          "route_cursor": {
+            "bank": 37,
+            "mbpp": 27
+          },
+          "metrics": {
+            "loss": 0.0620902176015079,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.39780569076538086
+          }
+        },
+        {
+          "tokens": 11280,
+          "step": 17,
+          "route_tokens": {
+            "bank": 8506,
+            "mbpp": 2774
+          },
+          "route_cursor": {
+            "bank": 39,
+            "mbpp": 29
+          },
+          "metrics": {
+            "loss": 0.05691670184023678,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.31529536843299866
+          }
+        },
+        {
+          "tokens": 11680,
+          "step": 18,
+          "route_tokens": {
+            "bank": 8787,
+            "mbpp": 2893
+          },
+          "route_cursor": {
+            "bank": 40,
+            "mbpp": 32
+          },
+          "metrics": {
+            "loss": 0.020861602783043054,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.1785394698381424
+          }
+        },
+        {
+          "tokens": 12068,
+          "step": 19,
+          "route_tokens": {
+            "bank": 9059,
+            "mbpp": 3009
+          },
+          "route_cursor": {
+            "bank": 41,
+            "mbpp": 35
+          },
+          "metrics": {
+            "loss": 0.0527047413343098,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.35826078057289124
+          }
+        },
+        {
+          "tokens": 12312,
+          "step": 20,
+          "route_tokens": {
+            "bank": 9216,
+            "mbpp": 3096
+          },
+          "route_cursor": {
+            "bank": 42,
+            "mbpp": 38
+          },
+          "metrics": {
+            "loss": 0.049564695370463596,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.5059664845466614
+          }
+        },
+        {
+          "tokens": 12780,
+          "step": 21,
+          "route_tokens": {
+            "bank": 9567,
+            "mbpp": 3213
+          },
+          "route_cursor": {
+            "bank": 44,
+            "mbpp": 40
+          },
+          "metrics": {
+            "loss": 0.04029998921032529,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.33246609568595886
+          }
+        },
+        {
+          "tokens": 13569,
+          "step": 22,
+          "route_tokens": {
+            "bank": 10289,
+            "mbpp": 3280
+          },
+          "route_cursor": {
+            "bank": 46,
+            "mbpp": 42
+          },
+          "metrics": {
+            "loss": 0.1117475496721454,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.4138551354408264
+          }
+        },
+        {
+          "tokens": 13684,
+          "step": 23,
+          "route_tokens": {
+            "bank": 10289,
+            "mbpp": 3395
+          },
+          "route_cursor": {
+            "bank": 46,
+            "mbpp": 46
+          },
+          "metrics": {
+            "loss": 0.004411646794324042,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.13767759501934052
+          }
+        },
+        {
+          "tokens": 14173,
+          "step": 24,
+          "route_tokens": {
+            "bank": 10664,
+            "mbpp": 3509
+          },
+          "route_cursor": {
+            "bank": 48,
+            "mbpp": 48
+          },
+          "metrics": {
+            "loss": 0.053691554348915815,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.3894459009170532
+          }
+        },
+        {
+          "tokens": 14753,
+          "step": 25,
+          "route_tokens": {
+            "bank": 11103,
+            "mbpp": 3650
+          },
+          "route_cursor": {
+            "bank": 50,
+            "mbpp": 50
+          },
+          "metrics": {
+            "loss": 0.04740199988737004,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.3897002041339874
+          }
+        },
+        {
+          "tokens": 15182,
+          "step": 26,
+          "route_tokens": {
+            "bank": 11420,
+            "mbpp": 3762
+          },
+          "route_cursor": {
+            "bank": 51,
+            "mbpp": 53
+          },
+          "metrics": {
+            "loss": 0.04062288434943184,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.29485923051834106
+          }
+        },
+        {
+          "tokens": 15572,
+          "step": 27,
+          "route_tokens": {
+            "bank": 11733,
+            "mbpp": 3839
+          },
+          "route_cursor": {
+            "bank": 52,
+            "mbpp": 56
+          },
+          "metrics": {
+            "loss": 0.04706853011157364,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.39778798818588257
+          }
+        },
+        {
+          "tokens": 15997,
+          "step": 28,
+          "route_tokens": {
+            "bank": 12004,
+            "mbpp": 3993
+          },
+          "route_cursor": {
+            "bank": 54,
+            "mbpp": 58
+          },
+          "metrics": {
+            "loss": 0.05027725314721465,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.344973623752594
+          }
+        },
+        {
+          "tokens": 16353,
+          "step": 29,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4065
+          },
+          "route_cursor": {
+            "bank": 56,
+            "mbpp": 60
+          },
+          "metrics": {
+            "loss": 0.08796553815045627,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.5945166349411011
+          }
+        },
+        {
+          "tokens": 16384,
+          "step": 30,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 56,
+            "mbpp": 61
+          },
+          "metrics": {
+            "loss": 0.0335153229534626,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.9629812836647034
+          }
+        }
+      ]
+    }
+  ]
+}

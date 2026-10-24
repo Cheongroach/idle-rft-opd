@@ -1,6 +1,6 @@
 # OPD：训练路线、能力融合与异步实现
 
-资料核对日期：2026-10-24。本文区分公开方法、数学分析和建议实验。当前没有本文方案的 OPD GPU 实测结果；既有 `idle_rft` 的候选筛选与 LoRA SFT 成绩不能记作 OPD 成绩。
+资料核对日期：2026-10-24。本文区分公开方法、数学分析和建议实验。同步 OPD 已接入 `idle_rft` 周末实验，teacher 资格、三种子 OPD 和三种子 replay 的完整 GPU 训练及全部 16 个模型盲测已完成；42 个任务均已终止。既有候选筛选与 LoRA SFT 成绩单独报告。
 
 ## 1. OPD 在完整训练流程中的位置
 
@@ -246,7 +246,7 @@ MiMo-V2-Flash Table 7 的实际领域差距：
 
 当前已有 Qwen3.5-4B 权重加载、LoRA 更新、checkpoint 恢复和 H20 执行经验，可复用设施。但当前权重的训练谱系还不足以证明它是纯预训练 base；权重 hash 或文本前缀转换都不能证明这一点。如果采用现有公开 Instruct 权重，项目应准确称为“Instruct 起点的 post-training”，不能声称从原始 base 完整训练。严格 base → 部署的实验需先确定真实 base 资产及其来源。
 
-首轮使用数学与代码两个可验证领域，保留指令跟随作为固定回归域；三域共同 SFT 和第三个专家在前两域闭环后扩展。代码测试应由 CPU/隔离 sandbox 执行，private test/reference 不进入 GPU rollout payload。已有代码规格 A/B 选题不等于两个领域专家。
+后续扩展方案使用数学与代码两个可验证领域，保留指令跟随作为固定回归域；三域共同 SFT 和第三个专家在前两域闭环后扩展。代码测试应由 CPU/隔离 sandbox 执行，private test/reference 不进入 GPU rollout payload。当前实际实验只覆盖两个代码任务集，代码规格 A/B 选题不等于两个领域专家。
 
 | 阶段 | 产物 | 必要验收 |
 |---|---|---|
@@ -267,9 +267,38 @@ MiMo-V2-Flash Table 7 的实际领域差距：
 
 预算比较同时使用两种口径：固定 student 有效训练 token 的科学比较、固定总 GPUh 的系统比较。总成本覆盖专家训练、student rollout、teacher prefill、learner、空等与失败；已有专家的融合边际成本与从零生产专家的完整成本分开报告。
 
-既有周末授权上限是总计 3000 GPUh、高优先并发至多 64 卡；OPD 新任务必须与仍在执行的实验共用账本，不能另起一份 3000 卡时额度。当前仅形成研究与实验协议，没有提交 OPD GPU 任务，也没有预先填入成功率、速度或专家保真率。
+既有周末授权上限是总计 3000 GPUh、高优先并发至多 64 卡；OPD 新任务与仍在执行的实验共用账本，不另起一份 3000 卡时额度。实际执行按下述冻结协议进行，未预填最终成功率、速度或专家保真率。
 
 第一轮可将“每域允许下降幅度”作为部署要求冻结，例如 1 pp 仅是可选工程阈值，不能称行业惯例。使用独立 dev 选配置，最终 blind 一次性验收；如果置信区间太宽则报告证据不足，不用单 seed 的最高分交差。
+
+### 7.1 当前实际接入的实验
+
+复用完成的 MBPP SFT adapter 作 student，同时作 MBPP 保持 teacher；bank teacher 取原实验按全部 18 项开发集选出的公共学习率和胜出组，teacher seed42 在资格验收前固定。二者共享同一 Qwen3.5-4B 权重、tokenizer 与 rank16；这是同规模两任务融合，初始化并非共同多域 SFT `S0`。
+
+完整 bank dev：student 664/768，teacher 760/768，配对 98 胜/2 负，提升 12.50 pp，95% CI [10.16, 14.97] pp。通过预先冻结的 +1 pp 且 CI 下界为正门槛。该结果证明目标任务的 headroom，不替代 student 错误前缀续写或最终迁移收益验证。
+
+三种子 OPD 对比三种子 answer-only SFT replay，每配置严格 16,384 响应 token，bank 12,288、MBPP 4,096；LR 5e-5，四响应累积，token-based LR decay。OPD 使用新鲜 student 采样前缀和 teacher top64 修正 reverse divergence，概率保留完整词表归一化，teacher 独立冻结。训练验收检查精确配额、有限梯度、参数哈希变化、Adam 状态和完整 checkpoint 文件哈希。
+
+六组训练均完成上述验收。OPD 三种子进程合计 0.8213 H20 卡时，replay 为 0.1515 卡时，约 5.42 倍；进程计时包括加载、rollout、teacher 评分、更新和保存。平均响应 token/s 分别 16.64 和 90.38，峰值显存分别 17.12 和 13.03 GiB。teacher top64 在本次访问前缀上的 token 加权概率质量为 99.9985%–99.9988%；高覆盖不证明 tail 对梯度无影响。61/402 次 OPD 采样达到 256-token 前缀上限，不能称作完成的正确程序。不同更新访问不同前缀，首末 loss 下降不能当固定评测集收敛。等响应 token 不等计算预算，teacher prefill 的阶段耗时没有单独测量。
+
+全部六个配置统一盲测 1,280 bank 与 170 MBPP 题，包含 warm student 与 bank expert 对照。报告跨 seed 均值/标准差、配对 CI、专家差距和 MBPP 回退。未执行异步 rollout、sampled-token PG、RL reward、异源 tokenizer 对齐或全词表 KL 消融；GPU 冷进程 OPD 恢复没有独立验收；本轮不据此声称恢复能力已在 OPD 上完成验证。
+
+最终盲测每模型 bank 1,280 题、MBPP 170 题：
+
+| 任务 | warm | 任务专家 | OPD 三种子均值 ± std | replay 三种子均值 ± std |
+|---|---:|---:|---:|---:|
+| bank | 85.39% | 98.59% | 94.66% ± 2.58 pp | 90.13% ± 2.50 pp |
+| mbpp | 61.76% | 61.76% | 61.37% ± 0.90 pp | 58.82% ± 0.59 pp |
+
+bank 上 OPD 相对 warm 均值 +9.27 pp，相对 replay +4.53 pp；距 bank expert 仍有 3.93 pp。三个同训练 seed 的 OPD/replay 配对 CI 中两组完全为正、一组包含零；这是逐 seed 的题目配对证据，不能当跨训练种子的总体显著性检验。OPD 三个种子均高于 warm，种子标准差为 2.58 pp，不能只报告最高种子 97.19%。
+
+MBPP 上 OPD 相对 warm 均值 −0.39 pp，replay 为 −2.94 pp；OPD/replay 均值差 +2.55 pp，但三组配对 CI 均包含零。OPD/warm 的三组 CI 也包含零，区间下界最低约 −4.52 pp：没有显著下降不证明非劣，不能据此称为部署保持性验收通过。本轮未冻结并验收部署非劣阈值，也没有执行线上 fallback。
+
+没有单任务 OPD 消融，所以专家差距无法分解为蒸馏迁移缺口与混合训练干扰。teacher 的 100 万监督 token 与融合的 1.6384 万响应 token 也不是等预算；本轮没有按 blind 追加训练。OPD/replay 同时改变轨迹和监督形式，收益不能单独归因于 on-policy。
+
+42 个完整 Pod 区间共 172.98 H20 卡时，观测并发峰值 64 卡，保守预留 721.00 卡时，当前活跃 GPU 为 0；未核验平台账单。完整结果与逐 seed CI 见 `results/FINAL_REPORT.md` 和 `results/opd-final.md`。
+
+代码：[main 分支](https://github.com/Cheongroach/idle-rft-opd/tree/main)。协议、日志与实测：[research 分支](https://github.com/Cheongroach/idle-rft-opd/tree/research)。
 
 ## 8. 代码阅读入口与面试表达边界
 
@@ -289,7 +318,11 @@ MiMo-V2-Flash Table 7 的实际领域差距：
 
 > 从共同 SFT checkpoint 生产同源专家，先验证 task headroom 和学生状态上的 teacher 可学习性；在固定 token 契约上比较 sampled/top-k 信号，分开测量单域迁移缺口与融合缺口；再通过有界异步、概率版本记录和 stale admission 控制提升有效吞吐；最后报告各域专家差距、质量置信区间和部署回退成本。
 
-在结果产生前，这只能作为计划。完成后，才填真实指标，并明确哪些能力由公开框架提供、哪些修复和实验由项目完成。
+上述共同多域 SFT、RL 专家、异步链路是扩展路线，本轮实际可讲的证据是：
+
+> 负责将同步 OPD 接入可验证代码后训练流程；先用完整开发集确认 teacher +12.50 pp 的学习空间，实现保留全词表归一化的 top64 分布 loss、冻结 teacher 路由、精确 3:1 token 配额和完整 checkpoint 验收；完成三种子 OPD/replay 与两个任务的全部盲测。OPD 在 bank 相对 warm +9.27 pp、相对 replay +4.53 pp，MBPP 均值 −0.39 pp，距 bank expert 3.93 pp；代价是训练进程时间约 5.42 倍。报告未证明的保持性与异步边界，使用 172.98 H20 卡时完成整个原实验及 OPD 接入。
+
+实现依赖 PyTorch、Transformers 和 PEFT；没有使用 Miles/verl 执行本轮 OPD，也没有把多域 RL、异步吞吐或纯 base 到部署记成本次完成工作。
 
 需要能回答的追问：
 

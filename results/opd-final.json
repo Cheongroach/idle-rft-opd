@@ -1,0 +1,1238 @@
+{
+  "qualification": {
+    "proceed": true,
+    "comparison": {
+      "n": 768,
+      "base_pass_at_1": 0.8645833333333334,
+      "adapter_pass_at_1": 0.9895833333333334,
+      "delta": 0.125,
+      "wins": 98,
+      "losses": 2,
+      "ci95": [
+        0.1015625,
+        0.14973958333333334
+      ],
+      "method": "paired bootstrap over frozen duplicate groups, seed42",
+      "training_seeds": 1
+    },
+    "teacher": {
+      "adapter_path": "[local path redacted]",
+      "contract": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "f455759d99ded9bfdc20ec7353e3984a2bb6cdeb13c05e63d75836edf2fa6fb3",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "status": {
+        "progress": {
+          "cursor": 4726,
+          "tokens": 1000000,
+          "step": 591,
+          "loss": 0.051753683015704155
+        },
+        "contract": {
+          "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+          "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+          "arm": "B",
+          "rank": 16,
+          "lr": 0.0002,
+          "seed": 42,
+          "epochs": 2,
+          "accumulation": 8,
+          "supervised_tokens": 1000000,
+          "max_length": 2560,
+          "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+          "examples": "f455759d99ded9bfdc20ec7353e3984a2bb6cdeb13c05e63d75836edf2fa6fb3",
+          "implementation": {
+            "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+            "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+          }
+        },
+        "complete": true,
+        "checkpoint": "checkpoint-000591-f7b0f5ee",
+        "exclusions": {
+          "A": [],
+          "B": []
+        },
+        "peak_cuda_bytes": 15639075840
+      }
+    },
+    "student_report": "[local path redacted]",
+    "student_report_sha256": "91c7cd6e7cc8cf541735ce118b05493b4968ded322c835b4d912975862cab98b",
+    "teacher_report": "[local path redacted]",
+    "teacher_report_sha256": "5a8f632e249d670b9b63c5ac4b50d2fa44979a69d881fc48a055f24e69430202",
+    "original_decision_sha256": "a870c65c8f0c6fe045719b9696cde16116d97a383dfcb7097d6bf67bc0d11e0a",
+    "rule": "Fixed teacher seed42; >=1pp development gain and positive paired CI lower bound"
+  },
+  "fits": [
+    {
+      "adapter_path": "[local path redacted]",
+      "adapter_hash": "28ec4157d36ddada9f25e72ce8698964c709cf3f6a2d30fc4086a97af44b707c",
+      "contract": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+        "teachers": {
+          "bank": "c7000f9a29b0e25f7f2de3625bf19fc4a97bde9676686681236853d46398363a",
+          "mbpp": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0"
+        },
+        "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+        "algorithm": "opd",
+        "arm": "OPD",
+        "rank": 16,
+        "seed": 42,
+        "lr": 5e-05,
+        "response_tokens": 16384,
+        "route_response_tokens": {
+          "bank": 12288,
+          "mbpp": 4096
+        },
+        "rollout_tokens": 256,
+        "max_length": 2560,
+        "accumulation": 4,
+        "topk": 64,
+        "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+        "objective": "teacher-topk generalized reverse divergence, no support renormalization",
+        "implementation": {
+          "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "status": {
+        "complete": true,
+        "progress": {
+          "tokens": 16384,
+          "step": 35,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 63,
+            "mbpp": 76
+          },
+          "metrics": {
+            "loss": 0.0016062530680756026,
+            "teacher_mass": 0.9999884091890776,
+            "student_mass": 0.9999749910581363,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.12531006336212158
+          }
+        },
+        "contract": {
+          "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+          "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+          "teachers": {
+            "bank": "c7000f9a29b0e25f7f2de3625bf19fc4a97bde9676686681236853d46398363a",
+            "mbpp": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0"
+          },
+          "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+          "algorithm": "opd",
+          "arm": "OPD",
+          "rank": 16,
+          "seed": 42,
+          "lr": 5e-05,
+          "response_tokens": 16384,
+          "route_response_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "rollout_tokens": 256,
+          "max_length": 2560,
+          "accumulation": 4,
+          "topk": 64,
+          "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+          "objective": "teacher-topk generalized reverse divergence, no support renormalization",
+          "implementation": {
+            "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+            "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+            "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+          }
+        },
+        "checkpoint": "checkpoint-000035-3dc81c82",
+        "initial_parameters": "8c6d21cd22a6e71d24d65787df00299f5406cb6806fcf12aff104fc9108c1e80",
+        "final_parameters": "019021a2cae9909add31b8e59814f9d3a7feb483cf7ae7dc1d7b436b90a23f5e",
+        "parameters_changed": true,
+        "optimizer_states": 128,
+        "exclusions": {},
+        "peak_cuda_bytes": 18377527808
+      }
+    },
+    {
+      "adapter_path": "[local path redacted]",
+      "adapter_hash": "03d90b260f3e596f35a36c52418827099dd5de815469f3e0a6ce76eaf5fbc652",
+      "contract": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+        "teachers": {
+          "bank": "c7000f9a29b0e25f7f2de3625bf19fc4a97bde9676686681236853d46398363a",
+          "mbpp": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0"
+        },
+        "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+        "algorithm": "opd",
+        "arm": "OPD",
+        "rank": 16,
+        "seed": 43,
+        "lr": 5e-05,
+        "response_tokens": 16384,
+        "route_response_tokens": {
+          "bank": 12288,
+          "mbpp": 4096
+        },
+        "rollout_tokens": 256,
+        "max_length": 2560,
+        "accumulation": 4,
+        "topk": 64,
+        "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+        "objective": "teacher-topk generalized reverse divergence, no support renormalization",
+        "implementation": {
+          "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "status": {
+        "complete": true,
+        "progress": {
+          "tokens": 16384,
+          "step": 33,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 62,
+            "mbpp": 70
+          },
+          "metrics": {
+            "loss": 0.0018114271305904595,
+            "teacher_mass": 0.9999895446675278,
+            "student_mass": 0.9999886866795977,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.06967390328645706
+          }
+        },
+        "contract": {
+          "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+          "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+          "teachers": {
+            "bank": "c7000f9a29b0e25f7f2de3625bf19fc4a97bde9676686681236853d46398363a",
+            "mbpp": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0"
+          },
+          "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+          "algorithm": "opd",
+          "arm": "OPD",
+          "rank": 16,
+          "seed": 43,
+          "lr": 5e-05,
+          "response_tokens": 16384,
+          "route_response_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "rollout_tokens": 256,
+          "max_length": 2560,
+          "accumulation": 4,
+          "topk": 64,
+          "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+          "objective": "teacher-topk generalized reverse divergence, no support renormalization",
+          "implementation": {
+            "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+            "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+            "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+          }
+        },
+        "checkpoint": "checkpoint-000033-34cda85f",
+        "initial_parameters": "8c6d21cd22a6e71d24d65787df00299f5406cb6806fcf12aff104fc9108c1e80",
+        "final_parameters": "10338f235ae687c6cdb333d488891a388f9fff5a26fd28ebc04ef6fbfd856ce9",
+        "parameters_changed": true,
+        "optimizer_states": 128,
+        "exclusions": {},
+        "peak_cuda_bytes": 18380219392
+      }
+    },
+    {
+      "adapter_path": "[local path redacted]",
+      "adapter_hash": "261b0bd64bfaa2e5d1f242d6a301b18fe20456f79e77727ea3d46b7c7aaf6de5",
+      "contract": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+        "teachers": {
+          "bank": "c7000f9a29b0e25f7f2de3625bf19fc4a97bde9676686681236853d46398363a",
+          "mbpp": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0"
+        },
+        "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+        "algorithm": "opd",
+        "arm": "OPD",
+        "rank": 16,
+        "seed": 44,
+        "lr": 5e-05,
+        "response_tokens": 16384,
+        "route_response_tokens": {
+          "bank": 12288,
+          "mbpp": 4096
+        },
+        "rollout_tokens": 256,
+        "max_length": 2560,
+        "accumulation": 4,
+        "topk": 64,
+        "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+        "objective": "teacher-topk generalized reverse divergence, no support renormalization",
+        "implementation": {
+          "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "status": {
+        "complete": true,
+        "progress": {
+          "tokens": 16384,
+          "step": 33,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 59,
+            "mbpp": 72
+          },
+          "metrics": {
+            "loss": 0.002242013841168955,
+            "teacher_mass": 0.9999941856630388,
+            "student_mass": 0.9999902786747101,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 2,
+            "grad_norm": 0.07151331007480621
+          }
+        },
+        "contract": {
+          "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+          "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+          "teachers": {
+            "bank": "c7000f9a29b0e25f7f2de3625bf19fc4a97bde9676686681236853d46398363a",
+            "mbpp": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0"
+          },
+          "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+          "algorithm": "opd",
+          "arm": "OPD",
+          "rank": 16,
+          "seed": 44,
+          "lr": 5e-05,
+          "response_tokens": 16384,
+          "route_response_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "rollout_tokens": 256,
+          "max_length": 2560,
+          "accumulation": 4,
+          "topk": 64,
+          "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+          "objective": "teacher-topk generalized reverse divergence, no support renormalization",
+          "implementation": {
+            "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+            "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+            "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+          }
+        },
+        "checkpoint": "checkpoint-000033-d27e723f",
+        "initial_parameters": "8c6d21cd22a6e71d24d65787df00299f5406cb6806fcf12aff104fc9108c1e80",
+        "final_parameters": "37f28a378d63d2126ae73e4d41b8fe2af5f43a96df03d6d592662f70f92831a1",
+        "parameters_changed": true,
+        "optimizer_states": 128,
+        "exclusions": {},
+        "peak_cuda_bytes": 18377527808
+      }
+    },
+    {
+      "adapter_path": "[local path redacted]",
+      "adapter_hash": "421666bcf69722a44e02e2be8eb83a374e5bf6493356a2d1996e146a56764e19",
+      "contract": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+        "teachers": {},
+        "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+        "algorithm": "replay",
+        "arm": "REPLAY",
+        "rank": 16,
+        "seed": 42,
+        "lr": 5e-05,
+        "response_tokens": 16384,
+        "route_response_tokens": {
+          "bank": 12288,
+          "mbpp": 4096
+        },
+        "rollout_tokens": 256,
+        "max_length": 2560,
+        "accumulation": 4,
+        "topk": 64,
+        "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+        "objective": "answer-only cross entropy",
+        "implementation": {
+          "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "status": {
+        "complete": true,
+        "progress": {
+          "tokens": 16384,
+          "step": 34,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 60,
+            "mbpp": 75
+          },
+          "metrics": {
+            "loss": 0.06397209991700947,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.8681386709213257
+          }
+        },
+        "contract": {
+          "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+          "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+          "teachers": {},
+          "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+          "algorithm": "replay",
+          "arm": "REPLAY",
+          "rank": 16,
+          "seed": 42,
+          "lr": 5e-05,
+          "response_tokens": 16384,
+          "route_response_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "rollout_tokens": 256,
+          "max_length": 2560,
+          "accumulation": 4,
+          "topk": 64,
+          "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+          "objective": "answer-only cross entropy",
+          "implementation": {
+            "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+            "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+            "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+          }
+        },
+        "checkpoint": "checkpoint-000034-d2b28b6e",
+        "initial_parameters": "8c6d21cd22a6e71d24d65787df00299f5406cb6806fcf12aff104fc9108c1e80",
+        "final_parameters": "c454bc8e44c3aa58262fe8ef4bf70d3f7caacad6e86f60216009f5afb21475b1",
+        "parameters_changed": true,
+        "optimizer_states": 128,
+        "exclusions": {
+          "bank": [],
+          "mbpp": []
+        },
+        "peak_cuda_bytes": 10976947712
+      }
+    },
+    {
+      "adapter_path": "[local path redacted]",
+      "adapter_hash": "fdfcb6875b7a75261b4df0af99f24fb46741fa797e2eb90e445ff744ba7b2322",
+      "contract": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+        "teachers": {},
+        "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+        "algorithm": "replay",
+        "arm": "REPLAY",
+        "rank": 16,
+        "seed": 43,
+        "lr": 5e-05,
+        "response_tokens": 16384,
+        "route_response_tokens": {
+          "bank": 12288,
+          "mbpp": 4096
+        },
+        "rollout_tokens": 256,
+        "max_length": 2560,
+        "accumulation": 4,
+        "topk": 64,
+        "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+        "objective": "answer-only cross entropy",
+        "implementation": {
+          "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "status": {
+        "complete": true,
+        "progress": {
+          "tokens": 16384,
+          "step": 33,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 63,
+            "mbpp": 67
+          },
+          "metrics": {
+            "loss": 0.10073339636437595,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 1.4360694885253906
+          }
+        },
+        "contract": {
+          "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+          "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+          "teachers": {},
+          "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+          "algorithm": "replay",
+          "arm": "REPLAY",
+          "rank": 16,
+          "seed": 43,
+          "lr": 5e-05,
+          "response_tokens": 16384,
+          "route_response_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "rollout_tokens": 256,
+          "max_length": 2560,
+          "accumulation": 4,
+          "topk": 64,
+          "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+          "objective": "answer-only cross entropy",
+          "implementation": {
+            "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+            "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+            "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+          }
+        },
+        "checkpoint": "checkpoint-000033-395d1f04",
+        "initial_parameters": "8c6d21cd22a6e71d24d65787df00299f5406cb6806fcf12aff104fc9108c1e80",
+        "final_parameters": "1abbfef7fba8816b2e04af018f02ba596d853323c41db03046cc2db820b10822",
+        "parameters_changed": true,
+        "optimizer_states": 128,
+        "exclusions": {
+          "bank": [],
+          "mbpp": []
+        },
+        "peak_cuda_bytes": 13962884096
+      }
+    },
+    {
+      "adapter_path": "[local path redacted]",
+      "adapter_hash": "5d0d032e129977f5a6958a0037cc379b4484da59e5cd6e36615522511944f580",
+      "contract": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+        "teachers": {},
+        "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+        "algorithm": "replay",
+        "arm": "REPLAY",
+        "rank": 16,
+        "seed": 44,
+        "lr": 5e-05,
+        "response_tokens": 16384,
+        "route_response_tokens": {
+          "bank": 12288,
+          "mbpp": 4096
+        },
+        "rollout_tokens": 256,
+        "max_length": 2560,
+        "accumulation": 4,
+        "topk": 64,
+        "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+        "objective": "answer-only cross entropy",
+        "implementation": {
+          "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "status": {
+        "complete": true,
+        "progress": {
+          "tokens": 16384,
+          "step": 30,
+          "route_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "route_cursor": {
+            "bank": 56,
+            "mbpp": 61
+          },
+          "metrics": {
+            "loss": 0.0335153229534626,
+            "teacher_mass": 0.0,
+            "student_mass": 0.0,
+            "sample_outside_topk": 0.0,
+            "prefixes_at_cap": 0,
+            "grad_norm": 0.9629812836647034
+          }
+        },
+        "contract": {
+          "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+          "warm_start": "85d8745fc1c8a6ea846e58ae84819ba49197a064b182d5f545f9238fbe0c1da0",
+          "teachers": {},
+          "experiment": "a194222946a7637ac5eb5312349e8ba6014e3fd72d9e6a202b1a19300f715924",
+          "algorithm": "replay",
+          "arm": "REPLAY",
+          "rank": 16,
+          "seed": 44,
+          "lr": 5e-05,
+          "response_tokens": 16384,
+          "route_response_tokens": {
+            "bank": 12288,
+            "mbpp": 4096
+          },
+          "rollout_tokens": 256,
+          "max_length": 2560,
+          "accumulation": 4,
+          "topk": 64,
+          "sampling": "fresh student, T=1, top_p=1, top_k=0; no asynchronous replay",
+          "objective": "answer-only cross entropy",
+          "implementation": {
+            "opd.py": "110b1f73e710fac41e216c5019e5777befd0c27a4eb47fa00614518e01b2f561",
+            "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+            "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+          }
+        },
+        "checkpoint": "checkpoint-000030-0fea2a8e",
+        "initial_parameters": "8c6d21cd22a6e71d24d65787df00299f5406cb6806fcf12aff104fc9108c1e80",
+        "final_parameters": "0fa87ad85f739ab073fc63f319a92e3d50a3ae7bc750c289cbfe2eb50becbed3",
+        "parameters_changed": true,
+        "optimizer_states": 128,
+        "exclusions": {
+          "bank": [],
+          "mbpp": []
+        },
+        "peak_cuda_bytes": 13995965440
+      }
+    }
+  ],
+  "evaluations": {
+    "bank": {
+      "tasks": 1280,
+      "warm_pass_at_1": 0.85390625,
+      "bank_teacher_pass_at_1": 0.9859375,
+      "comparisons": [
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.85390625,
+          "adapter_pass_at_1": 0.971875,
+          "delta": 0.11796875,
+          "wins": 159,
+          "losses": 8,
+          "ci95": [
+            0.09921875,
+            0.13671875
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.85390625,
+          "adapter_pass_at_1": 0.94765625,
+          "delta": 0.09375,
+          "wins": 145,
+          "losses": 25,
+          "ci95": [
+            0.075,
+            0.11328125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.85390625,
+          "adapter_pass_at_1": 0.9203125,
+          "delta": 0.06640625,
+          "wins": 125,
+          "losses": 40,
+          "ci95": [
+            0.04765625,
+            0.0859375
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.85390625,
+          "adapter_pass_at_1": 0.921875,
+          "delta": 0.06796875,
+          "wins": 129,
+          "losses": 42,
+          "ci95": [
+            0.0484375,
+            0.08828125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.85390625,
+          "adapter_pass_at_1": 0.8734375,
+          "delta": 0.01953125,
+          "wins": 112,
+          "losses": 87,
+          "ci95": [
+            -0.00234375,
+            0.04140625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.85390625,
+          "adapter_pass_at_1": 0.90859375,
+          "delta": 0.0546875,
+          "wins": 128,
+          "losses": 58,
+          "ci95": [
+            0.034375,
+            0.0765625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      ],
+      "by_algorithm": {
+        "opd": {
+          "mean_pass_at_1": 0.9466145833333334,
+          "seed_std": 0.025797028000252957,
+          "seed_scores": [
+            0.971875,
+            0.94765625,
+            0.9203125
+          ],
+          "mean_delta_from_warm": 0.09270833333333339,
+          "mean_gap_to_task_expert": 0.03932291666666665
+        },
+        "replay": {
+          "mean_pass_at_1": 0.9013020833333333,
+          "seed_std": 0.025028466865667856,
+          "seed_scores": [
+            0.921875,
+            0.8734375,
+            0.90859375
+          ],
+          "mean_delta_from_warm": 0.047395833333333304,
+          "mean_gap_to_task_expert": 0.08463541666666674
+        }
+      },
+      "task_expert_comparisons": [
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.9859375,
+          "adapter_pass_at_1": 0.971875,
+          "delta": -0.0140625,
+          "wins": 6,
+          "losses": 24,
+          "ci95": [
+            -0.02265625,
+            -0.00625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.9859375,
+          "adapter_pass_at_1": 0.94765625,
+          "delta": -0.03828125,
+          "wins": 5,
+          "losses": 54,
+          "ci95": [
+            -0.05,
+            -0.0265625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.9859375,
+          "adapter_pass_at_1": 0.9203125,
+          "delta": -0.065625,
+          "wins": 4,
+          "losses": 88,
+          "ci95": [
+            -0.0796875,
+            -0.0515625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.9859375,
+          "adapter_pass_at_1": 0.921875,
+          "delta": -0.0640625,
+          "wins": 4,
+          "losses": 86,
+          "ci95": [
+            -0.078125,
+            -0.05078125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.9859375,
+          "adapter_pass_at_1": 0.8734375,
+          "delta": -0.1125,
+          "wins": 7,
+          "losses": 151,
+          "ci95": [
+            -0.13125,
+            -0.09453125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.9859375,
+          "adapter_pass_at_1": 0.90859375,
+          "delta": -0.07734375,
+          "wins": 5,
+          "losses": 104,
+          "ci95": [
+            -0.09296875,
+            -0.06171875
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      ],
+      "passed_counts": [
+        1093,
+        1262,
+        1244,
+        1213,
+        1178,
+        1180,
+        1118,
+        1163
+      ],
+      "truncation_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "reports": [
+        {
+          "path": "[local path redacted]",
+          "sha256": "1a2e6b9d01502a9e7064d990b2fd827c72ec19f3c804a200777736a3edc4b06e"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "bc9c648a310db83339c8bd759757802e9c47ecc1a0e5fb556c5c2cf0442355c6"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "30de0d6af4070c85846e33bf254583a36ccac33f8f9f6da18d5c7039ec11777d"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "9f7c22afa40af8592587273a03692f92177f3d3b303d1739846f4dc199fffe51"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "c738a2cc0cdc11d0456b1e6a72c06a475da9f4664e9f13976093699d6fa1e0a6"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "5faa6fdd5c6389c3b5328df66093e78faaf320eb07893671388a5a9f824fd434"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "7aebd811b83657be1ac3f32dd549a43ab8e2986d8b9b06b144d991cfd35cb7be"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "1465cb29c7f1deb1bf9e438c7bf0a7b19a47a9d027e3792c5a6aca374d75c7df"
+        }
+      ],
+      "opd_vs_replay": [
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.921875,
+          "adapter_pass_at_1": 0.971875,
+          "delta": 0.05,
+          "wins": 77,
+          "losses": 13,
+          "ci95": [
+            0.0359375,
+            0.06484375
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.8734375,
+          "adapter_pass_at_1": 0.94765625,
+          "delta": 0.07421875,
+          "wins": 119,
+          "losses": 24,
+          "ci95": [
+            0.05625,
+            0.0921875
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 1280,
+          "base_pass_at_1": 0.90859375,
+          "adapter_pass_at_1": 0.9203125,
+          "delta": 0.01171875,
+          "wins": 68,
+          "losses": 53,
+          "ci95": [
+            -0.00546875,
+            0.028125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      ]
+    },
+    "mbpp": {
+      "tasks": 170,
+      "warm_pass_at_1": 0.6176470588235294,
+      "bank_teacher_pass_at_1": 0.5882352941176471,
+      "comparisons": [
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.611764705882353,
+          "delta": -0.0058823529411764705,
+          "wins": 3,
+          "losses": 4,
+          "ci95": [
+            -0.04142011834319527,
+            0.024390243902439025
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.6058823529411764,
+          "delta": -0.011764705882352941,
+          "wins": 3,
+          "losses": 5,
+          "ci95": [
+            -0.04519774011299435,
+            0.018072289156626505
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.6235294117647059,
+          "delta": 0.0058823529411764705,
+          "wins": 4,
+          "losses": 3,
+          "ci95": [
+            -0.023668639053254437,
+            0.03550295857988166
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.5823529411764706,
+          "delta": -0.03529411764705882,
+          "wins": 3,
+          "losses": 9,
+          "ci95": [
+            -0.0783132530120482,
+            0.0058823529411764705
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.5882352941176471,
+          "delta": -0.029411764705882353,
+          "wins": 2,
+          "losses": 7,
+          "ci95": [
+            -0.07017543859649122,
+            0.005917159763313609
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.5941176470588235,
+          "delta": -0.023529411764705882,
+          "wins": 3,
+          "losses": 7,
+          "ci95": [
+            -0.06470588235294118,
+            0.011976047904191617
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      ],
+      "by_algorithm": {
+        "opd": {
+          "mean_pass_at_1": 0.6137254901960785,
+          "seed_std": 0.008985442539129114,
+          "seed_scores": [
+            0.611764705882353,
+            0.6058823529411764,
+            0.6235294117647059
+          ],
+          "mean_delta_from_warm": -0.0039215686274509665,
+          "mean_gap_to_task_expert": 0.0039215686274509665
+        },
+        "replay": {
+          "mean_pass_at_1": 0.5882352941176471,
+          "seed_std": 0.00588235294117645,
+          "seed_scores": [
+            0.5823529411764706,
+            0.5882352941176471,
+            0.5941176470588235
+          ],
+          "mean_delta_from_warm": -0.02941176470588236,
+          "mean_gap_to_task_expert": 0.02941176470588236
+        }
+      },
+      "task_expert_comparisons": [
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.611764705882353,
+          "delta": -0.0058823529411764705,
+          "wins": 3,
+          "losses": 4,
+          "ci95": [
+            -0.04142011834319527,
+            0.024390243902439025
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.6058823529411764,
+          "delta": -0.011764705882352941,
+          "wins": 3,
+          "losses": 5,
+          "ci95": [
+            -0.04519774011299435,
+            0.018072289156626505
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.6235294117647059,
+          "delta": 0.0058823529411764705,
+          "wins": 4,
+          "losses": 3,
+          "ci95": [
+            -0.023668639053254437,
+            0.03550295857988166
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.5823529411764706,
+          "delta": -0.03529411764705882,
+          "wins": 3,
+          "losses": 9,
+          "ci95": [
+            -0.0783132530120482,
+            0.0058823529411764705
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.5882352941176471,
+          "delta": -0.029411764705882353,
+          "wins": 2,
+          "losses": 7,
+          "ci95": [
+            -0.07017543859649122,
+            0.005917159763313609
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.6176470588235294,
+          "adapter_pass_at_1": 0.5941176470588235,
+          "delta": -0.023529411764705882,
+          "wins": 3,
+          "losses": 7,
+          "ci95": [
+            -0.06470588235294118,
+            0.011976047904191617
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      ],
+      "passed_counts": [
+        105,
+        100,
+        104,
+        103,
+        106,
+        99,
+        100,
+        101
+      ],
+      "truncation_counts": [
+        2,
+        5,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "reports": [
+        {
+          "path": "[local path redacted]",
+          "sha256": "785cd7fcbe186442ec35e011b0f0f7d3e4f01a0aa2ce7c7a75a7fd8495a89123"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "0a9329ae0cfb0e7869cba51f35215cfd438755f4a68211b743540625b955e22b"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "5ca1324fecc3b8560613e080280bfde054be4dcb6083719f4097948c1b442c82"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "c0926c1505bc5ce0a16b619cc4abd59305fca5ac3ff1bb0e8286c2f3aec2cdbb"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "ec303a671db544e2d26635514f028e26b553471ebd1e66c85bcf42ddfb356722"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "d943f6fe32be322b0ca519db82a3aa435d1ee06bf721199cd0e915b363c5e1cc"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "aea9fb0a750922ebb93ae6a242a0756c0bb9873fee49716cb465e2bb30fece6f"
+        },
+        {
+          "path": "[local path redacted]",
+          "sha256": "30aa8fb544ca226e3fb4d14eb36d6a2af7895afa01dc2194c2079dda9a26b059"
+        }
+      ],
+      "opd_vs_replay": [
+        {
+          "n": 170,
+          "base_pass_at_1": 0.5823529411764706,
+          "adapter_pass_at_1": 0.611764705882353,
+          "delta": 0.029411764705882353,
+          "wins": 7,
+          "losses": 2,
+          "ci95": [
+            -0.005780346820809248,
+            0.06470588235294118
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.5882352941176471,
+          "adapter_pass_at_1": 0.6058823529411764,
+          "delta": 0.01764705882352941,
+          "wins": 7,
+          "losses": 4,
+          "ci95": [
+            -0.017964071856287425,
+            0.05813953488372093
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        {
+          "n": 170,
+          "base_pass_at_1": 0.5941176470588235,
+          "adapter_pass_at_1": 0.6235294117647059,
+          "delta": 0.029411764705882353,
+          "wins": 7,
+          "losses": 2,
+          "ci95": [
+            -0.005988023952095809,
+            0.06936416184971098
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      ]
+    }
+  },
+  "scope": "Same-size fusion of two code task suites; no reward-based RL in OPD",
+  "billing_verified": false
+}

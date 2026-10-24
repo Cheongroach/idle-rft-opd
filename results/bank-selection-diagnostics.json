@@ -1,0 +1,1775 @@
+{
+  "pool_tasks": 6144,
+  "pool_candidates": 24576,
+  "pool_passed": 18939,
+  "pool_failure_counts": {
+    "pass": 18939,
+    "wrong_answer": 4919,
+    "runtime_error": 689,
+    "truncated": 20,
+    "syntax_or_contract_error": 9
+  },
+  "eligible_task_pass_count_histogram": {
+    "0": 93,
+    "1": 447,
+    "2": 1041,
+    "3": 1842,
+    "4": 2721
+  },
+  "shared_selected_tasks": 2959,
+  "arms": {
+    "A": {
+      "tasks": 4235,
+      "mean_base_pool_success": 0.7829988193624557,
+      "base_pass_count_histogram": {
+        "1": 320,
+        "2": 709,
+        "3": 1298,
+        "4": 1908
+      },
+      "coarse_family_counts": {
+        "container": 4235
+      },
+      "first_operator_counts": {
+        "clip": 506,
+        "prefix": 457,
+        "window": 485,
+        "sort_unique": 494,
+        "keep_mod": 466,
+        "index_add": 458,
+        "pairs": 442,
+        "threshold": 450,
+        "affine": 477
+      },
+      "composition_length_counts": {
+        "3": 1466,
+        "4": 1343,
+        "5": 1426
+      },
+      "selected_code_characters": {
+        "mean": 658.0425029515939,
+        "median": 650
+      }
+    },
+    "B": {
+      "tasks": 4235,
+      "mean_base_pool_success": 0.6891971664698937,
+      "base_pass_count_histogram": {
+        "1": 447,
+        "2": 1041,
+        "3": 1842,
+        "4": 905
+      },
+      "coarse_family_counts": {
+        "container": 4235
+      },
+      "first_operator_counts": {
+        "clip": 436,
+        "sort_unique": 416,
+        "affine": 508,
+        "threshold": 461,
+        "window": 432,
+        "pairs": 498,
+        "keep_mod": 508,
+        "prefix": 540,
+        "index_add": 436
+      },
+      "composition_length_counts": {
+        "3": 1386,
+        "4": 1394,
+        "5": 1455
+      },
+      "selected_code_characters": {
+        "mean": 681.6035419126329,
+        "median": 667
+      }
+    }
+  },
+  "evaluation_slices": [
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "097b24680e8c338b52778c510957b436cc6bc3c380aabbf491ca2a6a23644409",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 5e-05,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "084caf0d004bded9e5bb7929d3e3d1c6872fbc7cd7f465e86446cc0266ab6c87",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 747,
+        "wrong_answer": 18,
+        "runtime_error": 3
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 82
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 83
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 81
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 80
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 75
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 82
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 97
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 84
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "d40f58df03dc17bb9a1ac6b742a32a80bb1e0f84e88dc3cc7ae323c6a0778eb7",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 0.0001,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "084caf0d004bded9e5bb7929d3e3d1c6872fbc7cd7f465e86446cc0266ab6c87",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 752,
+        "wrong_answer": 13,
+        "runtime_error": 3
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 81
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 84
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 82
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 79
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 75
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 86
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 97
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 85
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "761007003342b31998bcc88121a3642eb87f6b274361cbf16d5a3bb06eb05422",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "084caf0d004bded9e5bb7929d3e3d1c6872fbc7cd7f465e86446cc0266ab6c87",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 761,
+        "wrong_answer": 6,
+        "runtime_error": 1
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 81
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 86
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 83
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 81
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 77
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 88
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 96
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "ceff21ce5ca0dde89209a2b44ea4939a5f82f3b07876213bc0fa55d006d389f1",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 5e-05,
+        "seed": 43,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "6bfd38b04c0b52c523d2f7c0c1b8b3d4259bb78f9d3268fae20a313447869da8",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 747,
+        "wrong_answer": 18,
+        "runtime_error": 3
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 80
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 82
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 81
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 80
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 75
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 83
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 97
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "e029b8f437545c1aabdd167cb9d96ef8651bac43c27876f3c916c254a12eb4d9",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 0.0001,
+        "seed": 43,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "6bfd38b04c0b52c523d2f7c0c1b8b3d4259bb78f9d3268fae20a313447869da8",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 755,
+        "wrong_answer": 12,
+        "runtime_error": 1
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 80
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 86
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 82
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 79
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 77
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 86
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 96
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "4b1497ada83db3a89556403e4aea438635aafc7a0d9840a15aaf3fda4388378e",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 43,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "6bfd38b04c0b52c523d2f7c0c1b8b3d4259bb78f9d3268fae20a313447869da8",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 754,
+        "wrong_answer": 12,
+        "runtime_error": 2
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 79
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 85
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 83
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 80
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 77
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 84
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 97
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "1242edcb343df2c04aa7769aa1759f7fe7f12b53799a116a6973848a375a7e7c",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 5e-05,
+        "seed": 44,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "628485ad152b6f2cb8701ed98ced52925af4997cd068544dfc829d4b6624643c",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 754,
+        "wrong_answer": 11,
+        "runtime_error": 3
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 81
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 84
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 81
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 81
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 76
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 85
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 97
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "2b10db4410d2bc5fb732213224689a07e83944367cf175696424c42e108bdd68",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 0.0001,
+        "seed": 44,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "628485ad152b6f2cb8701ed98ced52925af4997cd068544dfc829d4b6624643c",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 753,
+        "wrong_answer": 13,
+        "runtime_error": 2
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 80
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 84
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 82
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 81
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 77
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 84
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 96
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "4a04477296abd12d4d1aa2b4bd40b82e92d78a6e820c1b35520b66c9bac14c5f",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 44,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "628485ad152b6f2cb8701ed98ced52925af4997cd068544dfc829d4b6624643c",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 758,
+        "wrong_answer": 9,
+        "runtime_error": 1
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 81
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 86
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 82
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 81
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 78
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 86
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 96
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 85
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "6aecc211e08bbd5449eb18a3414c646591045099b367a6d36f5a62a2bfd9804d",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 5e-05,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "f455759d99ded9bfdc20ec7353e3984a2bb6cdeb13c05e63d75836edf2fa6fb3",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 746,
+        "wrong_answer": 17,
+        "runtime_error": 5
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 79
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 84
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 80
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 78
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 74
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 86
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 96
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "3abd670d869f6de75802785d24bb63f60488655fc6d1cab8cfc28d44c94efc31",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0001,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "f455759d99ded9bfdc20ec7353e3984a2bb6cdeb13c05e63d75836edf2fa6fb3",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 759,
+        "wrong_answer": 9
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 81
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 85
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 83
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 80
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 75
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 88
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 98
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "5a8f632e249d670b9b63c5ac4b50d2fa44979a69d881fc48a055f24e69430202",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "f455759d99ded9bfdc20ec7353e3984a2bb6cdeb13c05e63d75836edf2fa6fb3",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 760,
+        "wrong_answer": 8
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 82
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 85
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 83
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 81
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 76
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 86
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 98
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "26d6f92057451304bdcef0c02a407911d7e50cdf53777a48138df0230005fcb8",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 5e-05,
+        "seed": 43,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "f4065080e6458f6e072bcff3dd0792e7c5c1b700bcce312ec6ea136e005b3741",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 750,
+        "wrong_answer": 15,
+        "runtime_error": 3
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 80
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 84
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 80
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 81
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 75
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 85
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 97
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 85
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "ef635f8447426a5c432150ac8e4bb7a60d680c7daa37d8b665cbe6b76b0c08f3",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0001,
+        "seed": 43,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "f4065080e6458f6e072bcff3dd0792e7c5c1b700bcce312ec6ea136e005b3741",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 761,
+        "runtime_error": 1,
+        "wrong_answer": 6
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 81
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 85
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 83
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 80
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 77
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 89
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 97
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "2b2f734f2c5c3ccec5547d214f5ee7cc5b8c36d58d2169fa2a41969f7f8d9dd0",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 43,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "f4065080e6458f6e072bcff3dd0792e7c5c1b700bcce312ec6ea136e005b3741",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 763,
+        "wrong_answer": 4,
+        "runtime_error": 1
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 82
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 85
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 83
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 79
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 78
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 90
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 97
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "5f555133f73cc233dc415906854e97249e2f0ad753b95c0076869ac917d5f9c8",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 5e-05,
+        "seed": 44,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "e431a8fb7b5a57216715c5d21dace1cb093d87de7eb1e9e5b02542c6469eab45",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 758,
+        "wrong_answer": 7,
+        "runtime_error": 3
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 81
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 85
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 82
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 79
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 76
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 88
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 98
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "eb63048ab97a4cbee6d894827562b2289a827186c304800a3156ae6e465f6782",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0001,
+        "seed": 44,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "e431a8fb7b5a57216715c5d21dace1cb093d87de7eb1e9e5b02542c6469eab45",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 761,
+        "wrong_answer": 6,
+        "runtime_error": 1
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 82
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 85
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 83
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 79
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 77
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 88
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 98
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "3847bd37d171d72925b1117117692ac64347bb1bff53c88581a1c7072c56cf59",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 44,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "e431a8fb7b5a57216715c5d21dace1cb093d87de7eb1e9e5b02542c6469eab45",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 762,
+        "runtime_error": 2,
+        "wrong_answer": 4
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 82
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 85
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 83
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 80
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 76
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 89
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 83
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 98
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 86
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "report": "[local path redacted]",
+      "sha256": "ce934bfad5b67f36b79fbda5414c547305851130614a92442e2c79b5d44b9ae3",
+      "training": null,
+      "failure_counts": {
+        "wrong_answer": 90,
+        "pass": 666,
+        "runtime_error": 12
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 82,
+          "correct": 68
+        },
+        "pipeline_clip": {
+          "n": 86,
+          "correct": 76
+        },
+        "pipeline_index_add": {
+          "n": 84,
+          "correct": 71
+        },
+        "pipeline_keep_mod": {
+          "n": 81,
+          "correct": 70
+        },
+        "pipeline_pairs": {
+          "n": 78,
+          "correct": 59
+        },
+        "pipeline_prefix": {
+          "n": 90,
+          "correct": 72
+        },
+        "pipeline_sort_unique": {
+          "n": 83,
+          "correct": 76
+        },
+        "pipeline_threshold": {
+          "n": 98,
+          "correct": 92
+        },
+        "pipeline_window": {
+          "n": 86,
+          "correct": 82
+        }
+      }
+    },
+    {
+      "split": "blind",
+      "report": "[local path redacted]",
+      "sha256": "42b40283d8420648558e743651787da16df61a179c38f02759e616895cde72f4",
+      "training": null,
+      "failure_counts": {
+        "wrong_answer": 169,
+        "pass": 1089,
+        "runtime_error": 21,
+        "truncated": 1
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 131,
+          "correct": 101
+        },
+        "pipeline_clip": {
+          "n": 140,
+          "correct": 130
+        },
+        "pipeline_index_add": {
+          "n": 157,
+          "correct": 129
+        },
+        "pipeline_keep_mod": {
+          "n": 151,
+          "correct": 135
+        },
+        "pipeline_pairs": {
+          "n": 135,
+          "correct": 110
+        },
+        "pipeline_prefix": {
+          "n": 147,
+          "correct": 112
+        },
+        "pipeline_sort_unique": {
+          "n": 134,
+          "correct": 116
+        },
+        "pipeline_threshold": {
+          "n": 140,
+          "correct": 128
+        },
+        "pipeline_window": {
+          "n": 145,
+          "correct": 128
+        }
+      }
+    },
+    {
+      "split": "blind",
+      "report": "[local path redacted]",
+      "sha256": "4c8441aaca3b220da53cdf40f4b38689a70670bf0e095f7209093ae40c2776db",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "084caf0d004bded9e5bb7929d3e3d1c6872fbc7cd7f465e86446cc0266ab6c87",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 1246,
+        "wrong_answer": 32,
+        "runtime_error": 2
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 131,
+          "correct": 126
+        },
+        "pipeline_clip": {
+          "n": 140,
+          "correct": 137
+        },
+        "pipeline_index_add": {
+          "n": 157,
+          "correct": 152
+        },
+        "pipeline_keep_mod": {
+          "n": 151,
+          "correct": 149
+        },
+        "pipeline_pairs": {
+          "n": 135,
+          "correct": 131
+        },
+        "pipeline_prefix": {
+          "n": 147,
+          "correct": 137
+        },
+        "pipeline_sort_unique": {
+          "n": 134,
+          "correct": 134
+        },
+        "pipeline_threshold": {
+          "n": 140,
+          "correct": 138
+        },
+        "pipeline_window": {
+          "n": 145,
+          "correct": 142
+        }
+      }
+    },
+    {
+      "split": "blind",
+      "report": "[local path redacted]",
+      "sha256": "cab4546e3f520354ba33ca6d59a7695cdbe91269405793fd8b8ea9cfde47bc0e",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 43,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "6bfd38b04c0b52c523d2f7c0c1b8b3d4259bb78f9d3268fae20a313447869da8",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 1247,
+        "wrong_answer": 30,
+        "runtime_error": 3
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 131,
+          "correct": 126
+        },
+        "pipeline_clip": {
+          "n": 140,
+          "correct": 138
+        },
+        "pipeline_index_add": {
+          "n": 157,
+          "correct": 155
+        },
+        "pipeline_keep_mod": {
+          "n": 151,
+          "correct": 150
+        },
+        "pipeline_pairs": {
+          "n": 135,
+          "correct": 130
+        },
+        "pipeline_prefix": {
+          "n": 147,
+          "correct": 136
+        },
+        "pipeline_sort_unique": {
+          "n": 134,
+          "correct": 133
+        },
+        "pipeline_threshold": {
+          "n": 140,
+          "correct": 139
+        },
+        "pipeline_window": {
+          "n": 145,
+          "correct": 140
+        }
+      }
+    },
+    {
+      "split": "blind",
+      "report": "[local path redacted]",
+      "sha256": "1f8cc21c1de26819b1ee57a31bf5a1f6ad6469f1793ec77c6aa93770f7a2b2d0",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "A",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 44,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "628485ad152b6f2cb8701ed98ced52925af4997cd068544dfc829d4b6624643c",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 1259,
+        "wrong_answer": 19,
+        "runtime_error": 2
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 131,
+          "correct": 128
+        },
+        "pipeline_clip": {
+          "n": 140,
+          "correct": 137
+        },
+        "pipeline_index_add": {
+          "n": 157,
+          "correct": 154
+        },
+        "pipeline_keep_mod": {
+          "n": 151,
+          "correct": 151
+        },
+        "pipeline_pairs": {
+          "n": 135,
+          "correct": 133
+        },
+        "pipeline_prefix": {
+          "n": 147,
+          "correct": 137
+        },
+        "pipeline_sort_unique": {
+          "n": 134,
+          "correct": 134
+        },
+        "pipeline_threshold": {
+          "n": 140,
+          "correct": 140
+        },
+        "pipeline_window": {
+          "n": 145,
+          "correct": 145
+        }
+      }
+    },
+    {
+      "split": "blind",
+      "report": "[local path redacted]",
+      "sha256": "bc9c648a310db83339c8bd759757802e9c47ecc1a0e5fb556c5c2cf0442355c6",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 42,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "f455759d99ded9bfdc20ec7353e3984a2bb6cdeb13c05e63d75836edf2fa6fb3",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 1262,
+        "wrong_answer": 18
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 131,
+          "correct": 127
+        },
+        "pipeline_clip": {
+          "n": 140,
+          "correct": 138
+        },
+        "pipeline_index_add": {
+          "n": 157,
+          "correct": 155
+        },
+        "pipeline_keep_mod": {
+          "n": 151,
+          "correct": 151
+        },
+        "pipeline_pairs": {
+          "n": 135,
+          "correct": 135
+        },
+        "pipeline_prefix": {
+          "n": 147,
+          "correct": 140
+        },
+        "pipeline_sort_unique": {
+          "n": 134,
+          "correct": 132
+        },
+        "pipeline_threshold": {
+          "n": 140,
+          "correct": 140
+        },
+        "pipeline_window": {
+          "n": 145,
+          "correct": 144
+        }
+      }
+    },
+    {
+      "split": "blind",
+      "report": "[local path redacted]",
+      "sha256": "bdcbfcb339b561037ec6dd3a0570ec5cb9e107f4e4bbc8c1607eb3774a5c4693",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 43,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "f4065080e6458f6e072bcff3dd0792e7c5c1b700bcce312ec6ea136e005b3741",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 1258,
+        "wrong_answer": 20,
+        "runtime_error": 2
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 131,
+          "correct": 124
+        },
+        "pipeline_clip": {
+          "n": 140,
+          "correct": 138
+        },
+        "pipeline_index_add": {
+          "n": 157,
+          "correct": 154
+        },
+        "pipeline_keep_mod": {
+          "n": 151,
+          "correct": 149
+        },
+        "pipeline_pairs": {
+          "n": 135,
+          "correct": 133
+        },
+        "pipeline_prefix": {
+          "n": 147,
+          "correct": 143
+        },
+        "pipeline_sort_unique": {
+          "n": 134,
+          "correct": 134
+        },
+        "pipeline_threshold": {
+          "n": 140,
+          "correct": 139
+        },
+        "pipeline_window": {
+          "n": 145,
+          "correct": 144
+        }
+      }
+    },
+    {
+      "split": "blind",
+      "report": "[local path redacted]",
+      "sha256": "2479abb4c4c3d95811e62805f21c4bf36eb1bf39b2cf2afa7c3a12ce001b97ec",
+      "training": {
+        "base": "c54c83d3507d9d12856bb119d41b477d6dc31780b994cdcc2f9cd50dd8f51f38",
+        "data": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc",
+        "arm": "B",
+        "rank": 16,
+        "lr": 0.0002,
+        "seed": 44,
+        "epochs": 2,
+        "accumulation": 8,
+        "supervised_tokens": 1000000,
+        "max_length": 2560,
+        "sequence_protocol": "segmented chat prefix + code + EOS; answer loss only",
+        "examples": "e431a8fb7b5a57216715c5d21dace1cb093d87de7eb1e9e5b02542c6469eab45",
+        "implementation": {
+          "train.py": "f794a335c5893506634be107147a88804e0c520ac8b62262a35bbcd95cfa72c2",
+          "runtime.py": "fd207be868f780c27517a25484777b55c474ef56fa5d916e96e145af375b34d1"
+        }
+      },
+      "failure_counts": {
+        "pass": 1266,
+        "wrong_answer": 10,
+        "runtime_error": 4
+      },
+      "first_operator_slices": {
+        "pipeline_affine": {
+          "n": 131,
+          "correct": 128
+        },
+        "pipeline_clip": {
+          "n": 140,
+          "correct": 138
+        },
+        "pipeline_index_add": {
+          "n": 157,
+          "correct": 156
+        },
+        "pipeline_keep_mod": {
+          "n": 151,
+          "correct": 149
+        },
+        "pipeline_pairs": {
+          "n": 135,
+          "correct": 132
+        },
+        "pipeline_prefix": {
+          "n": 147,
+          "correct": 144
+        },
+        "pipeline_sort_unique": {
+          "n": 134,
+          "correct": 134
+        },
+        "pipeline_threshold": {
+          "n": 140,
+          "correct": 140
+        },
+        "pipeline_window": {
+          "n": 145,
+          "correct": 145
+        }
+      }
+    }
+  ],
+  "scope": "Descriptive diagnostics only; no selection or hyperparameter changes. Coarse family quotas match; first operators, composition lengths, answer lengths and optimizer-step counts may differ under equal supervised-token budgets. First-operator slices overlap in later operators and do not establish operator-specific causation.",
+  "sources": {
+    "pool_sha256": "c96a57a2de226df890506db70a73e1f577ab22796d2f74b3c444cd67a5fc47b2",
+    "selection_sha256": "000eef5b37585fd8a6800c40cb8df9c4178dde7e7118e5bb4b1dd11b52b467fc"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-24T09:35:45.248669+00:00",
+  "completed": true,
+  "original_bank_blind_adapters": 6,
+  "opd_training_configs": 6,
+  "opd_blind_models_per_track": 8,
+  "active_gpus": 0,
+  "training_acceptance_passed": true,
+  "launch_contracts_verified": 42,
+  "observed_pod_gpu_hours": 172.97694444444448,
+  "reserved_gpu_hours": 721.0000000000003,
+  "peak_observed_gpus": 64,
+  "billing_verified": false,
+  "sources": {
+    "mbpp-final.json": "b745f3e0037c01ac16fd8bff465b7d9a1533404d751ba18f5a91bcfe65bd37c3",
+    "bank-final.json": "4d01cd9a5641b1364e90320e575d2ffc271c96386aead93f561df406704a0a23",
+    "opd-final.json": "0e045caec2b01cbb50182da7a55f032b6ec7dcebfe1e45ed7e02eced75bc5e0c",
+    "opd-training-diagnostics.json": "2b555ee439307991824c1b92051a33c933c8e99ae5fdd8fde3145813760491c3",
+    "opd-update-metrics.json": "375bcdc0be5084a444cf55d954ba6fd03034ecb9a8931b645592c69ec945e7ec",
+    "bank-selection-diagnostics.json": "f00ea3b6746f781e07d127268278bdbafa7b0836799e26e5f6291da6f7c7e31b",
+    "cost-accounting.json": "f958a942cd3e896074c099d8542601e113c5ee05bb1c72df991b930125adbfb7",
+    "launch-contract-audit.json": "3cbdc62bed9fa71b2c3f717728ae64fa75d200e48e1dc245ecad21fcb0f19ef6",
+    "observed-h20-resources.png": "98ec864aad93776691ffb8826dbc7d855b055f9541eef73cc5f9e9b2ec1102c4",
+    "FINAL_REPORT.md": "c3d033720b271b5ba0e9f74bd97509322b07d3d9a354ff09c75b18149a67d8d9"
+  }
+}

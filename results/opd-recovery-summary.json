@@ -1,0 +1,21 @@
+{
+  "create_timeouts_reconciled": [
+    {
+      "name": "rft-weekend-opd-bank-blind-07-20261024",
+      "sid": "69a0610f69466477",
+      "gpu_retried": false,
+      "precheck_sid": "3f407a86-ce99-40d7-abf3-256b7a5e8cd1",
+      "evidence": "/tmp/idle-rft-weekend/opd-504-reconciled-run.json"
+    },
+    {
+      "name": "rft-weekend-opd-mbpp-blind-01-20261024",
+      "sid": "23963a9706ff3359",
+      "gpu_retried": false,
+      "precheck_sid": "67f7d85f-40dd-4c18-acdb-a68e0764b50a",
+      "evidence": "/tmp/idle-rft-weekend/rft-weekend-opd-mbpp-blind-01-20261024.reconciled-get.json"
+    }
+  ],
+  "gpu_retries": 0,
+  "collection": "Exact phase namespace and archive/file SHA256, without repeated log API downloads",
+  "algorithm_or_blind_protocol_changed": false
+}
