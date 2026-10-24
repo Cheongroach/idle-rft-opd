@@ -1,0 +1,24 @@
+{
+  "student_adapter": "/results/mbpp-sft/checkpoint/adapter",
+  "teacher_adapters": {
+    "bank": "/results/bank-expert/checkpoint/adapter",
+    "mbpp": "/results/mbpp-sft/checkpoint/adapter"
+  },
+  "train_files": {
+    "bank": "train.bank.json",
+    "mbpp": "train.mbpp.json"
+  },
+  "train_sha256": {
+    "bank": "<actual sha256>",
+    "mbpp": "<actual sha256>"
+  },
+  "route_response_tokens": {
+    "bank": 12288,
+    "mbpp": 4096
+  },
+  "qualification": {
+    "proceed": true,
+    "sha256": "<actual qualification sha256>"
+  },
+  "protocol_sha256": "<actual frozen protocol sha256>"
+}
