@@ -48,6 +48,21 @@ exact route counters, prompt cursors and RNG. Acceptance requires completed
 quotas, finite metrics, changed parameter hashes and nonempty optimizer state.
 Each process has a finite window and an owner lock.
 
+For budget-scaling follow-ups, set the exact bank/MBPP quotas in the frozen
+experiment JSON. A zero quota disables a route for a single-task control;
+quotas must be nonnegative integers with a positive total. Both OPD and replay
+use the same token-based LR horizon for each total-budget comparison. Runs at
+different total budgets have different LR horizons and are independent runs.
+Allocated process windows may be up to 12h; the external shared scheduler must
+reserve and cap the full command, setup allowance and termination grace.
+
+`opd_probe.py` scores a frozen file of generated development prefixes without
+updating weights. Add `fixed_prefix_file` and its actual `fixed_prefix_sha256`
+to the experiment configuration. Rows contain `task_id`, `prompt`, `interface`,
+`route` and generated `code`; exclude private reference programs/tests.
+The probe reports fixed-state top64 distance, mass, action logratio, entropy
+and response CE, and verifies that adapter parameters are unchanged.
+
 Evaluate with `generate --split dev --samples 1 --adapter <checkpoint/adapter>`.
 Blind runs also require a frozen `--selection` with base/dataset hashes,
 approved adapter hashes, `max_new_tokens=2048`, `proceed=true`.

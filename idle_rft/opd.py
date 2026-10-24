@@ -60,6 +60,15 @@ def next_route(tokens, targets):
     return min(remaining, key=lambda name: (tokens[name] / targets[name], name))
 
 
+def validate_targets(targets):
+    """A zero quota disables a route for a frozen single-task ablation."""
+    if (set(targets) != {"bank", "mbpp"} or
+            any(type(v) is not int or v < 0 for v in targets.values()) or
+            sum(targets.values()) <= 0):
+        raise ValueError("Freeze nonnegative integer bank/MBPP quotas with a positive total")
+    return dict(targets)
+
+
 def row_at(rows, cursor, seed):
     epoch, index = divmod(cursor, len(rows))
     order = list(range(len(rows)))
@@ -212,9 +221,7 @@ def train(args):
     config = read_json(config_path)
     if not config["qualification"]["proceed"]:
         raise ValueError("Teacher qualification rejected distillation")
-    targets = config["route_response_tokens"]
-    if any(v <= 0 for v in targets.values()) or set(targets) != {"bank", "mbpp"}:
-        raise ValueError("Freeze positive bank and MBPP response-token quotas")
+    targets = validate_targets(config["route_response_tokens"])
     with gpu_session(args.run, "train", args.window_seconds) as window:
         signal.signal(signal.SIGTERM, window.stop)
         signal.signal(signal.SIGINT, window.stop)

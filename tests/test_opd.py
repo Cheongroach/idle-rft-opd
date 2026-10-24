@@ -6,7 +6,7 @@ import torch
 
 from idle_rft.common import atomic_json, digest
 from idle_rft.opd import (checkpoint_info, next_route, response_positions,
-                          row_at, topk_reverse_divergence)
+                          row_at, topk_reverse_divergence, validate_targets)
 
 
 class DistillationTests(unittest.TestCase):
@@ -64,6 +64,18 @@ class DistillationTests(unittest.TestCase):
         resumed = [row_at(rows, i, 42) for i in range(9, 20)]
         self.assertEqual(uninterrupted[9:], resumed)
         self.assertEqual(len({r["id"] for r in uninterrupted[:7]}), 7)
+
+    def test_single_task_zero_quota_never_enters_disabled_route(self):
+        targets = validate_targets({"bank": 12, "mbpp": 0})
+        progress = {"bank": 0, "mbpp": 0}
+        for _ in range(12):
+            self.assertEqual(next_route(progress, targets), "bank")
+            progress["bank"] += 1
+        self.assertIsNone(next_route(progress, targets))
+        for invalid in ({"bank": 0, "mbpp": 0}, {"bank": -1, "mbpp": 2},
+                        {"bank": 1.5, "mbpp": 0}, {"bank": True, "mbpp": 0}):
+            with self.assertRaises(ValueError):
+                validate_targets(invalid)
 
     def test_checkpoint_rejects_incomplete_and_tampered_assets(self):
         with tempfile.TemporaryDirectory() as temporary:

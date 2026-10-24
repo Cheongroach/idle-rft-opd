@@ -44,8 +44,8 @@ def read_json(path):
 class Window:
     """Monotonic finite window, including model loading and checkpoint time."""
     def __init__(self, seconds, started=None):
-        if not 0 < seconds <= 7200:
-            raise ValueError("Each idle window must be in (0, 7200] seconds")
+        if not 0 < seconds <= 43200:
+            raise ValueError("Each allocated window must be in (0, 43200] seconds")
         self.started = time.monotonic() if started is None else started
         self.seconds = seconds
         self.stopped = False
