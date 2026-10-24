@@ -1,0 +1,146 @@
+{
+  "user_confirmed_stops_were_not_theirs": true,
+  "timeout_diagnosis": "Each stopped job ran about 3h36m with a 12h command cap; no run_timeout event found. Stop origin remains unknown.",
+  "new_recovery_gpus": 10,
+  "logical_configs": 10,
+  "checkpoint_copy_hashes_verified": true,
+  "new_train_tokens_observed_for_all_configs": true,
+  "frozen_training_modules_unchanged": 13,
+  "cpu_coordinator_runs": true,
+  "full_extension_completed": false,
+  "groups": [
+    {
+      "name": "rft-weekend-ext-resume-02-20261025",
+      "phase": "ext-resume-02",
+      "gpus": 3,
+      "seconds": 14400,
+      "sid": "2af5b9136e6cceae",
+      "config_sha256": "1f7bff36018ab9fb859accf8377d9db20603e7a5bf110a30ea2d90634479dfb1",
+      "package_sha256": "4c37ec1f13cba9339527fdcf4fa0e20ea1820edede3a33d42b327f359bc2f657"
+    },
+    {
+      "name": "rft-weekend-ext-resume-03-20261025",
+      "phase": "ext-resume-03",
+      "gpus": 6,
+      "seconds": 14400,
+      "sid": "b7de3874dce5a06a",
+      "config_sha256": "edf1849b36ad86222fafcf5b72f77e447ace6f08d91b354f22105682a2ad34a3",
+      "package_sha256": "4c178ac0dc6936023395b1b129354bb176fd445ec6dea20c744e955097742396"
+    },
+    {
+      "name": "rft-weekend-ext-resume-04-20261025",
+      "phase": "ext-resume-04",
+      "gpus": 1,
+      "seconds": 14400,
+      "sid": "c98c99c0354c6f66",
+      "config_sha256": "da19e794da4569e9520aa0824e15ab636ff171ddcf81818fdcebc83ef3dafc67",
+      "package_sha256": "f58102ccb68f950aca9731a156f7a770e1561a31954070f087a47f4b2541f8ef"
+    }
+  ],
+  "deterministic_tail_audit": {
+    "checks": [
+      {
+        "label": "opd-524288-s42",
+        "old_uncommitted_updates": 1,
+        "new_update_count_observed": 8,
+        "compared_updates": 1,
+        "exactly_equal": true
+      },
+      {
+        "label": "opd-524288-s43",
+        "old_uncommitted_updates": 3,
+        "new_update_count_observed": 8,
+        "compared_updates": 3,
+        "exactly_equal": true
+      },
+      {
+        "label": "opd-524288-s44",
+        "old_uncommitted_updates": 1,
+        "new_update_count_observed": 8,
+        "compared_updates": 1,
+        "exactly_equal": true
+      },
+      {
+        "label": "bank-only-524288-s42",
+        "old_uncommitted_updates": 3,
+        "new_update_count_observed": 2,
+        "compared_updates": 2,
+        "exactly_equal": true
+      },
+      {
+        "label": "bank-only-524288-s43",
+        "old_uncommitted_updates": 1,
+        "new_update_count_observed": 2,
+        "compared_updates": 1,
+        "exactly_equal": true
+      },
+      {
+        "label": "bank-only-524288-s44",
+        "old_uncommitted_updates": 5,
+        "new_update_count_observed": 2,
+        "compared_updates": 2,
+        "exactly_equal": true
+      },
+      {
+        "label": "balanced-s42",
+        "old_uncommitted_updates": 1,
+        "new_update_count_observed": 4,
+        "compared_updates": 1,
+        "exactly_equal": true
+      },
+      {
+        "label": "balanced-s43",
+        "old_uncommitted_updates": 0,
+        "new_update_count_observed": 5,
+        "compared_updates": 0,
+        "exactly_equal": null
+      },
+      {
+        "label": "balanced-s44",
+        "old_uncommitted_updates": 1,
+        "new_update_count_observed": 6,
+        "compared_updates": 1,
+        "exactly_equal": true
+      },
+      {
+        "label": "bank-only-balanced-s44",
+        "old_uncommitted_updates": 6,
+        "new_update_count_observed": 3,
+        "compared_updates": 3,
+        "exactly_equal": true
+      }
+    ],
+    "gpu_compute": false,
+    "observed_unix": 1792862033.0209858,
+    "scope": "Exact deterministic comparison only where original uncommitted tail exists; not a full uninterrupted-run equivalence test"
+  },
+  "development_262144": {
+    "budget": 262144,
+    "scores": {
+      "opd": {
+        "bank": {
+          "mean": 0.9889322916666666,
+          "seed_std": 0.0014917238590351043
+        },
+        "retention": {
+          "mean": 0.5846153846153846,
+          "seed_std": 0.0
+        }
+      },
+      "replay": {
+        "bank": {
+          "mean": 0.9554036458333334,
+          "seed_std": 0.007064627087959214
+        },
+        "retention": {
+          "mean": 0.5794871794871794,
+          "seed_std": 0.011750194089630378
+        }
+      }
+    }
+  },
+  "conservative_reserved_gpu_hours": 1419.8833333333332,
+  "reservation_limit": 3000,
+  "observed_unix": 1792862094.3194184,
+  "scope": "Recovery startup and partial update validation only. Development means are preliminary; no final selection or convergence claim."
+}

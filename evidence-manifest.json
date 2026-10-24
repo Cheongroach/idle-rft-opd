@@ -30,11 +30,12 @@
     "extension/matrix.json": "5e4044f74f141567520defe50c986167a6f425cdf4411ed5eb3ad61e4ebd1e45",
     "extension/prepared.json": "4abbfabbf29655ff81cdd5f02fd9a6eb8ba64f28676a97506d601693c2606061",
     "extension/retention-audit.json": "7f0103afb0213fa4f47a978e053574c79af7ec21ca71e54468c131fc219efaa1",
-    "extension/INTERRUPTION_AND_RECOVERY.md": "3241bf1e39abfbf4a02e9fd4ea75ea551b41c752981d91a7be7be5a044a39993",
-    "extension/interruption.json": "00f6889ab15ac5056086fd66b9e57066d086c307c6cbb6902f4529640cfa1718"
+    "extension/INTERRUPTION_AND_RECOVERY.md": "323f2620a4ea822b1d90e4b33b1b6033e192e26e37c31708fd0ab4a003cb880d",
+    "extension/interruption.json": "11a690002d827791c6386c7f35838373c25909ba0f8bcd6eb9246b6d7393e5de",
+    "extension/recovery-start.json": "d6a446efc808e81bf79c712bf9dfa23c194e3d34a9cd27cd7fb4a2e5a312d631"
   },
   "dialogue_records": 223,
-  "status": "Pilot complete; strengthening training externally interrupted, full extension acceptance pending",
+  "status": "Pilot complete; 10 interrupted strengthening configurations resumed, full acceptance pending",
   "tool_messages_exported": false,
   "private_oracles_exported": false,
   "model_weights_exported": false

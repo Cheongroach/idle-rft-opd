@@ -4,8 +4,8 @@
   "declared_logical_training_configs": 36,
   "interrupted_logical_training_configs": 10,
   "remaining_saved_checkpoint_response_tokens": 1987008,
-  "gpu_recovery_launched": false,
-  "automatic_launch_paused": true,
+  "gpu_recovery_launched": true,
+  "automatic_launch_paused": false,
   "frozen_inputs_changed": false,
   "independent_existing_development_evaluations_continue": true,
   "stop_events": [
@@ -168,5 +168,6 @@
         "bytes": 410705920
       }
     }
-  }
+  },
+  "recovery_current_status": "Authorized checkpoint recovery running; 10 configurations resumed"
 }
