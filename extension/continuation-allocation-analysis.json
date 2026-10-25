@@ -1,0 +1,73 @@
+{
+  "phases": [
+    {
+      "phase": "ext-resume-02",
+      "gpus": 3,
+      "node_seconds": 9043.638936479576,
+      "staging_seconds": 119.09072155598551,
+      "allocated_gpu_hours": 7.536365781982895,
+      "child_session_seconds": [
+        8920.474341467954,
+        8901.052709093317,
+        8911.274777417071
+      ],
+      "recorded_session_gpu_hours": 7.42577828554954,
+      "outside_session_gpu_hours": 0.11058749643335533,
+      "allocation_sha256": "31ec1eb472f32f7505d05638b176f16a961f910985a91588bc0430d8ebef8d46",
+      "phase_status_sha256": "cfd4efdbe20035d85206c3408000254a01d2cb611774ca665e921da82ecce178"
+    },
+    {
+      "phase": "ext-resume-03",
+      "gpus": 6,
+      "node_seconds": 9087.948241580278,
+      "staging_seconds": 193.4580414518714,
+      "allocated_gpu_hours": 15.146580405893426,
+      "child_session_seconds": [
+        4630.407933974639,
+        5409.599201863632,
+        5260.885116215795,
+        8892.07289872691,
+        8882.823040811345,
+        8871.190799327567
+      ],
+      "recorded_session_gpu_hours": 11.651938608588857,
+      "outside_session_gpu_hours": 3.4946417973045674,
+      "allocation_sha256": "39f0e43260dc2349e2ddcfb456f811e2c1b452ce1b18ee60c4a6f6016ddfecba",
+      "phase_status_sha256": "9712b485857660ffb815e0e00862cd7fdc094731c5219b7c5bbb349bd41c0378"
+    },
+    {
+      "phase": "ext-segment-02-01",
+      "gpus": 3,
+      "node_seconds": 5303.085268840194,
+      "staging_seconds": 108.80413233116269,
+      "allocated_gpu_hours": 4.419237725936497,
+      "child_session_seconds": [
+        5176.867203403264,
+        5176.088426172733,
+        5191.064569829032
+      ],
+      "recorded_session_gpu_hours": 4.317783388723619,
+      "outside_session_gpu_hours": 0.10145433721287797,
+      "allocation_sha256": "d418384fb1d861600736bf5e8aafa7523aa304c048be3a22b1b6f8113e06198f",
+      "phase_status_sha256": "34d1a648e79d5655a846743512f93627ab2861f0450eabd1640ade68d6aa080c"
+    },
+    {
+      "phase": "ext-segment-03-01",
+      "gpus": 3,
+      "node_seconds": 5299.666304537095,
+      "staging_seconds": 113.37624491844326,
+      "allocated_gpu_hours": 4.416388588459231,
+      "child_session_seconds": [
+        5173.712503113784,
+        5183.569766777568,
+        5177.173926425166
+      ],
+      "recorded_session_gpu_hours": 4.315126721199033,
+      "outside_session_gpu_hours": 0.10126186726019822,
+      "allocation_sha256": "481764925671cc3067fee6353cfa6fc821b4081fa6e2693ca1a5be80eb61c181",
+      "phase_status_sha256": "19335573e2790da05c17942f0123759fea0921ed725f5552a5b386ec14b7970f"
+    }
+  ],
+  "scope": "Four completed continuation stages; node allocation includes staging, child sessions and waiting. Child sessions include CPU work and model loading, not pure GPU compute. No SM/FLOPs utilization or counterfactual speedup claim. Original stopped phases and current active phases are excluded.",
+  "frozen_training_changed": false
+}

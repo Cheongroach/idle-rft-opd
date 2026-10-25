@@ -1,6 +1,6 @@
 {
-  "logical_fits_complete": 27,
-  "complete": false,
+  "logical_fits_complete": 36,
+  "complete": true,
   "frozen_training_changed": false,
   "groups": [
     {
@@ -9,8 +9,12 @@
       "sid": "2af5b9136e6cceae",
       "gpus": 3,
       "seconds": 14400,
-      "planned_checkpoint": null,
-      "pod_stop_at": null
+      "planned_checkpoint": {
+        "mode": "child-SIGTERM",
+        "requested_unix": 1792870517.0065157,
+        "reason": "Observed low utilization and token rate require finite stages; preserve complete updates and release finished GPUs"
+      },
+      "pod_stop_at": "2026-10-24T19:36:19.000Z"
     },
     {
       "name": "rft-weekend-ext-resume-03-20261025",
@@ -18,8 +22,12 @@
       "sid": "b7de3874dce5a06a",
       "gpus": 6,
       "seconds": 14400,
-      "planned_checkpoint": null,
-      "pod_stop_at": null
+      "planned_checkpoint": {
+        "mode": "child-SIGTERM",
+        "requested_unix": 1792870735.3264875,
+        "reason": "Observed low utilization and token rate require finite stages; preserve complete updates and release finished GPUs"
+      },
+      "pod_stop_at": "2026-10-24T19:40:28.000Z"
     },
     {
       "name": "rft-weekend-ext-resume-04-20261025",
@@ -29,7 +37,61 @@
       "seconds": 14400,
       "planned_checkpoint": null,
       "pod_stop_at": "2026-10-24T17:58:59.000Z"
+    },
+    {
+      "name": "rft-weekend-ext-segment-02-01-20261025",
+      "phase": "ext-segment-02-01",
+      "sid": "f82c9b64c035e359",
+      "gpus": 3,
+      "seconds": 5400,
+      "planned_checkpoint": {
+        "mode": "worker-window",
+        "verified_after_terminal": true,
+        "observed_unix": 1792901545.470005,
+        "reason": "Frozen child windows expired and saved complete optimizer/RNG; exact checkpoint, logs, sessions and exit codes verified"
+      },
+      "pod_stop_at": "2026-10-24T21:09:07.000Z"
+    },
+    {
+      "name": "rft-weekend-ext-segment-03-01-20261025",
+      "phase": "ext-segment-03-01",
+      "sid": "37c99c2d7f0390ea",
+      "gpus": 3,
+      "seconds": 5400,
+      "planned_checkpoint": {
+        "mode": "worker-window",
+        "verified_after_terminal": true,
+        "observed_unix": 1792901556.8612354,
+        "reason": "Frozen child windows expired and saved complete optimizer/RNG; exact checkpoint, logs, sessions and exit codes verified"
+      },
+      "pod_stop_at": "2026-10-24T21:13:24.000Z"
+    },
+    {
+      "name": "rft-weekend-ext-segment-02-02-20261025",
+      "phase": "ext-segment-02-02",
+      "sid": "a03ad6a133af4375",
+      "gpus": 3,
+      "seconds": 5400,
+      "planned_checkpoint": {
+        "mode": "worker-window",
+        "declared_unix": 1792901621.8638856,
+        "reason": "Frozen child and parent windows own checkpoint/save/export; read-only controller availability is not required"
+      },
+      "pod_stop_at": "2026-10-25T04:29:43.000Z"
+    },
+    {
+      "name": "rft-weekend-ext-segment-03-02-20261025",
+      "phase": "ext-segment-03-02",
+      "sid": "8010ab6c8fe4fe1e",
+      "gpus": 3,
+      "seconds": 5400,
+      "planned_checkpoint": {
+        "mode": "worker-window",
+        "declared_unix": 1792901637.8141034,
+        "reason": "Frozen child and parent windows own checkpoint/save/export; read-only controller availability is not required"
+      },
+      "pod_stop_at": "2026-10-25T04:35:25.000Z"
     }
   ],
-  "observed_unix": 1792864781.0618494
+  "observed_unix": 1792902986.3056047
 }

@@ -1,6 +1,6 @@
 # OPD：训练路线、能力融合与异步实现
 
-资料核对日期：2026-10-24。本文区分公开方法、数学分析和建议实验。同步 OPD 已接入 `idle_rft` 周末实验，teacher 资格、三种子 OPD 和三种子 replay 的完整 GPU 训练及全部 16 个模型盲测已完成；42 个任务均已终止。既有候选筛选与 LoRA SFT 成绩单独报告。
+资料核对日期：2026-10-24。本文区分公开方法、数学分析和建议实验。同步 OPD 已接入 `idle_rft` 周末实验，teacher 资格、三种子 OPD 和三种子 replay 的完整 GPU 训练及全部 16 个模型盲测已完成；42 个任务均已终止。既有候选筛选与 LoRA SFT 成绩单独报告。上述42个任务为原pilot；独立补强的36组训练及全部评测也已完成，结果和全程资源核算见§7.2。
 
 ## 1. OPD 在完整训练流程中的位置
 
@@ -300,13 +300,46 @@ MBPP 上 OPD 相对 warm 均值 −0.39 pp，replay 为 −2.94 pp；OPD/replay 
 
 代码：[main 分支](https://github.com/Cheongroach/idle-rft-opd/tree/main)。协议、日志与实测：[research 分支](https://github.com/Cheongroach/idle-rft-opd/tree/research)。
 
-### 7.2 用户要求补强后的独立扩展（执行中）
+### 7.2 用户要求补强后的独立扩展（已完成）
 
-用户认为首轮预算不足以回答“训到位了吗”，因此把首轮定义为接入 pilot，保留原结果后冻结独立扩展协议。36组训练包含6.5万/26.2万/52.4万响应token的OPD与replay三种子曲线、匹配bank token配额的单任务OPD、1:1保持份额及512-token前缀消融。不同预算有不同token-based LR horizon，它们是独立完整训练，不能拼成同一优化轨迹。
+首轮16,384响应token作为pilot保留。独立扩展已完成36组训练、38个完整开发集模型、20个新留出模型与38个固定前缀诊断。开发集按冻结规则选择524,288响应token；保持性开发集选型门槛：True。
 
-新增256道bank dev规格和2048道最终规格，排除旧8192道规格hash。完整MBPP新增80道dev、436道最终题，排除所有旧427个项目任务ID、规范化题面与alpha-renamed程序，连接重复组不跨dev/final。参考执行516/519通过，3道不支持或执行未通过项排除；公开MBPP的预训练污染与测试稀疏边界仍存在。
+训练包括65,536/262,144/524,288响应token的OPD/replay三种子、匹配bank token的单任务OPD、1:1保持份额及512-token前缀消融。各预算的LR horizon不同，不能拼成同一优化轨迹。
 
-开发集仅用于选预算；最终全部三种子进入新留出集。保持性非劣目标提前冻结为逐seed配对95% CI下界≥−2pp，未通过就报告证据不足。固定64个bank和16个MBPP旧student生成前缀用于无更新分布诊断，禁止用其loss下降替代任务分数。完整协议在`extension/PROTOCOL.md`；实际训练与最终结果未完成时不预填收益、平台期或非劣结论。
+新增256道bank dev和2,048道bank最终规格，排除旧8,192道规格hash。新增80道MBPP dev、436道MBPP最终题，排除所有旧427个项目任务ID、规范化题面与alpha-renamed程序；连接重复组不跨dev/final。参考执行516/519通过，排除3道当前协议未通过项；开发集与原开发集合并后共1,154题（bank 1,024、MBPP 130），新留出共2,484题（bank 2,048、MBPP 436）。公开MBPP预训练污染与源测试稀疏的边界仍存在。
+
+| 新留出方法 | bank mean ± seed std | retention mean ± seed std |
+|---|---:|---:|
+| opd | 98.44% ± 0.13pp | 46.64% ± 0.35pp |
+| replay | 96.91% ± 0.24pp | 45.18% ± 0.23pp |
+| bank-only | 98.45% ± 0.07pp | 46.02% ± 0.48pp |
+| balanced | 98.16% ± 0.15pp | 46.41% ± 0.35pp |
+| bank-only-balanced | 98.34% ± 0.10pp | 46.02% ± 0.13pp |
+| long-prefix | 96.88% ± 0.70pp | 46.56% ± 0.61pp |
+
+warm：bank 1792/2048，retention 202/436；bank expert 2019/2048。
+
+选定OPD相对warm的bank均值变化 +10.94pp，相对replay +1.53pp；距bank专家 0.15pp。
+
+最大两档OPD预算的bank dev均值变化 +0.13pp；冻结的近似平台期判据：True。该判据只覆盖bank dev，不能证明全域收敛；不同更新访问的前缀不同，训练loss不能替代固定评测。
+
+保持性要求每个种子相对warm的配对95% CI下界≥−2pp。选定OPD全部种子通过：True。区间包含零不等于非劣通过，种子标准差也不是置信区间。
+
+- opd-524288-s42 retention vs warm +0.00pp，95% CI [-1.37,+1.37]pp。
+- opd-524288-s43 retention vs warm +0.23pp，95% CI [-1.58,+2.05]pp。
+- opd-524288-s44 retention vs warm +0.69pp，95% CI [-0.46,+1.85]pp。
+
+同bank token的mixed/single、平衡份额/single逐seed配对比较、所有模型失败与截断计数、OPD/replay逐seed区间见`extension/final-analysis.json`。固定64个bank和16个MBPP生成前缀只用于无更新条件分布诊断；没有测量teacher纠错续写。
+
+附加数值诊断确认PEFT 0.18.1加载第二个MBPP保持teacher adapter时发生BF16舍入，源checkpoint hash相同不代表运行时权重逐元素相同。全部LoRA参数与warm权重的BF16舍入值一致；临时teacher回填源FP32权重后，一个236-token前缀的输出差异和距离均为0。官方36组实验保留冻结加载方式，MBPP warm非零分布距离包含该精度基线；详见`extension/teacher-load-precision-audit.json`。该探针使用已有Pod中的完成进程空闲GPU，计入原Pod成本，未保存adapter。
+
+补强中三项任务被平台低GPU/SM利用率查杀，并非用户关闭或12小时超时。保全214个文件，仅恢复未完成的10个配置；模型、Adam、调度器、路由游标与Python/Torch/CUDA RNG使用原冻结实现恢复。按实测速率缩短后续任务窗口，正常保存完整优化器和RNG后分段续训，已完成进程不再申请GPU。另一次控制端45秒状态查询超时使协调进程退出；已启动任务仍在各自90分钟窗口保存退出。重新核验6个checkpoint后续跑剩余45,917响应token；只读查询增加有界重试，保存和导出由任务自身窗口负责。详见controller-timeout-recovery.json。原中断Pod及所有续训Pod均计入全程成本。原进程没有正常退出记录时，其进程时间以session开始至Pod停止、且不超过原预留给出上界；逐配置上界标识见update-metrics.json，不把该上界当成精确进程耗时。
+
+选定预算的三种子OPD进程合计 22.74 H20卡时，replay 3.19，比值 7.13x。包含加载、rollout、teacher评分、更新和保存，teacher评分未独立计时。
+
+原实验与补强的完整Pod资源时间共 521.34 H20卡时，保守预留 1853.10/3000卡时，终态活跃GPU为0。Pod时间包括空等，不是平台账单或GPU利用率。
+
+未执行奖励RL、异步rollout、异源词表、完整词表loss消融、线上部署或fallback验收。结果仅支持同规模、同tokenizer的两个代码任务集后训练；主分支提供可移植训练代码，research保留协议、手稿和实测证据。
 
 ## 8. 代码阅读入口与面试表达边界
 
@@ -326,9 +359,9 @@ MBPP 上 OPD 相对 warm 均值 −0.39 pp，replay 为 −2.94 pp；OPD/replay 
 
 > 从共同 SFT checkpoint 生产同源专家，先验证 task headroom 和学生状态上的 teacher 可学习性；在固定 token 契约上比较 sampled/top-k 信号，分开测量单域迁移缺口与融合缺口；再通过有界异步、概率版本记录和 stale admission 控制提升有效吞吐；最后报告各域专家差距、质量置信区间和部署回退成本。
 
-上述共同多域 SFT、RL 专家、异步链路是扩展路线，本轮实际可讲的证据是：
+共同多域 SFT、RL 专家生产和异步链路仍是后续路线。本项目已完成的证据可表述为：
 
-> 负责将同步 OPD 接入可验证代码后训练流程；先用完整开发集确认 teacher +12.50 pp 的学习空间，实现保留全词表归一化的 top64 分布 loss、冻结 teacher 路由、精确 3:1 token 配额和完整 checkpoint 验收；完成三种子 OPD/replay 与两个任务的全部盲测。OPD 在 bank 相对 warm +9.27 pp、相对 replay +4.53 pp，MBPP 均值 −0.39 pp，距 bank expert 3.93 pp；代价是训练进程时间约 5.42 倍。报告未证明的保持性与异步边界，使用 172.98 H20 卡时完成整个原实验及 OPD 接入。
+> 负责将同步OPD接入可验证代码后训练，并完成36组预算、单域/混合及保持份额消融；实现完整词表归一化的teacher top64 loss、冻结teacher路由、精确token配额与checkpoint验收。按38个完整开发集模型选定524,288响应token，在20个新留出模型上复核：OPD的bank三种子均值98.44%，较warm变化+10.94pp，较replay变化+1.53pp，距领域专家0.15pp；MBPP保持性均值变化+0.31pp，每种子配对95% CI下界≥−2pp的门槛通过。固定前缀诊断与参数逐元素比较定位了第二个teacher adapter的BF16舍入边界。原pilot及补强完整Pod资源时间共521.34 H20卡时；训练完成、条件分布接近及全域收敛分别报告。
 
 实现依赖 PyTorch、Transformers 和 PEFT；没有使用 Miles/verl 执行本轮 OPD，也没有把多域 RL、异步吞吐或纯 base 到部署记成本次完成工作。
 

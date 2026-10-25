@@ -1,0 +1,2509 @@
+{
+  "completed": true,
+  "selected_budget": 524288,
+  "selection": {
+    "chosen_budget": 524288,
+    "retention_gate_passed": true,
+    "warm": {
+      "bank": 0.861328125,
+      "retention": 0.6076923076923076
+    },
+    "curves": [
+      {
+        "budget": 65536,
+        "scores": {
+          "opd": {
+            "bank": {
+              "mean": 0.9772135416666666,
+              "std": 0.0029834477180702085,
+              "seed_scores": [
+                0.974609375,
+                0.98046875,
+                0.9765625
+              ]
+            },
+            "retention": {
+              "mean": 0.5974358974358974,
+              "std": 0.011750194089630317,
+              "seed_scores": [
+                0.5846153846153846,
+                0.6,
+                0.6076923076923076
+              ]
+            }
+          },
+          "replay": {
+            "bank": {
+              "mean": 0.9547526041666666,
+              "std": 0.015696046160470305,
+              "seed_scores": [
+                0.97265625,
+                0.9482421875,
+                0.943359375
+              ]
+            },
+            "retention": {
+              "mean": 0.5948717948717949,
+              "std": 0.00888231183368652,
+              "seed_scores": [
+                0.6,
+                0.5846153846153846,
+                0.6
+              ]
+            }
+          }
+        },
+        "retention_eligible": true
+      },
+      {
+        "budget": 262144,
+        "scores": {
+          "opd": {
+            "bank": {
+              "mean": 0.9889322916666666,
+              "std": 0.0014917238590351043,
+              "seed_scores": [
+                0.990234375,
+                0.9892578125,
+                0.9873046875
+              ]
+            },
+            "retention": {
+              "mean": 0.5846153846153846,
+              "std": 0.0,
+              "seed_scores": [
+                0.5846153846153846,
+                0.5846153846153846,
+                0.5846153846153846
+              ]
+            }
+          },
+          "replay": {
+            "bank": {
+              "mean": 0.9554036458333334,
+              "std": 0.007064627087959214,
+              "seed_scores": [
+                0.947265625,
+                0.9599609375,
+                0.958984375
+              ]
+            },
+            "retention": {
+              "mean": 0.5794871794871794,
+              "std": 0.011750194089630378,
+              "seed_scores": [
+                0.5692307692307692,
+                0.5769230769230769,
+                0.5923076923076923
+              ]
+            }
+          }
+        },
+        "retention_eligible": false
+      },
+      {
+        "budget": 524288,
+        "scores": {
+          "opd": {
+            "bank": {
+              "mean": 0.990234375,
+              "std": 0.0016914558667664816,
+              "seed_scores": [
+                0.9892578125,
+                0.9892578125,
+                0.9921875
+              ]
+            },
+            "retention": {
+              "mean": 0.5948717948717949,
+              "std": 0.00444115591684326,
+              "seed_scores": [
+                0.5923076923076923,
+                0.6,
+                0.5923076923076923
+              ]
+            }
+          },
+          "replay": {
+            "bank": {
+              "mean": 0.9713541666666666,
+              "std": 0.0011276372445109878,
+              "seed_scores": [
+                0.970703125,
+                0.970703125,
+                0.97265625
+              ]
+            },
+            "retention": {
+              "mean": 0.5717948717948718,
+              "std": 0.00444115591684326,
+              "seed_scores": [
+                0.5692307692307692,
+                0.5769230769230769,
+                0.5692307692307692
+              ]
+            }
+          }
+        },
+        "retention_eligible": true
+      }
+    ],
+    "reports": {
+      "warm": {
+        "path": "[local path redacted]",
+        "sha256": "c67273a75e3d41f33e104c8ad8106f7b65678dff3d2bbc2b0b32de323b822434"
+      },
+      "expert": {
+        "path": "[local path redacted]",
+        "sha256": "722597d3519bdaac6852fcc4626a858b979a79a0145c8da981a9c73e57a8dbbc"
+      },
+      "opd-65536-s42": {
+        "path": "[local path redacted]",
+        "sha256": "8874b2eb03fda574c9d0d3dd0c79227de4f1c6ec126209390be758bbc9f13714"
+      },
+      "opd-65536-s43": {
+        "path": "[local path redacted]",
+        "sha256": "6b8f95c98f169e103ccda5403753b6f5a9023b3335d35bd02dc3ca8ebe4514b1"
+      },
+      "opd-65536-s44": {
+        "path": "[local path redacted]",
+        "sha256": "47512778ea53ad5ba401101e9d0f6c7947a5d0623eea54d76039a841745115b9"
+      },
+      "replay-65536-s42": {
+        "path": "[local path redacted]",
+        "sha256": "65fb043ae90ea4591ceb0c3ba8656962c1e4dd6e294facddb571f91a2445e781"
+      },
+      "replay-65536-s43": {
+        "path": "[local path redacted]",
+        "sha256": "18a136d7f2bcb4fe4ef2e1e6f07e1e92f43c02e4ba0fad7c61c417e17e987dab"
+      },
+      "replay-65536-s44": {
+        "path": "[local path redacted]",
+        "sha256": "b00cf863a559366630ba515695007ce9bcba34bab46416f7a00a828014565626"
+      },
+      "bank-only-65536-s42": {
+        "path": "[local path redacted]",
+        "sha256": "b93a5b817178bfac9e1d2140664a8f2f914046a0c70a2ea3626338fd0f09abea"
+      },
+      "bank-only-65536-s43": {
+        "path": "[local path redacted]",
+        "sha256": "69bba8516f176b75e9542bf212d543b4fc88e8ae0e5c3f77fb2a03efe1b07718"
+      },
+      "bank-only-65536-s44": {
+        "path": "[local path redacted]",
+        "sha256": "eaa7f84bdff8fa755becc570027748968d14bfa677fb016169877d15072769a3"
+      },
+      "opd-262144-s42": {
+        "path": "[local path redacted]",
+        "sha256": "b72da2d820b699f29f8c3dc7455f443c520f4a284c9b9c0198c737689cd09ff0"
+      },
+      "opd-262144-s43": {
+        "path": "[local path redacted]",
+        "sha256": "7495e6055189ea18e9e4643fa04d3381cbb83d35178172c5941ef5e80d2575e0"
+      },
+      "opd-262144-s44": {
+        "path": "[local path redacted]",
+        "sha256": "3668497913621c96b5e435d90481f59326a297bfda32387e6191fa0d1533bd1f"
+      },
+      "replay-262144-s42": {
+        "path": "[local path redacted]",
+        "sha256": "d4d680a2d3d8d416312670b9bae7929053b1bf3988698fd7dd6e94f7bb550aca"
+      },
+      "replay-262144-s43": {
+        "path": "[local path redacted]",
+        "sha256": "fa64cf89ce97398c920744fa9ff92d8834a91b529c4b1c7f15512f54cca745e4"
+      },
+      "replay-262144-s44": {
+        "path": "[local path redacted]",
+        "sha256": "035167f93d89c319fca9c96ad7664aac9b610972774e07d96be02efb985f65df"
+      },
+      "bank-only-262144-s42": {
+        "path": "[local path redacted]",
+        "sha256": "9cf24069d060d6fbdf1d6f20dca684ef4e21cda45b89708adf27e908e4c3406f"
+      },
+      "bank-only-262144-s43": {
+        "path": "[local path redacted]",
+        "sha256": "370f0b946616493f424c9a0f862ab352f2b382aa568af4c2822bd2e6465a3e4a"
+      },
+      "bank-only-262144-s44": {
+        "path": "[local path redacted]",
+        "sha256": "de6a22bb1ece623baa4e41fa803f87843c559fa3dd5a2d82e223a9a53472e2b1"
+      },
+      "opd-524288-s42": {
+        "path": "[local path redacted]",
+        "sha256": "fdfb4f66875d287ee1ff5fbaa202aacef177e4c829540625719456ce7af041ab"
+      },
+      "opd-524288-s43": {
+        "path": "[local path redacted]",
+        "sha256": "93131b9860a212781b92c70e0c4c73eacbb013489b6e33dca7ae5d559ba1e57d"
+      },
+      "opd-524288-s44": {
+        "path": "[local path redacted]",
+        "sha256": "ca52c9a4f9a1f881657373f6cb5fa717fcb4dd568f7d0bff63313a296e2a3938"
+      },
+      "replay-524288-s42": {
+        "path": "[local path redacted]",
+        "sha256": "507131e7eb35969c1d6ad6b220a20dbb484b314717ebf53250c9fd842f4147cc"
+      },
+      "replay-524288-s43": {
+        "path": "[local path redacted]",
+        "sha256": "a1f4005446f801803a6e910ef44f7502396ace753899a308d3068d6b5a867397"
+      },
+      "replay-524288-s44": {
+        "path": "[local path redacted]",
+        "sha256": "3c2cc898d42f42392ef0311f3e79774b993adb0a8fe2b3a1d2a1488fd8a35af2"
+      },
+      "bank-only-524288-s42": {
+        "path": "[local path redacted]",
+        "sha256": "1492d25d50b060f4e835cdc8dabdd8bbb1c8ebe1365a084522b0dce641c01e71"
+      },
+      "bank-only-524288-s43": {
+        "path": "[local path redacted]",
+        "sha256": "92f27f98ae30444da8b1b2b7957dfa764f6260760c09ab5d2097199c6324c35e"
+      },
+      "bank-only-524288-s44": {
+        "path": "[local path redacted]",
+        "sha256": "0444dd233bb5ea67ec1b570783145d3524295fabe3acc0a01c4982d492c0c0df"
+      },
+      "balanced-s42": {
+        "path": "[local path redacted]",
+        "sha256": "b9034cf1cdcfb37a68ad644b1bc148d60f72865745fedb5982cb833e8415cbbd"
+      },
+      "balanced-s43": {
+        "path": "[local path redacted]",
+        "sha256": "ead4056bd8b0ffcf64526775c5cd75c8953b6afcfe27308a4d638260f7603a29"
+      },
+      "balanced-s44": {
+        "path": "[local path redacted]",
+        "sha256": "87f9dc8cb2ece69f384aea0858e58edc3deac9ba623e3a2475f9387b68079d15"
+      },
+      "bank-only-balanced-s42": {
+        "path": "[local path redacted]",
+        "sha256": "742e44b7d2abae38de5c337d9cc57a24fb3ab632e519f81713cb5066428b8c9b"
+      },
+      "bank-only-balanced-s43": {
+        "path": "[local path redacted]",
+        "sha256": "d1b898b8aafa1f8f24a1fa325fbbcef6596b782a431992fad2b1f45bb301227b"
+      },
+      "bank-only-balanced-s44": {
+        "path": "[local path redacted]",
+        "sha256": "3f5e14a8413ad613e1221a2963ef9a050be9414a0a3676d4f6717d8a9d878813"
+      },
+      "long-prefix-s42": {
+        "path": "[local path redacted]",
+        "sha256": "7e0a421bceef150583b3e67a1bb1592a2196ae85aeef740d156c7f55c9e4714b"
+      },
+      "long-prefix-s43": {
+        "path": "[local path redacted]",
+        "sha256": "3f300a9c01c251439bb8fb62f2650dcea40a0da233a62fb36073d1d943721b63"
+      },
+      "long-prefix-s44": {
+        "path": "[local path redacted]",
+        "sha256": "e89422c21a27b91b99f3a5a255d4513a2177fec892c167589b1eb244c7d9a78b"
+      }
+    },
+    "protocol_sha256": "143a8fc799ccd57a169edf8acef0cd3e28b4ab162e8161fceedf3d51cb4971e1"
+  },
+  "final_comparisons": {
+    "bank": {
+      "opd-524288-s42": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.98388671875,
+          "delta": 0.10888671875,
+          "wins": 237,
+          "losses": 14,
+          "ci95": [
+            0.09521484375,
+            0.123046875
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.98388671875,
+          "delta": -0.001953125,
+          "wins": 8,
+          "losses": 12,
+          "ci95": [
+            -0.00634765625,
+            0.00244140625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "opd-524288-s43": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.9833984375,
+          "delta": 0.1083984375,
+          "wins": 234,
+          "losses": 12,
+          "ci95": [
+            0.0947265625,
+            0.12255859375
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.9833984375,
+          "delta": -0.00244140625,
+          "wins": 10,
+          "losses": 15,
+          "ci95": [
+            -0.00732421875,
+            0.00244140625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "opd-524288-s44": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.98583984375,
+          "delta": 0.11083984375,
+          "wins": 236,
+          "losses": 9,
+          "ci95": [
+            0.09716796875,
+            0.125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.98583984375,
+          "delta": 0.0,
+          "wins": 7,
+          "losses": 7,
+          "ci95": [
+            -0.00341796875,
+            0.00341796875
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "replay-524288-s42": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.96630859375,
+          "delta": 0.09130859375,
+          "wins": 217,
+          "losses": 30,
+          "ci95": [
+            0.0771484375,
+            0.10595703125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.96630859375,
+          "delta": -0.01953125,
+          "wins": 14,
+          "losses": 54,
+          "ci95": [
+            -0.02734375,
+            -0.01171875
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "replay-524288-s43": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.970703125,
+          "delta": 0.095703125,
+          "wins": 218,
+          "losses": 22,
+          "ci95": [
+            0.08154296875,
+            0.10986328125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.970703125,
+          "delta": -0.01513671875,
+          "wins": 9,
+          "losses": 40,
+          "ci95": [
+            -0.02197265625,
+            -0.0087890625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "replay-524288-s44": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.97021484375,
+          "delta": 0.09521484375,
+          "wins": 225,
+          "losses": 30,
+          "ci95": [
+            0.08056640625,
+            0.10986328125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.97021484375,
+          "delta": -0.015625,
+          "wins": 15,
+          "losses": 47,
+          "ci95": [
+            -0.0234375,
+            -0.00830078125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-524288-s42": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.98388671875,
+          "delta": 0.10888671875,
+          "wins": 237,
+          "losses": 14,
+          "ci95": [
+            0.0947265625,
+            0.123046875
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.98388671875,
+          "delta": -0.001953125,
+          "wins": 11,
+          "losses": 15,
+          "ci95": [
+            -0.0068359375,
+            0.0029296875
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-524288-s43": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.984375,
+          "delta": 0.109375,
+          "wins": 238,
+          "losses": 14,
+          "ci95": [
+            0.09521484375,
+            0.12353515625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.984375,
+          "delta": -0.00146484375,
+          "wins": 8,
+          "losses": 11,
+          "ci95": [
+            -0.005859375,
+            0.00244140625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-524288-s44": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.9853515625,
+          "delta": 0.1103515625,
+          "wins": 240,
+          "losses": 14,
+          "ci95": [
+            0.09619140625,
+            0.12451171875
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.9853515625,
+          "delta": -0.00048828125,
+          "wins": 13,
+          "losses": 14,
+          "ci95": [
+            -0.00537109375,
+            0.00439453125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "balanced-s42": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.97998046875,
+          "delta": 0.10498046875,
+          "wins": 231,
+          "losses": 16,
+          "ci95": [
+            0.0908203125,
+            0.119140625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.97998046875,
+          "delta": -0.005859375,
+          "wins": 9,
+          "losses": 21,
+          "ci95": [
+            -0.01123046875,
+            -0.0009765625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "balanced-s43": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.98193359375,
+          "delta": 0.10693359375,
+          "wins": 229,
+          "losses": 10,
+          "ci95": [
+            0.09326171875,
+            0.12060546875
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.98193359375,
+          "delta": -0.00390625,
+          "wins": 12,
+          "losses": 20,
+          "ci95": [
+            -0.00927734375,
+            0.00146484375
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "balanced-s44": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.98291015625,
+          "delta": 0.10791015625,
+          "wins": 236,
+          "losses": 15,
+          "ci95": [
+            0.09375,
+            0.12255859375
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.98291015625,
+          "delta": -0.0029296875,
+          "wins": 11,
+          "losses": 17,
+          "ci95": [
+            -0.00830078125,
+            0.001953125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-balanced-s42": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.9833984375,
+          "delta": 0.1083984375,
+          "wins": 236,
+          "losses": 14,
+          "ci95": [
+            0.09423828125,
+            0.123046875
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.9833984375,
+          "delta": -0.00244140625,
+          "wins": 9,
+          "losses": 14,
+          "ci95": [
+            -0.0068359375,
+            0.001953125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-balanced-s43": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.982421875,
+          "delta": 0.107421875,
+          "wins": 236,
+          "losses": 16,
+          "ci95": [
+            0.09326171875,
+            0.12158203125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.982421875,
+          "delta": -0.00341796875,
+          "wins": 13,
+          "losses": 20,
+          "ci95": [
+            -0.00927734375,
+            0.001953125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-balanced-s44": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.984375,
+          "delta": 0.109375,
+          "wins": 237,
+          "losses": 13,
+          "ci95": [
+            0.095703125,
+            0.12353515625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.984375,
+          "delta": -0.00146484375,
+          "wins": 13,
+          "losses": 16,
+          "ci95": [
+            -0.0068359375,
+            0.00390625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "long-prefix-s42": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.970703125,
+          "delta": 0.095703125,
+          "wins": 217,
+          "losses": 21,
+          "ci95": [
+            0.08154296875,
+            0.10986328125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.970703125,
+          "delta": -0.01513671875,
+          "wins": 10,
+          "losses": 41,
+          "ci95": [
+            -0.02197265625,
+            -0.00830078125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "long-prefix-s43": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.974609375,
+          "delta": 0.099609375,
+          "wins": 225,
+          "losses": 21,
+          "ci95": [
+            0.08544921875,
+            0.11376953125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.974609375,
+          "delta": -0.01123046875,
+          "wins": 12,
+          "losses": 35,
+          "ci95": [
+            -0.01806640625,
+            -0.0048828125
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "long-prefix-s44": {
+        "vs_warm": {
+          "n": 2048,
+          "base_pass_at_1": 0.875,
+          "adapter_pass_at_1": 0.9609375,
+          "delta": 0.0859375,
+          "wins": 205,
+          "losses": 29,
+          "ci95": [
+            0.07177734375,
+            0.10009765625
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 2048,
+          "base_pass_at_1": 0.98583984375,
+          "adapter_pass_at_1": 0.9609375,
+          "delta": -0.02490234375,
+          "wins": 11,
+          "losses": 62,
+          "ci95": [
+            -0.033203125,
+            -0.01708984375
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      }
+    },
+    "retention": {
+      "opd-524288-s42": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.463302752293578,
+          "delta": 0.0,
+          "wins": 4,
+          "losses": 4,
+          "ci95": [
+            -0.01366742596810934,
+            0.01366742596810934
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.463302752293578,
+          "delta": 0.0,
+          "wins": 4,
+          "losses": 4,
+          "ci95": [
+            -0.01366742596810934,
+            0.01366742596810934
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "opd-524288-s43": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.46559633027522934,
+          "delta": 0.0022935779816513763,
+          "wins": 8,
+          "losses": 7,
+          "ci95": [
+            -0.015765765765765764,
+            0.020454545454545454
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.46559633027522934,
+          "delta": 0.0022935779816513763,
+          "wins": 8,
+          "losses": 7,
+          "ci95": [
+            -0.015765765765765764,
+            0.020454545454545454
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "opd-524288-s44": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4701834862385321,
+          "delta": 0.006880733944954129,
+          "wins": 5,
+          "losses": 2,
+          "ci95": [
+            -0.004597701149425287,
+            0.018518518518518517
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4701834862385321,
+          "delta": 0.006880733944954129,
+          "wins": 5,
+          "losses": 2,
+          "ci95": [
+            -0.004597701149425287,
+            0.018518518518518517
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "replay-524288-s42": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.44954128440366975,
+          "delta": -0.013761467889908258,
+          "wins": 9,
+          "losses": 15,
+          "ci95": [
+            -0.03669724770642202,
+            0.009009009009009009
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.44954128440366975,
+          "delta": -0.013761467889908258,
+          "wins": 9,
+          "losses": 15,
+          "ci95": [
+            -0.03669724770642202,
+            0.009009009009009009
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "replay-524288-s43": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4518348623853211,
+          "delta": -0.011467889908256881,
+          "wins": 10,
+          "losses": 15,
+          "ci95": [
+            -0.03464203233256351,
+            0.011441647597254004
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4518348623853211,
+          "delta": -0.011467889908256881,
+          "wins": 10,
+          "losses": 15,
+          "ci95": [
+            -0.03464203233256351,
+            0.011441647597254004
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "replay-524288-s44": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4541284403669725,
+          "delta": -0.009174311926605505,
+          "wins": 11,
+          "losses": 15,
+          "ci95": [
+            -0.03233256351039261,
+            0.013761467889908258
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4541284403669725,
+          "delta": -0.009174311926605505,
+          "wins": 11,
+          "losses": 15,
+          "ci95": [
+            -0.03233256351039261,
+            0.013761467889908258
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-524288-s42": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.45871559633027525,
+          "delta": -0.0045871559633027525,
+          "wins": 8,
+          "losses": 10,
+          "ci95": [
+            -0.02304147465437788,
+            0.013793103448275862
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.45871559633027525,
+          "delta": -0.0045871559633027525,
+          "wins": 8,
+          "losses": 10,
+          "ci95": [
+            -0.02304147465437788,
+            0.013793103448275862
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-524288-s43": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.45642201834862384,
+          "delta": -0.006880733944954129,
+          "wins": 9,
+          "losses": 12,
+          "ci95": [
+            -0.0273972602739726,
+            0.013729977116704805
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.45642201834862384,
+          "delta": -0.006880733944954129,
+          "wins": 9,
+          "losses": 12,
+          "ci95": [
+            -0.0273972602739726,
+            0.013729977116704805
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-524288-s44": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.46559633027522934,
+          "delta": 0.0022935779816513763,
+          "wins": 11,
+          "losses": 10,
+          "ci95": [
+            -0.01839080459770115,
+            0.022935779816513763
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.46559633027522934,
+          "delta": 0.0022935779816513763,
+          "wins": 11,
+          "losses": 10,
+          "ci95": [
+            -0.01839080459770115,
+            0.022935779816513763
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "balanced-s42": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4610091743119266,
+          "delta": -0.0022935779816513763,
+          "wins": 4,
+          "losses": 5,
+          "ci95": [
+            -0.016018306636155607,
+            0.011467889908256881
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4610091743119266,
+          "delta": -0.0022935779816513763,
+          "wins": 4,
+          "losses": 5,
+          "ci95": [
+            -0.016018306636155607,
+            0.011467889908256881
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "balanced-s43": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.46788990825688076,
+          "delta": 0.0045871559633027525,
+          "wins": 5,
+          "losses": 3,
+          "ci95": [
+            -0.006944444444444444,
+            0.0182648401826484
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.46788990825688076,
+          "delta": 0.0045871559633027525,
+          "wins": 5,
+          "losses": 3,
+          "ci95": [
+            -0.006944444444444444,
+            0.0182648401826484
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "balanced-s44": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.463302752293578,
+          "delta": 0.0,
+          "wins": 5,
+          "losses": 5,
+          "ci95": [
+            -0.013824884792626729,
+            0.013793103448275862
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.463302752293578,
+          "delta": 0.0,
+          "wins": 5,
+          "losses": 5,
+          "ci95": [
+            -0.013824884792626729,
+            0.013793103448275862
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-balanced-s42": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4610091743119266,
+          "delta": -0.0022935779816513763,
+          "wins": 8,
+          "losses": 9,
+          "ci95": [
+            -0.020785219399538105,
+            0.016129032258064516
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4610091743119266,
+          "delta": -0.0022935779816513763,
+          "wins": 8,
+          "losses": 9,
+          "ci95": [
+            -0.020785219399538105,
+            0.016129032258064516
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-balanced-s43": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4610091743119266,
+          "delta": -0.0022935779816513763,
+          "wins": 9,
+          "losses": 10,
+          "ci95": [
+            -0.02262443438914027,
+            0.0182648401826484
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4610091743119266,
+          "delta": -0.0022935779816513763,
+          "wins": 9,
+          "losses": 10,
+          "ci95": [
+            -0.02262443438914027,
+            0.0182648401826484
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "bank-only-balanced-s44": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.45871559633027525,
+          "delta": -0.0045871559633027525,
+          "wins": 7,
+          "losses": 9,
+          "ci95": [
+            -0.02288329519450801,
+            0.013729977116704805
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.45871559633027525,
+          "delta": -0.0045871559633027525,
+          "wins": 7,
+          "losses": 9,
+          "ci95": [
+            -0.02288329519450801,
+            0.013729977116704805
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "long-prefix-s42": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4724770642201835,
+          "delta": 0.009174311926605505,
+          "wins": 8,
+          "losses": 4,
+          "ci95": [
+            -0.00683371298405467,
+            0.02528735632183908
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4724770642201835,
+          "delta": 0.009174311926605505,
+          "wins": 8,
+          "losses": 4,
+          "ci95": [
+            -0.00683371298405467,
+            0.02528735632183908
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "long-prefix-s43": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4610091743119266,
+          "delta": -0.0022935779816513763,
+          "wins": 6,
+          "losses": 7,
+          "ci95": [
+            -0.01839080459770115,
+            0.013793103448275862
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.4610091743119266,
+          "delta": -0.0022935779816513763,
+          "wins": 6,
+          "losses": 7,
+          "ci95": [
+            -0.01839080459770115,
+            0.013793103448275862
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      },
+      "long-prefix-s44": {
+        "vs_warm": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.463302752293578,
+          "delta": 0.0,
+          "wins": 6,
+          "losses": 6,
+          "ci95": [
+            -0.016055045871559634,
+            0.016018306636155607
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        },
+        "vs_expert": {
+          "n": 436,
+          "base_pass_at_1": 0.463302752293578,
+          "adapter_pass_at_1": 0.463302752293578,
+          "delta": 0.0,
+          "wins": 6,
+          "losses": 6,
+          "ci95": [
+            -0.016055045871559634,
+            0.016018306636155607
+          ],
+          "method": "paired bootstrap over frozen duplicate groups, seed42",
+          "training_seeds": 1
+        }
+      }
+    }
+  },
+  "opd_vs_replay": {
+    "bank": [
+      {
+        "n": 2048,
+        "base_pass_at_1": 0.96630859375,
+        "adapter_pass_at_1": 0.98388671875,
+        "delta": 0.017578125,
+        "wins": 51,
+        "losses": 15,
+        "ci95": [
+          0.01025390625,
+          0.025390625
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 2048,
+        "base_pass_at_1": 0.970703125,
+        "adapter_pass_at_1": 0.9833984375,
+        "delta": 0.0126953125,
+        "wins": 38,
+        "losses": 12,
+        "ci95": [
+          0.00634765625,
+          0.01953125
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 2048,
+        "base_pass_at_1": 0.97021484375,
+        "adapter_pass_at_1": 0.98583984375,
+        "delta": 0.015625,
+        "wins": 50,
+        "losses": 18,
+        "ci95": [
+          0.0078125,
+          0.0234375
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      }
+    ],
+    "retention": [
+      {
+        "n": 436,
+        "base_pass_at_1": 0.44954128440366975,
+        "adapter_pass_at_1": 0.463302752293578,
+        "delta": 0.013761467889908258,
+        "wins": 13,
+        "losses": 7,
+        "ci95": [
+          -0.004640371229698376,
+          0.034324942791762014
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 436,
+        "base_pass_at_1": 0.4518348623853211,
+        "adapter_pass_at_1": 0.46559633027522934,
+        "delta": 0.013761467889908258,
+        "wins": 15,
+        "losses": 9,
+        "ci95": [
+          -0.006944444444444444,
+          0.036613272311212815
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 436,
+        "base_pass_at_1": 0.4541284403669725,
+        "adapter_pass_at_1": 0.4701834862385321,
+        "delta": 0.016055045871559634,
+        "wins": 17,
+        "losses": 10,
+        "ci95": [
+          -0.006880733944954129,
+          0.03944315545243619
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      }
+    ]
+  },
+  "mixed_vs_same_bank_tokens": {
+    "bank": [
+      {
+        "n": 2048,
+        "base_pass_at_1": 0.98388671875,
+        "adapter_pass_at_1": 0.98388671875,
+        "delta": 0.0,
+        "wins": 7,
+        "losses": 7,
+        "ci95": [
+          -0.00341796875,
+          0.00341796875
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 2048,
+        "base_pass_at_1": 0.984375,
+        "adapter_pass_at_1": 0.9833984375,
+        "delta": -0.0009765625,
+        "wins": 11,
+        "losses": 13,
+        "ci95": [
+          -0.005859375,
+          0.00390625
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 2048,
+        "base_pass_at_1": 0.9853515625,
+        "adapter_pass_at_1": 0.98583984375,
+        "delta": 0.00048828125,
+        "wins": 14,
+        "losses": 13,
+        "ci95": [
+          -0.00439453125,
+          0.00537109375
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      }
+    ],
+    "retention": [
+      {
+        "n": 436,
+        "base_pass_at_1": 0.45871559633027525,
+        "adapter_pass_at_1": 0.463302752293578,
+        "delta": 0.0045871559633027525,
+        "wins": 12,
+        "losses": 10,
+        "ci95": [
+          -0.016091954022988506,
+          0.02546296296296296
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 436,
+        "base_pass_at_1": 0.45642201834862384,
+        "adapter_pass_at_1": 0.46559633027522934,
+        "delta": 0.009174311926605505,
+        "wins": 12,
+        "losses": 8,
+        "ci95": [
+          -0.009259259259259259,
+          0.02981651376146789
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 436,
+        "base_pass_at_1": 0.46559633027522934,
+        "adapter_pass_at_1": 0.4701834862385321,
+        "delta": 0.0045871559633027525,
+        "wins": 9,
+        "losses": 7,
+        "ci95": [
+          -0.013729977116704805,
+          0.02304147465437788
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      }
+    ]
+  },
+  "largest_budget_dev_pairs": [
+    {
+      "n": 1024,
+      "base_pass_at_1": 0.990234375,
+      "adapter_pass_at_1": 0.9892578125,
+      "delta": -0.0009765625,
+      "wins": 3,
+      "losses": 4,
+      "ci95": [
+        -0.005859375,
+        0.00390625
+      ],
+      "method": "paired bootstrap over frozen duplicate groups, seed42",
+      "training_seeds": 1
+    },
+    {
+      "n": 1024,
+      "base_pass_at_1": 0.9892578125,
+      "adapter_pass_at_1": 0.9892578125,
+      "delta": 0.0,
+      "wins": 2,
+      "losses": 2,
+      "ci95": [
+        -0.00390625,
+        0.00390625
+      ],
+      "method": "paired bootstrap over frozen duplicate groups, seed42",
+      "training_seeds": 1
+    },
+    {
+      "n": 1024,
+      "base_pass_at_1": 0.9873046875,
+      "adapter_pass_at_1": 0.9921875,
+      "delta": 0.0048828125,
+      "wins": 8,
+      "losses": 3,
+      "ci95": [
+        -0.0009765625,
+        0.01171875
+      ],
+      "method": "paired bootstrap over frozen duplicate groups, seed42",
+      "training_seeds": 1
+    }
+  ],
+  "balanced_vs_same_bank_tokens": {
+    "bank": [
+      {
+        "n": 2048,
+        "base_pass_at_1": 0.9833984375,
+        "adapter_pass_at_1": 0.97998046875,
+        "delta": -0.00341796875,
+        "wins": 10,
+        "losses": 17,
+        "ci95": [
+          -0.0087890625,
+          0.00146484375
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 2048,
+        "base_pass_at_1": 0.982421875,
+        "adapter_pass_at_1": 0.98193359375,
+        "delta": -0.00048828125,
+        "wins": 15,
+        "losses": 16,
+        "ci95": [
+          -0.005859375,
+          0.0048828125
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 2048,
+        "base_pass_at_1": 0.984375,
+        "adapter_pass_at_1": 0.98291015625,
+        "delta": -0.00146484375,
+        "wins": 11,
+        "losses": 14,
+        "ci95": [
+          -0.00634765625,
+          0.00341796875
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      }
+    ],
+    "retention": [
+      {
+        "n": 436,
+        "base_pass_at_1": 0.4610091743119266,
+        "adapter_pass_at_1": 0.4610091743119266,
+        "delta": 0.0,
+        "wins": 10,
+        "losses": 10,
+        "ci95": [
+          -0.020594965675057208,
+          0.020594965675057208
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 436,
+        "base_pass_at_1": 0.4610091743119266,
+        "adapter_pass_at_1": 0.46788990825688076,
+        "delta": 0.006880733944954129,
+        "wins": 10,
+        "losses": 7,
+        "ci95": [
+          -0.011547344110854504,
+          0.02522935779816514
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      },
+      {
+        "n": 436,
+        "base_pass_at_1": 0.45871559633027525,
+        "adapter_pass_at_1": 0.463302752293578,
+        "delta": 0.0045871559633027525,
+        "wins": 8,
+        "losses": 6,
+        "ci95": [
+          -0.011574074074074073,
+          0.020737327188940093
+        ],
+        "method": "paired bootstrap over frozen duplicate groups, seed42",
+        "training_seeds": 1
+      }
+    ]
+  },
+  "final_suite_summaries": {
+    "warm": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 1792,
+        "pass_at_1": 0.875,
+        "failure_counts": {
+          "pass": 1792,
+          "wrong_answer": 217,
+          "runtime_error": 39
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 202,
+        "pass_at_1": 0.463302752293578,
+        "failure_counts": {
+          "wrong_answer": 201,
+          "pass": 202,
+          "runtime_error": 27,
+          "truncated": 6
+        }
+      }
+    },
+    "expert": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2019,
+        "pass_at_1": 0.98583984375,
+        "failure_counts": {
+          "pass": 2019,
+          "runtime_error": 7,
+          "wrong_answer": 22
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 197,
+        "pass_at_1": 0.4518348623853211,
+        "failure_counts": {
+          "wrong_answer": 198,
+          "pass": 197,
+          "runtime_error": 34,
+          "truncated": 7
+        }
+      }
+    },
+    "opd-524288-s42": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2015,
+        "pass_at_1": 0.98388671875,
+        "failure_counts": {
+          "pass": 2015,
+          "wrong_answer": 27,
+          "runtime_error": 6
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 202,
+        "pass_at_1": 0.463302752293578,
+        "failure_counts": {
+          "wrong_answer": 201,
+          "pass": 202,
+          "runtime_error": 30,
+          "truncated": 3
+        }
+      }
+    },
+    "opd-524288-s43": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2014,
+        "pass_at_1": 0.9833984375,
+        "failure_counts": {
+          "pass": 2014,
+          "wrong_answer": 28,
+          "runtime_error": 6
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 203,
+        "pass_at_1": 0.46559633027522934,
+        "failure_counts": {
+          "wrong_answer": 203,
+          "pass": 203,
+          "truncated": 4,
+          "runtime_error": 26
+        }
+      }
+    },
+    "opd-524288-s44": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2019,
+        "pass_at_1": 0.98583984375,
+        "failure_counts": {
+          "pass": 2019,
+          "runtime_error": 7,
+          "wrong_answer": 22
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 205,
+        "pass_at_1": 0.4701834862385321,
+        "failure_counts": {
+          "wrong_answer": 201,
+          "pass": 205,
+          "runtime_error": 26,
+          "truncated": 4
+        }
+      }
+    },
+    "replay-524288-s42": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 1979,
+        "pass_at_1": 0.96630859375,
+        "failure_counts": {
+          "pass": 1979,
+          "wrong_answer": 55,
+          "runtime_error": 14
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 196,
+        "pass_at_1": 0.44954128440366975,
+        "failure_counts": {
+          "wrong_answer": 195,
+          "pass": 196,
+          "runtime_error": 37,
+          "truncated": 5,
+          "syntax_or_contract_error": 3
+        }
+      }
+    },
+    "replay-524288-s43": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 1988,
+        "pass_at_1": 0.970703125,
+        "failure_counts": {
+          "pass": 1988,
+          "wrong_answer": 49,
+          "runtime_error": 11
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 197,
+        "pass_at_1": 0.4518348623853211,
+        "failure_counts": {
+          "wrong_answer": 195,
+          "pass": 197,
+          "runtime_error": 38,
+          "truncated": 4,
+          "syntax_or_contract_error": 2
+        }
+      }
+    },
+    "replay-524288-s44": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 1987,
+        "pass_at_1": 0.97021484375,
+        "failure_counts": {
+          "pass": 1987,
+          "wrong_answer": 46,
+          "runtime_error": 15
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 198,
+        "pass_at_1": 0.4541284403669725,
+        "failure_counts": {
+          "wrong_answer": 198,
+          "pass": 198,
+          "runtime_error": 33,
+          "truncated": 4,
+          "syntax_or_contract_error": 3
+        }
+      }
+    },
+    "bank-only-524288-s42": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2015,
+        "pass_at_1": 0.98388671875,
+        "failure_counts": {
+          "pass": 2015,
+          "wrong_answer": 28,
+          "runtime_error": 5
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 200,
+        "pass_at_1": 0.45871559633027525,
+        "failure_counts": {
+          "wrong_answer": 197,
+          "pass": 200,
+          "runtime_error": 33,
+          "truncated": 6
+        }
+      }
+    },
+    "bank-only-524288-s43": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2016,
+        "pass_at_1": 0.984375,
+        "failure_counts": {
+          "pass": 2016,
+          "wrong_answer": 27,
+          "runtime_error": 5
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 199,
+        "pass_at_1": 0.45642201834862384,
+        "failure_counts": {
+          "wrong_answer": 202,
+          "pass": 199,
+          "runtime_error": 31,
+          "truncated": 4
+        }
+      }
+    },
+    "bank-only-524288-s44": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2018,
+        "pass_at_1": 0.9853515625,
+        "failure_counts": {
+          "pass": 2018,
+          "runtime_error": 6,
+          "wrong_answer": 24
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 203,
+        "pass_at_1": 0.46559633027522934,
+        "failure_counts": {
+          "wrong_answer": 195,
+          "pass": 203,
+          "runtime_error": 35,
+          "truncated": 3
+        }
+      }
+    },
+    "balanced-s42": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2007,
+        "pass_at_1": 0.97998046875,
+        "failure_counts": {
+          "pass": 2007,
+          "wrong_answer": 35,
+          "runtime_error": 6
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 201,
+        "pass_at_1": 0.4610091743119266,
+        "failure_counts": {
+          "wrong_answer": 206,
+          "pass": 201,
+          "truncated": 4,
+          "runtime_error": 25
+        }
+      }
+    },
+    "balanced-s43": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2011,
+        "pass_at_1": 0.98193359375,
+        "failure_counts": {
+          "pass": 2011,
+          "wrong_answer": 30,
+          "runtime_error": 7
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 204,
+        "pass_at_1": 0.46788990825688076,
+        "failure_counts": {
+          "wrong_answer": 202,
+          "pass": 204,
+          "truncated": 4,
+          "runtime_error": 26
+        }
+      }
+    },
+    "balanced-s44": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2013,
+        "pass_at_1": 0.98291015625,
+        "failure_counts": {
+          "pass": 2013,
+          "wrong_answer": 32,
+          "runtime_error": 3
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 202,
+        "pass_at_1": 0.463302752293578,
+        "failure_counts": {
+          "wrong_answer": 205,
+          "pass": 202,
+          "runtime_error": 27,
+          "truncated": 2
+        }
+      }
+    },
+    "bank-only-balanced-s42": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2014,
+        "pass_at_1": 0.9833984375,
+        "failure_counts": {
+          "pass": 2014,
+          "wrong_answer": 25,
+          "runtime_error": 9
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 201,
+        "pass_at_1": 0.4610091743119266,
+        "failure_counts": {
+          "wrong_answer": 196,
+          "pass": 201,
+          "runtime_error": 32,
+          "truncated": 7
+        }
+      }
+    },
+    "bank-only-balanced-s43": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2012,
+        "pass_at_1": 0.982421875,
+        "failure_counts": {
+          "pass": 2012,
+          "wrong_answer": 28,
+          "runtime_error": 8
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 201,
+        "pass_at_1": 0.4610091743119266,
+        "failure_counts": {
+          "wrong_answer": 199,
+          "pass": 201,
+          "runtime_error": 31,
+          "truncated": 5
+        }
+      }
+    },
+    "bank-only-balanced-s44": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 2016,
+        "pass_at_1": 0.984375,
+        "failure_counts": {
+          "pass": 2016,
+          "wrong_answer": 27,
+          "runtime_error": 5
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 200,
+        "pass_at_1": 0.45871559633027525,
+        "failure_counts": {
+          "wrong_answer": 199,
+          "pass": 200,
+          "runtime_error": 33,
+          "truncated": 4
+        }
+      }
+    },
+    "long-prefix-s42": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 1988,
+        "pass_at_1": 0.970703125,
+        "failure_counts": {
+          "pass": 1988,
+          "wrong_answer": 46,
+          "runtime_error": 14
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 206,
+        "pass_at_1": 0.4724770642201835,
+        "failure_counts": {
+          "wrong_answer": 200,
+          "pass": 206,
+          "runtime_error": 29,
+          "truncated": 1
+        }
+      }
+    },
+    "long-prefix-s43": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 1996,
+        "pass_at_1": 0.974609375,
+        "failure_counts": {
+          "pass": 1996,
+          "wrong_answer": 40,
+          "runtime_error": 12
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 201,
+        "pass_at_1": 0.4610091743119266,
+        "failure_counts": {
+          "wrong_answer": 201,
+          "pass": 201,
+          "runtime_error": 32,
+          "truncated": 2
+        }
+      }
+    },
+    "long-prefix-s44": {
+      "bank": {
+        "tasks": 2048,
+        "passed": 1968,
+        "pass_at_1": 0.9609375,
+        "failure_counts": {
+          "pass": 1968,
+          "wrong_answer": 62,
+          "runtime_error": 18
+        }
+      },
+      "retention": {
+        "tasks": 436,
+        "passed": 202,
+        "pass_at_1": 0.463302752293578,
+        "failure_counts": {
+          "wrong_answer": 199,
+          "pass": 202,
+          "runtime_error": 29,
+          "truncated": 6
+        }
+      }
+    }
+  },
+  "final_seed_statistics": {
+    "opd": {
+      "bank": {
+        "mean": 0.984375,
+        "seed_std": 0.0012918707573557572,
+        "seed_scores": [
+          0.98388671875,
+          0.9833984375,
+          0.98583984375
+        ]
+      },
+      "retention": {
+        "mean": 0.46636085626911317,
+        "seed_std": 0.003503498237733832,
+        "seed_scores": [
+          0.463302752293578,
+          0.46559633027522934,
+          0.4701834862385321
+        ]
+      }
+    },
+    "replay": {
+      "bank": {
+        "mean": 0.9690755208333334,
+        "seed_std": 0.002408634210115355,
+        "seed_scores": [
+          0.96630859375,
+          0.970703125,
+          0.97021484375
+        ]
+      },
+      "retention": {
+        "mean": 0.4518348623853211,
+        "seed_std": 0.0022935779816513624,
+        "seed_scores": [
+          0.44954128440366975,
+          0.4518348623853211,
+          0.4541284403669725
+        ]
+      }
+    },
+    "bank-only": {
+      "bank": {
+        "mean": 0.9845377604166666,
+        "seed_std": 0.0007458619295175521,
+        "seed_scores": [
+          0.98388671875,
+          0.984375,
+          0.9853515625
+        ]
+      },
+      "retention": {
+        "mean": 0.4602446483180428,
+        "seed_std": 0.0047744633015278206,
+        "seed_scores": [
+          0.45871559633027525,
+          0.45642201834862384,
+          0.46559633027522934
+        ]
+      }
+    },
+    "balanced": {
+      "bank": {
+        "mean": 0.9816080729166666,
+        "seed_std": 0.0014917238590351043,
+        "seed_scores": [
+          0.97998046875,
+          0.98193359375,
+          0.98291015625
+        ]
+      },
+      "retention": {
+        "mean": 0.4640672782874618,
+        "seed_std": 0.003503498237733832,
+        "seed_scores": [
+          0.4610091743119266,
+          0.46788990825688076,
+          0.463302752293578
+        ]
+      }
+    },
+    "bank-only-balanced": {
+      "bank": {
+        "mean": 0.9833984375,
+        "seed_std": 0.0009765625,
+        "seed_scores": [
+          0.9833984375,
+          0.982421875,
+          0.984375
+        ]
+      },
+      "retention": {
+        "mean": 0.46024464831804285,
+        "seed_std": 0.0013241978651138127,
+        "seed_scores": [
+          0.4610091743119266,
+          0.4610091743119266,
+          0.45871559633027525
+        ]
+      }
+    },
+    "long-prefix": {
+      "bank": {
+        "mean": 0.96875,
+        "seed_std": 0.007042092334890604,
+        "seed_scores": [
+          0.970703125,
+          0.974609375,
+          0.9609375
+        ]
+      },
+      "retention": {
+        "mean": 0.46559633027522934,
+        "seed_std": 0.006068236951983001,
+        "seed_scores": [
+          0.4724770642201835,
+          0.4610091743119266,
+          0.463302752293578
+        ]
+      }
+    }
+  },
+  "selected_training_cost": {
+    "opd": {
+      "process_gpu_hours": 22.737913157397674,
+      "response_tokens": 1572864,
+      "response_tokens_per_process_second": 19.21489732335094,
+      "contains_interrupted_process_upper_bound": true
+    },
+    "replay": {
+      "process_gpu_hours": 3.187465811903336,
+      "response_tokens": 1572864,
+      "response_tokens_per_process_second": 137.07022834098288,
+      "contains_interrupted_process_upper_bound": false
+    }
+  },
+  "fixed_prefix_summary": {
+    "warm": {
+      "bank": {
+        "top64_distance": 0.010147698034858025,
+        "student_mass": 0.9999849516472546,
+        "teacher_mass": 0.9999951039068459,
+        "sampled_logratio": 0.005107587181202371,
+        "student_ce": 0.028891380870177515,
+        "teacher_ce": 0.03399896763954656,
+        "entropy": 0.06138612389811856
+      },
+      "mbpp": {
+        "top64_distance": 0.00024462386326360916,
+        "student_mass": 0.9999292757636622,
+        "teacher_mass": 0.9999296983083089,
+        "sampled_logratio": -4.9080772584778045e-05,
+        "student_ce": 0.06331833300344124,
+        "teacher_ce": 0.06326925340549726,
+        "entropy": 0.13856821330035465
+      }
+    },
+    "expert": {
+      "bank": {
+        "top64_distance": 0.0,
+        "student_mass": 0.9999951039068459,
+        "teacher_mass": 0.9999951039068459,
+        "sampled_logratio": 0.0,
+        "student_ce": 0.03399896763954656,
+        "teacher_ce": 0.03399896763954656,
+        "entropy": 0.05019104628914992
+      },
+      "mbpp": {
+        "top64_distance": 0.008344287144902506,
+        "student_mass": 0.999941068783141,
+        "teacher_mass": 0.9999296983083089,
+        "sampled_logratio": -0.005675581202065172,
+        "student_ce": 0.06894483225991982,
+        "teacher_ce": 0.06326925340549726,
+        "entropy": 0.13732362853591903
+      }
+    },
+    "opd": {
+      "bank": {
+        "top64_distance": 0.0003516222199554338,
+        "student_mass": 0.9999946341881462,
+        "teacher_mass": 0.9999951039068459,
+        "sampled_logratio": 0.0006337962388726628,
+        "student_ce": 0.03336517170005683,
+        "teacher_ce": 0.03399896763954656,
+        "entropy": 0.05015075474077964
+      },
+      "mbpp": {
+        "top64_distance": 0.0010098819562869843,
+        "student_mass": 0.9999356045778732,
+        "teacher_mass": 0.9999296983083089,
+        "sampled_logratio": 4.795071126332204e-06,
+        "student_ce": 0.06326445662067953,
+        "teacher_ce": 0.06326925340549726,
+        "entropy": 0.13662694555320587
+      }
+    },
+    "replay": {
+      "bank": {
+        "top64_distance": 0.0022452584677829165,
+        "student_mass": 0.999991084024993,
+        "teacher_mass": 0.9999951039068459,
+        "sampled_logratio": 0.0007287856119391394,
+        "student_ce": 0.03327018204305069,
+        "teacher_ce": 0.03399896763954656,
+        "entropy": 0.054192000909821514
+      },
+      "mbpp": {
+        "top64_distance": 0.03513373812704145,
+        "student_mass": 0.999973440811648,
+        "teacher_mass": 0.9999296983083089,
+        "sampled_logratio": 0.020910498174288642,
+        "student_ce": 0.04235875274542152,
+        "teacher_ce": 0.06326925340549726,
+        "entropy": 0.05248207181108005
+      }
+    },
+    "bank-only": {
+      "bank": {
+        "top64_distance": 0.00035803023354033145,
+        "student_mass": 0.9999946574491404,
+        "teacher_mass": 0.9999951039068459,
+        "sampled_logratio": 0.0004225292340626268,
+        "student_ce": 0.03357643845035804,
+        "teacher_ce": 0.03399896763954656,
+        "entropy": 0.05031851413797325
+      },
+      "mbpp": {
+        "top64_distance": 0.00496541509957581,
+        "student_mass": 0.9999505644932127,
+        "teacher_mass": 0.9999296983083089,
+        "sampled_logratio": 0.003716620548630994,
+        "student_ce": 0.05955263239925194,
+        "teacher_ce": 0.06326925340549726,
+        "entropy": 0.12247052627196263
+      }
+    },
+    "balanced": {
+      "bank": {
+        "top64_distance": 0.000445486217654892,
+        "student_mass": 0.9999943371636221,
+        "teacher_mass": 0.9999951039068459,
+        "sampled_logratio": 0.0008136589802368718,
+        "student_ce": 0.03318530848058843,
+        "teacher_ce": 0.03399896763954656,
+        "entropy": 0.05022843234651884
+      },
+      "mbpp": {
+        "top64_distance": 0.0008109660366114722,
+        "student_mass": 0.9999345070437381,
+        "teacher_mass": 0.9999296983083089,
+        "sampled_logratio": 0.0002468525672752522,
+        "student_ce": 0.0630224004575754,
+        "teacher_ce": 0.06326925340549726,
+        "entropy": 0.1372432273567507
+      }
+    },
+    "bank-only-balanced": {
+      "bank": {
+        "top64_distance": 0.0004913495478593338,
+        "student_mass": 0.9999943456074579,
+        "teacher_mass": 0.9999951039068459,
+        "sampled_logratio": 0.0008209675639035003,
+        "student_ce": 0.03317799994267771,
+        "teacher_ce": 0.03399896763954656,
+        "entropy": 0.050312691556682776
+      },
+      "mbpp": {
+        "top64_distance": 0.0047509278345047035,
+        "student_mass": 0.9999492706471717,
+        "teacher_mass": 0.9999296983083089,
+        "sampled_logratio": 0.003940260716716433,
+        "student_ce": 0.059328992087993096,
+        "teacher_ce": 0.06326925340549726,
+        "entropy": 0.12171132148292504
+      }
+    },
+    "long-prefix": {
+      "bank": {
+        "top64_distance": 0.0016128021029186996,
+        "student_mass": 0.9999926368927505,
+        "teacher_mass": 0.9999951039068459,
+        "sampled_logratio": 0.0026067401265181082,
+        "student_ce": 0.03139222742618647,
+        "teacher_ce": 0.03399896763954656,
+        "entropy": 0.05095604657620286
+      },
+      "mbpp": {
+        "top64_distance": 0.001029190375208882,
+        "student_mass": 0.9999376010894775,
+        "teacher_mass": 0.9999296983083089,
+        "sampled_logratio": 0.0019939081887602236,
+        "student_ce": 0.0612753435289106,
+        "teacher_ce": 0.06326925340549726,
+        "entropy": 0.1326171373351537
+      }
+    }
+  },
+  "teacher_load_precision_audit": {
+    "peft_version": "0.18.1",
+    "same_adapter_hash": true,
+    "lora_parameters_equal_before": false,
+    "teacher_equals_student_rounded_to_bf16": true,
+    "max_abs_lora_parameter_difference": 6.103515625e-05,
+    "lora_parameters_equal_after_fp32_reload": true,
+    "max_logit_difference_before": 0.5986328125,
+    "max_logit_difference_after": 0.0,
+    "top64_distance_before": 0.00024391069018747658,
+    "top64_distance_after": 0.0,
+    "student_repeat_max_logit_difference": 0.0,
+    "prefix_tokens": 236,
+    "loader_source_order": [
+      {
+        "source_line": 79,
+        "text": "load_result = set_peft_model_state_dict("
+      },
+      {
+        "source_line": 153,
+        "text": "if hasattr(self.base_model, \"_cast_adapter_dtype\"):"
+      },
+      {
+        "source_line": 154,
+        "text": "self.base_model._cast_adapter_dtype("
+      }
+    ],
+    "official_training_modified": false,
+    "adapter_saved": false,
+    "scope": "Scratch models only; read-only numerical audit inside an existing allocated free slot",
+    "checked_utc": "2026-10-24T12:37:24.606029+00:00",
+    "raw_stdout_sha256": "e2dcc530faa83c8bf051a36f3d01c3dcb1c82d46ccb905fa1631212a0ac96b35",
+    "request_sha256": "e580bcd68fce6382c7af17ae752d0107f76e020fd1fe7c0a4d8284928fdf90fd",
+    "slot": "Previously completed process slot within an existing accounted training allocation",
+    "interpretation": "Secondary adapter load rounds FP32 checkpoint values through BF16 before converting them to FP32; frozen official runs retain this loader behavior. One prefix was used to isolate output differences; all LoRA parameters were compared."
+  },
+  "largest_budget_dev_mean_gain": 0.0013020833333333703,
+  "approximately_plateaued_on_bank_dev": true,
+  "scope": "Independent LR horizons; fixed-state diagnostics; two code task suites"
+}

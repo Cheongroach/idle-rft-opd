@@ -1,0 +1,95 @@
+{
+  "groups": [
+    {
+      "phase": "ext-segment-02-01",
+      "trial": "438878096",
+      "pod": "5393290604",
+      "pod_exit": 1,
+      "phase_elapsed_seconds": 5303.085268840194,
+      "rows": [
+        {
+          "label": "opd-524288-s42",
+          "saved_tokens": 512980,
+          "remaining_response_tokens": 11308,
+          "saved_step": 997
+        },
+        {
+          "label": "opd-524288-s43",
+          "saved_tokens": 520849,
+          "remaining_response_tokens": 3439,
+          "saved_step": 1017
+        },
+        {
+          "label": "opd-524288-s44",
+          "saved_tokens": 520475,
+          "remaining_response_tokens": 3813,
+          "saved_step": 1024
+        }
+      ],
+      "snapshot_manifest_verified": true
+    },
+    {
+      "phase": "ext-segment-03-01",
+      "trial": "438881029",
+      "pod": "5393314884",
+      "pod_exit": 1,
+      "phase_elapsed_seconds": 5299.666304537095,
+      "rows": [
+        {
+          "label": "balanced-s42",
+          "saved_tokens": 512392,
+          "remaining_response_tokens": 11896,
+          "saved_step": 1371
+        },
+        {
+          "label": "balanced-s43",
+          "saved_tokens": 512692,
+          "remaining_response_tokens": 11596,
+          "saved_step": 1379
+        },
+        {
+          "label": "balanced-s44",
+          "saved_tokens": 520423,
+          "remaining_response_tokens": 3865,
+          "saved_step": 1401
+        }
+      ],
+      "snapshot_manifest_verified": true
+    }
+  ],
+  "before_state_sha256": "91682c2c0177c254b852e07e158fa65f429ae0dd208879de898613cd9919567d",
+  "after_state_sha256": "2df18e906353175dbf050a99ddc71a94286822808996bb413cc34321794a3afa",
+  "remaining_response_tokens": 45917,
+  "frozen_training_changed": false,
+  "gpu_launched": true,
+  "observed_unix": 1792901685.1594179,
+  "logical_fits_complete_before_resume": 30,
+  "development_shards_collected": 60,
+  "fixed_prefix_models_collected": 22,
+  "query_timeout_seconds": 45,
+  "read_retry_window_seconds": 900,
+  "read_timeout_recovery_test_passed": true,
+  "write_timeout_not_retried_test_passed": true,
+  "future_save_owner": "Frozen worker/child finite windows",
+  "source_modules_matched": 13,
+  "scope": "Validated interruption recovery; not full experiment acceptance",
+  "resumed_stages": [
+    {
+      "phase": "ext-segment-02-02",
+      "sid": "a03ad6a133af4375",
+      "tasks_equal_original": true,
+      "assets_equal_original": true,
+      "remaining_response_tokens": 18560
+    },
+    {
+      "phase": "ext-segment-03-02",
+      "sid": "8010ab6c8fe4fe1e",
+      "tasks_equal_original": true,
+      "assets_equal_original": true,
+      "remaining_response_tokens": 27357
+    }
+  ],
+  "launches_verified": 65,
+  "reserved_gpu_hours": 1516.1666666666667,
+  "resumed_launch_audit_sha256": "9c059899e2c7d429d8a9e4bfe74bfaed5a83be1dc5b239679d30574eed68a614"
+}

@@ -1,0 +1,10 @@
+{
+  "logical_configs": 36,
+  "recovered_configs": 10,
+  "original_configs": 26,
+  "frozen_matrix_sha256": "5e4044f74f141567520defe50c986167a6f425cdf4411ed5eb3ad61e4ebd1e45",
+  "planned_checkpoint_stages": 7,
+  "full_extension_completed": false,
+  "all_predecessors_archived": true,
+  "observed_unix": 1792903108.4346898
+}

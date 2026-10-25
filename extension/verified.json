@@ -1,0 +1,25 @@
+{
+  "completed": true,
+  "checked_utc": "2026-10-25T08:55:31.387199+00:00",
+  "training_configs": 36,
+  "development_models": 38,
+  "fixed_prefix_models": 38,
+  "fixed_prefix_provenance_checked": true,
+  "final_models": 20,
+  "active_gpus": 0,
+  "observed_total_gpu_hours": 521.3363888888889,
+  "reserved_total_gpu_hours": 1853.0999999999992,
+  "launches_verified": 79,
+  "billing_verified": false,
+  "files": {
+    "fits.json": "2507ad2607329f21f4d67410601d9b0d3152f662fcc6d5a4d528db0d438e5872",
+    "dev-decision.json": "1169bead4a115ee4c30914c42e786908c6ab5566dcb04e8b6f219cd328bd787f",
+    "blind-reports.json": "c036f9589accf38b255112e2224e2b643251b683c467216eb4d76c6c56cfd5f6",
+    "fixed-prefix-diagnostics.json": "e1eba986e4bedc7e544ce96e400df81342822918004a5878fec33403192c5cf0",
+    "final-analysis.json": "cd3bc49501a54847c8c8b800701426441e5a2ffc883b4841a43e97b758aba0c2",
+    "update-metrics.json": "385435961cca141374f8768be634b5b395b7afddb85333cef5f463a085ac75f8",
+    "development-budget-curves.png": "9ebe1ab0301228aae087ea262fd968f3b81d616ccdbc3c7e235f9b3f548d5b02",
+    "REPORT.md": "dd282de584677bdfb23b695e9ce6cf2a02d127e261002bd8ffea7171793de228",
+    "teacher-load-precision-audit.json": "c9b0b87b50ab142a9fdf066d1936b2a23b0aeebe06e8d61937137c9a2edd7266"
+  }
+}
